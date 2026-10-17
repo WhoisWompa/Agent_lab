@@ -1,0 +1,15 @@
+# Environments and caches
+.venv/
+__pycache__/
+*.pyc
+.mypy_cache/
+.pytest_cache/
+.vscode/
+
+# Secrets and per-run state, in every agent
+agent/.env
+agent/data/
+agent/logs/
+
+# Telegram exports used as test data
+agents/*/test data/telegram chats/

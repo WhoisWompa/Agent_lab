@@ -1,0 +1,5 @@
+.venv/
+agent/.env
+agent/data/
+agent/logs/
+test data/telegram chats/
