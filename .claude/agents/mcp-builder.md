@@ -62,4 +62,4 @@ Every function has a docstring in the standard Python form: a one-line summary, 
 
 ## 6. What you report
 
-The files written, one line each. Anything the brief left out that you had to leave as a gap. The `settings.json` entry an agent needs to grant the server, so the calling session can add it. You do not install the server and you do not run it; the calling session does.
+The files written, one line each. Anything the brief left out that you had to leave as a gap. The `base_settings.json` entry an agent needs to grant the server, so the calling session can add it. You do not install the server and you do not run it; the calling session does.

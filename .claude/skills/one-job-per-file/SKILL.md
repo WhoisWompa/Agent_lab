@@ -1,6 +1,6 @@
 ---
 name: one-job-per-file
-description: "How code in this repo is split into files: one job per file, the entry file holds only the entry points, backend work lives in files named for the job, and a table lists every file. Loaded by both builders before they write anything, in agents/<name>/agent/src/ and in mcp/<name>/."
+description: "How code in this repo is split into files: one job per file, the entry file holds only the entry points, backend work lives in files named for the job, and a table lists every file. Loaded by both builders before they write anything, in agents/<name>/src/ and in mcp/<name>/."
 ---
 
 # One job per file
@@ -43,7 +43,7 @@ Split the rest by what each piece touches, and name the file after the job. The 
 | Reading or writing the outside thing | `reader.py`, `writer.py`, or named for the thing (`mail.py`, `calendar.py`) | The calls that fetch or send, given an open connection. |
 | Shapes | `convert.py` | Parsing inputs (dates from text) and making outputs serialisable (objects to JSON). |
 | Storage | `store.py` or a `memory/` package | The agent's own data on disk, how it is read back. |
-| Prompts | `instructions/*.md` | Prose for the model, never inline in Python. |
+| Prompts | `src/instructions/*.md` | Prose for the model, never inline in Python. |
 | The command line | `server.py` | Arguments, then run. Nothing else. |
 
 Not every package has every row; a package with no storage has no `store.py`. But a package never has one file doing two rows.

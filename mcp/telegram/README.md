@@ -32,7 +32,7 @@ The server never asks for a login code. Log in once with a script that calls `op
 
 ## Grant it to an agent
 
-In the agent's `settings.json`:
+In the agent's `base_settings.json`:
 
 ```json
 "mcpServers": {

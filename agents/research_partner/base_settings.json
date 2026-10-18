@@ -1,0 +1,12 @@
+{
+  "providers": {
+    "anthropic": {
+      "provider": "anthropic",
+      "base_url": "https://api.anthropic.com",
+      "key": "ANTHROPIC_API_KEY",
+      "models": ["claude-sonnet-5-5"]
+    }
+  },
+  "max_retries": 3,
+  "mcpServers": {}
+}

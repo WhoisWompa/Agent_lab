@@ -1,4 +1,3 @@
-agent/.env
-agent/data/
-agent/logs/
-.venv/
+.env
+data/
+logs/

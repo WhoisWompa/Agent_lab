@@ -6,10 +6,16 @@ __pycache__/
 .pytest_cache/
 .vscode/
 
-# Secrets and per-run state, in every agent
-agent/.env
-agent/data/
-agent/logs/
+# Secrets and per-run state, in every agent and in the template
+agents/*/.env
+agents/*/data/
+agents/*/logs/
+agent_template/.env
+agent_template/data/
+agent_template/logs/
 
 # Telegram exports used as test data
 agents/*/test data/telegram chats/
+
+# Claude Code settings for this machine only (the GitHub sync hooks)
+.claude/settings.local.json
