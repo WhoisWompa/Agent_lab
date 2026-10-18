@@ -5,7 +5,7 @@ This project main focus is building **agent architectures**: Python programs tha
 # Workflow
 
 The main session is the second voice: the user brings ideas, the session
-pushes back, and designs take shape in the conversation. Three teams are
+pushes back, and designs take shape in the conversation. Two teams are
 called from the main session, never on their own initiative.
 
 The user leads. The session answers what is asked, pushes back where it
@@ -18,25 +18,7 @@ the key's line when it is removed. The user fills the value.
 ## Discussion
 
 The default mode. Ideas, designs and implementations are talked through.
-Nothing is spawned. A paper worth reading in full goes to deep read; a
-direction worth trying goes to building.
-
-## Deep read
-
-A paper is read in full only on the user's word, through the `deep-read`
-skill. The main session reads back one thing: the report. Nothing else
-from the run enters its context.
-
-A run is the `deep-read-run` workflow. The deep reader leads it: it reads
-the paper, the librarian checks which references already have notes,
-searchers find the missing ones on arXiv and GitHub, readers read the
-abstract or README only and write one note per reference, and the deep
-reader reads all the summaries and writes the report. That is what creates
-the Cites and Cited by links in the vault.
-
-The research run that used to sit in front of this was removed on
-2026-10-15. The user is building their own research process outside the
-workflow tool.
+Nothing is spawned.
 
 ## Building team
 
@@ -51,13 +33,6 @@ the main session shows the tools, their arguments and their outputs, and the
 the `one-job-per-file` skill. The main session runs
 the result; what happens feeds back into discussion. Git discards what
 did not work.
-
-## Documentation team
-
-Runs at the end of a session, via `record`. It writes down the ideas and
-decisions made along the way, with the reasoning, as they stood at the
-time. Nothing has to be settled to be recorded. The point is that a
-future session on the same problem starts from the user's own thinking.
 
 # Rules that must be followed during the session
 
@@ -121,9 +96,8 @@ python provider.py remove <agent> <label>
 | `mcp/` | Shared MCP servers that agents may list in their `base_settings.json`. |
 | `.claude/agents/` | Subagents. `agent-builder` writes an agent's logic from a brief; `mcp-builder` writes an MCP server in `mcp/<name>/` from a brief. `research-searcher`, `research-reader`, `research-librarian` and `deep-reader` are the deep-read team, spawned by the deep-read workflow only. |
 | `.claude/hooks/` | `builder_paths.py` and `mcp_builder_paths.py` enforce the two builders' read and write limits. |
-| `.claude/skills/` | `one-job-per-file` is how code is split into files; both builders load it before writing. `vault-notes` is the note conventions for the vault. `record` runs the documentation agent, a fork that writes the session into the vault. `deep-read` launches a deep read of one paper. |
+| `.claude/skills/` | `one-job-per-file` is how code is split into files; both builders load it before writing. `vault-notes` is the note conventions for the vault. `deep-read` launches a deep read of one paper. |
 | `.claude/workflows/` | Workflow scripts. `deep-read.js` is `deep-read-run`, led by the deep reader. |
-| `notes/` | The Obsidian vault: session, decision, agent, paper, repo, research and topic notes. Tags are arXiv categories. Written by `record` and the deep-read agents. |
 
 ### Inside an agent folder
 
