@@ -132,7 +132,7 @@ You do not write any of this.
 - Starts every MCP server in `base_settings.json` once, before the first message, and keeps them running until Stop.
 - Retries a failed model call on rate limits and server errors, `max_retries` times from `base_settings.json`.
 - Applies the fallback when asked, and warns on stderr when the main model and its fallback share a key.
-- Traces every run to `logs/trace_<start time>.jsonl` in the OpenInference format: one AGENT span per hook call carrying the user line and the output line, with every model call and tool call as child spans, one JSON span per line. You never write a trace line.
+- Traces every run to Phoenix, at the `phoenix` address in `base_settings.json` (a local `http://localhost:6006` when absent), in the OpenInference format: one AGENT span per hook call carrying the user line and the output line, with every model call and tool call as child spans. The agent's folder name is the Phoenix project; one process start is one Phoenix session. If Phoenix is not running the run goes on and the trace is lost. You never write a trace line.
 - Catches your exceptions, as above.
 - Sets stdin and stdout to UTF-8.
 
@@ -146,9 +146,8 @@ Paths are relative to the agent folder, `agents/<name>/`.
 | `src/instructions/` | yes | Prompts and any other long text, one `.md` per piece. Read them at runtime; do not paste prose into Python. |
 | `src/requirements.txt` | yes | The exact set of packages the agent needs to run. Add what `src/` imports, remove what nothing imports. Never remove the base's own packages, listed below. |
 | `src/<name>.json` | yes | The agent's own settings, if it has any: model names, intervals, which chats to read. Read with `json.load`; the base never opens it. |
-| `base_settings.json` | read only | The providers (each one key and the models it serves), `max_retries`, and which MCP servers are granted. If you need a model or a server that is not there, say so in your report. |
+| `base_settings.json` | read only | The providers (each one key and the models it serves), `max_retries`, which MCP servers are granted, and `phoenix`, where the trace goes. If you need a model or a server that is not there, say so in your report. |
 | `data/` | at runtime | Keep the agent's own memory here if it needs any, in whatever shape. |
-| `logs/` | no | The base's traces, one file per run. |
 | `.env` | no | Secrets. Never read. Every line is loaded into `os.environ` before `src/` is imported, so read a secret by the variable name the brief gives, e.g. `os.environ["TELEGRAM_BOT_TOKEN"]`. |
 | `base/` | no | The base. This file replaces it. |
 | `base/base_interface.md` | read | This file. |
@@ -165,6 +164,7 @@ langchain-mcp-adapters
 openinference-instrumentation-langchain
 openinference-semantic-conventions
 opentelemetry-sdk
+opentelemetry-exporter-otlp-proto-http
 ```
 
 `deepagents` is also present at creation; keep it only if `src/` uses it.

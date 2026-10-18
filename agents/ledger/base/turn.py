@@ -6,7 +6,7 @@ from .mcp import close, connect, loop
 from .trace import tracer
 
 src = None                                   # the agent's package, imported by start() and not before, so a file under src/ can run on its own
-CRASH = error("crash: agent stopped, see logs/trace_*.jsonl")
+CRASH = error("crash: agent stopped, see the trace in Phoenix")
 
 
 def start():
@@ -22,7 +22,7 @@ def start():
                 raise RuntimeError("src/__init__.py must define on_stop() and at least one of on_start() or on_message(text)")
             loop.run_until_complete(connect())
     except Exception:                            # src/ would not load, or a server would not start: tell, die
-        print(error("startup: agent failed to start, see logs/trace_*.jsonl"), flush=True)
+        print(error("startup: agent failed to start, see the trace in Phoenix"), flush=True)
         raise
 
 

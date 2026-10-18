@@ -12,13 +12,11 @@ HERE = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))     # the age
 ENV_PATH = os.path.join(HERE, ".env")
 SETTINGS_PATH = os.path.join(HERE, "base_settings.json")
 DATA_DIR = os.path.join(HERE, "data")
-LOGS_DIR = os.path.join(HERE, "logs")
-RUN_ID = datetime.now().strftime("%Y%m%d-%H%M%S")            # one per process start
-LOG_PATH = os.path.join(LOGS_DIR, f"trace_{RUN_ID}.jsonl")    # one trace per run: OpenInference spans, one per line
+AGENT = os.path.basename(HERE)                                # the Phoenix project every span of this agent lands in
+RUN_ID = datetime.now().strftime("%Y%m%d-%H%M%S")            # one per process start: the Phoenix session every span of this run carries
 os.makedirs(DATA_DIR, exist_ok=True)
-os.makedirs(LOGS_DIR, exist_ok=True)
 
-KNOWN = {"providers", "max_retries", "mcpServers"}             # every key base_settings.json may hold
+KNOWN = {"providers", "max_retries", "mcpServers", "phoenix"}  # every key base_settings.json may hold
 BLOCK = {"provider", "base_url", "key", "models"}              # every key a provider block must hold
 
 
@@ -61,6 +59,7 @@ def _load_settings(path):
         die(f"base_settings.json has unknown key(s) {sorted(unknown)}; allowed: {sorted(KNOWN)}")
     settings.setdefault("max_retries", 2)
     settings.setdefault("mcpServers", {})
+    settings.setdefault("phoenix", "http://localhost:6006")   # where the trace goes; absent means a local Phoenix
     providers = settings.get("providers") or {}
     if not providers:
         die("base_settings.json has no providers; add one with provider.py at the repo root")
@@ -97,5 +96,6 @@ def _check_keys(providers):
 
 _load_env(ENV_PATH)
 settings = _load_settings(SETTINGS_PATH)
+PHOENIX_URL = settings["phoenix"].rstrip("/")
 blocks = _blocks(settings["providers"])      # models.py looks a name up here to find its key
 _check_keys(settings["providers"])

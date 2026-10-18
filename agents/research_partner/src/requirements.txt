@@ -6,3 +6,4 @@ deepagents==0.7.23
 openinference-instrumentation-langchain==0.1.79
 openinference-semantic-conventions==0.1.41
 opentelemetry-sdk==1.45.1
+opentelemetry-exporter-otlp-proto-http==1.45.1
