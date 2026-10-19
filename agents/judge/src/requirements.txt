@@ -1,5 +1,6 @@
 langchain==1.4.4
 langchain-anthropic==1.7.5
+langchain-openai==1.7.2
 langgraph==1.2.14
 langchain-mcp-adapters==0.3.2
 deepagents==0.7.23
