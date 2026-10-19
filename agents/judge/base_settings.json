@@ -13,10 +13,11 @@
       "base_url": "https://openrouter.ai/api/v1",
       "key": "OPENROUTER_API_KEY",
       "models": [
-        "openrouter/auto"
+        "typesafe/jev-1.14",
+        "deepseek/deepseek-v4.1-flash-1017"
       ]
     }
   },
-  "max_retries": 3,
+  "max_retries": 5,
   "mcpServers": {}
 }
