@@ -7,6 +7,14 @@
       "models": [
         "claude-opus-5-5"
       ]
+    },
+    "openrouter": {
+      "provider": "openai",
+      "base_url": "https://openrouter.ai/api/v1",
+      "key": "OPENROUTER_API_KEY",
+      "models": [
+        "openrouter/auto"
+      ]
     }
   },
   "max_retries": 3,
