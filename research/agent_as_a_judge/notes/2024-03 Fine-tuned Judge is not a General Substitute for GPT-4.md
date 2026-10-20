@@ -20,6 +20,7 @@ Tests JudgeLM, PandaLM, Auto-J, Prometheus out of their training format: strong 
 
 ## Limitations admitted by the authors
 - Fine-tuned judges act as task-specific classifiers ([arXiv](https://arxiv.org/abs/2403.02839)).
+- Studies 2023-24 judges (PandaLM, JudgeLM, Auto-J, Prometheus).
 
 ## Limitations found by others
 

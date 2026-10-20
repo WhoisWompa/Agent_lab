@@ -25,6 +25,8 @@ Best judge (simplified, GPT-4o, accessibility tree): precision 69.8%, recall 83.
 
 ## Limitations found by others
 - MobileJudgeBench (2608.11434) found the AgentRewardBench-style judge not consistently better than a simple screenshot-sampling baseline on mobile.
+- Gaming the Judge (2601.14691) reused 300 AgentRewardBench trajectories and showed judges reading them can be pushed to call failures successes by rewriting only the agent's CoT (FPR up to +90%) (added by agent-as-judge-core researcher).
+- AgentHorizon (2610.11050, same lab) extends this line to agentic judges on computer-use near-miss pairs; best 80.9% balanced accuracy, side-effect recall at most 24.1%.
 
 ## What it leaves untried
 - Judges that can query the environment's final state instead of reading the trajectory.

@@ -22,6 +22,7 @@ Flaws can under- or overestimate performance by up to 100% relative. Examples: S
 - Checklist is partly qualitative; the 33% fix figure is from one benchmark.
 
 ## Limitations found by others
+- (added by alternative-paradigms researcher) Agentic Benchmark Checklist (ABC); audits popular agent benchmarks and finds task and outcome-validity flaws (e.g. insufficient tests, success credited to empty or trivial responses) that misestimate performance by large relative margins.
 
 
 ## What it leaves untried

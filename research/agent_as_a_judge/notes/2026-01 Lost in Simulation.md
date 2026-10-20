@@ -22,6 +22,7 @@ Success shifts up to 9 pp by user LLM; simulators underestimate on hard and over
 - One benchmark domain (retail).
 
 ## Limitations found by others
+- (added by alternative-paradigms researcher) Human study (US, India, Kenya, Nigeria) on tau-Bench retail shows LLM-simulated users misestimate agent success and are worst proxies for AAVE and Indian English speakers.
 
 
 ## What it leaves untried

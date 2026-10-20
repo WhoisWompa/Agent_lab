@@ -19,7 +19,7 @@ LLM generates an instruction-specific YES/NO checklist, then a judge scores the 
 Raises exact agreement between LLM judgements and human preferences (reported 46.4% -> 52.2%).
 
 ## Limitations admitted by the authors
-
+- Agreement remains about half; checklist quality depends on the generator.
 
 ## Limitations found by others
 

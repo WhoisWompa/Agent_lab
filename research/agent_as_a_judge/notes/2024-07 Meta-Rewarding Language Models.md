@@ -20,6 +20,9 @@ Adds a meta-judge role that judges the model's own judgments, so the judge skill
 - Llama-3-8B-Instruct: AlpacaEval 2 length-controlled win rate 22.9% to 39.4%; Arena-Hard 20.6% to 29.1% (paper abstract).
 
 ## Limitations admitted by the authors
+- (self-evolving-tests slice) Length bias: without explicit length control the loop drifts to longer responses.
+- (self-evolving-tests slice) Judge scores saturate (many ties on the 5-point scale), limiting further gains.
+- (self-evolving-tests slice) No human labels: the meta-judge's own bias can be amplified.
 - Judge score distribution concentrates (ties, saturation near top scores).
 - Positional bias in meta-judge.
 - No human labels, so errors can self-reinforce.

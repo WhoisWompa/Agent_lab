@@ -22,6 +22,7 @@ At release the best model (Claude 2 with retrieval) resolved 1.96%.
 - Tests come from the original PR, so they can be narrower or broader than the issue text implies.
 
 ## Limitations found by others
+- (added by alternative-paradigms researcher) Repository-level issue resolution judged by executing the repository's fail-to-pass and pass-to-pass tests.
 - Solution leakage: 32.67% of passing patches had the fix in the issue text or comments; 31.08% passed on weak tests; SWE-Agent+GPT-4 dropped 12.47% -> 3.97% after filtering (SWE-Bench+, 2410.06992).
 - 7.8% of 'resolved' patches fail the full developer test suite; 29.6% of plausible patches diverge behaviourally from gold; resolution inflated ~6.2 pp (Wang, Pradel, Liu, 2503.15223).
 - Insufficient tests in 36 instances, 345 wrongly passing patches; 40.9% of Lite and 24.4% of Verified leaderboard entries affected (UTBoost, 2506.09289).

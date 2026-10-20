@@ -20,6 +20,7 @@ Pointwise generative RM that writes its own principles then critiques; trained w
 - DeepSeek-GRM-27B: greedy 69.9 overall; voting@32 71.0; MetaRM@32 72.8 (RewardBench 90.4, PPE Pref 67.2, PPE Correctness 63.2, RMB 70.3) vs GPT-4o 71.3, Nemotron-4-340B-Reward 70.5 ([HTML](https://arxiv.org/html/2504.02495v3)).
 
 ## Limitations admitted by the authors
+- (self-evolving-tests slice) Principles are generated per query and not accumulated or corrected across evaluations.
 - 'Challenges in efficiency and specific tasks'; generative RM costs much more compute than a scalar RM.
 - Weaker on verifiable correctness (PPE Correctness ~60) than scalar RMs and later reasoning judges.
 

@@ -22,6 +22,7 @@ LLM generates extra unit tests from the codebase and gold patch; patches that pa
 
 
 ## Limitations found by others
+- (added by alternative-paradigms researcher) LLM-driven test generation for SWE-bench finds 36 under-tested instances and 345 patches wrongly marked passing; 170 erroneous patches in Lite and 92 in Verified; fixing the parser changed leaderboard ranks.
 
 
 ## What it leaves untried

@@ -25,4 +25,4 @@ Best: 53.5% agent-level, 14.2% step-level accuracy; some methods below random; o
 
 
 ## What it leaves untried
-
+- Agentic attribution that replays the system from the suspected step (counterfactual re-execution) instead of reading logs (added by agent-as-judge-core researcher).

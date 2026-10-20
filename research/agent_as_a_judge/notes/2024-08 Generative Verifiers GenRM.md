@@ -23,6 +23,7 @@ Trains the verifier with next-token prediction (P('Yes')) and optional chain-of-
 ## Limitations admitted by the authors
 - Tested on math/algorithmic domains with checkable answers.
 - Inference cost grows with number of rationales.
+- Reasoning domains with verifiable answers.
 
 ## Limitations found by others
 - ProcessBench (arXiv:2412.06559) and the Qwen PRM lessons paper show outcome-trained verifiers accept correct answers with flawed steps.

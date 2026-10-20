@@ -22,6 +22,7 @@ Run plausible patches against all developer tests; generate differential tests c
 
 
 ## Limitations found by others
+- (added by alternative-paradigms researcher) PatchDiff differential testing finds about 7.8% of 'correct' SWE-bench Verified patches fail the full developer test suite and 29.6% behave differently from the gold patch, of which 28.6% are certainly incorrect.
 
 
 ## What it leaves untried

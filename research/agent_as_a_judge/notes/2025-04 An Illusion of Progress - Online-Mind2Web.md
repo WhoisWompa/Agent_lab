@@ -22,7 +22,7 @@ WebJudge: LLM judge over key screenshots and actions, identifying key points of 
 
 
 ## Limitations found by others
-
+- Gaming the Judge (2601.14691): WebJudge-style rubric evaluation mitigated manipulated-CoT attacks only inconsistently (added by agent-as-judge-core researcher).
 
 ## What it leaves untried
 

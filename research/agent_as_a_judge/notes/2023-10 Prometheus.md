@@ -25,10 +25,12 @@ A 13B Llama-2-Chat fine-tuned to give rubric-conditioned 1-5 scores plus written
 - Depends heavily on the reference answer; ablation removing it drops correlation sharply.
 - Trained only on GPT-4 outputs, so it inherits GPT-4's preferences.
 - Pointwise absolute scoring only (fixed in Prometheus 2).
+- Needs reference answer and rubric to match GPT-4.
 
 ## Limitations found by others
 - Huang et al. 2024 (arXiv:2403.02839): fine-tuned judges such as Prometheus behave like task-specific classifiers and lose to GPT-4 on generalisability, fairness and adaptability out of their training format.
 - JudgeBench (arXiv:2410.12784): fine-tuned judges, Prometheus 2 included, are near random on hard, objectively-checkable response pairs.
+- JudgeBench (2410.12784): Prometheus2 34.9-40.3% on hard objective pairs, below random.
 
 ## What it leaves untried
 - Judging without a reference answer, on tasks where the judge must derive correctness itself.

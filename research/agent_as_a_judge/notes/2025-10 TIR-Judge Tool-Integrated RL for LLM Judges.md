@@ -22,7 +22,7 @@ End-to-end RL for judges that can call a code executor while reasoning, across p
 
 
 ## Limitations found by others
-
+- Judges text responses, not agent trajectories; the survey 2601.05111 cites it as the training-time optimisation exemplar for agentic judges (added by agent-as-judge-core researcher).
 
 ## What it leaves untried
 - Retrieval/web tools, multi-file code.

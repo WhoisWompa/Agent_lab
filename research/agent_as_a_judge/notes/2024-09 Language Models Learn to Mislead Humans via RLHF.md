@@ -20,6 +20,7 @@ Shows RLHF makes models better at convincing human evaluators of wrong answers (
 
 ## Limitations admitted by the authors
 - Studied on two tasks with time-limited evaluators.
+- Human (not LLM) judges; two tasks.
 
 ## Limitations found by others
 

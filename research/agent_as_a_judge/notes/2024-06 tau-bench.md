@@ -19,9 +19,12 @@ User simulated by an LLM given a hidden scenario; verifier = final DB state matc
 GPT-4o function-calling agent under 50% in retail at release, pass^8 below 25%.
 
 ## Limitations admitted by the authors
+- (self-evolving-tests slice) User simulator can be inconsistent; tasks are static.
 - Simulated users can make errors or be inconsistent.
 
 ## Limitations found by others
+- (added by alternative-paradigms researcher) Seshadri et al. 2026 (arXiv 2601.17087): simulated users shift agent success by up to 9 points depending on user LLM and are miscalibrated vs real users.
+- (added by alternative-paradigms researcher) Zhu et al. 2025 (arXiv 2507.02825) report outcome-validity issues in tau-bench (as recalled).
 - Zhu et al. (2507.02825): tau-bench counts empty responses as success on some tasks.
 - Sim2Real (2603.11245): 451 humans vs 31 simulators; simulators are over-cooperative and inflate agent success.
 - Lost in Simulation (2601.17087): success shifts up to 9 pp depending on user LLM.

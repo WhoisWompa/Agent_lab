@@ -22,9 +22,11 @@ A 13B generative judge for 58 real-world scenarios that does pairwise comparison
 ## Limitations admitted by the authors
 - Scenario taxonomy is fixed; out-of-scenario behaviour untested.
 - GPT-4 is the label source.
+- Scenario coverage defined by authors.
 
 ## Limitations found by others
 - Huang et al. (arXiv:2403.02839) evaluate Auto-J as one of the fine-tuned judges that generalise poorly.
+- JudgeBench (2410.12784): 36.6%.
 
 ## What it leaves untried
 - Judging correctness of reasoning, code or math.

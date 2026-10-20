@@ -23,10 +23,12 @@ Vicuna-based 7B/13B/33B pairwise judges fine-tuned on 100K GPT-4 judgments, with
 ## Limitations admitted by the authors
 - Agreement is measured against GPT-4, the same teacher, so it measures imitation, not correctness.
 - Biases reduced, not removed.
+- Agreement measured against teacher GPT-4, inheriting its biases.
 
 ## Limitations found by others
 - Huang et al. (arXiv:2403.02839) found JudgeLM-style fine-tuned judges score high in-domain but drop on other formats and benchmarks.
 - JudgeBench (arXiv:2410.12784) lists JudgeLM among fine-tuned judges that perform poorly on hard pairs.
+- JudgeBench (2410.12784): 25.1-35.7%.
 
 ## What it leaves untried
 - Agreement with ground-truth correctness rather than with the teacher judge.

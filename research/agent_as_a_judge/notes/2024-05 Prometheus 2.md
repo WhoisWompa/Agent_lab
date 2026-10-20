@@ -23,10 +23,12 @@ Open 7B and 8x7B judges that do both direct (1-5) assessment and pairwise rankin
 ## Limitations admitted by the authors
 - Still trails GPT-4 / Claude-3-Opus on some benchmarks.
 - English only; synthetic GPT-4 labels.
+- Correlation targets are human/GPT-4 preferences, not objective correctness.
 
 ## Limitations found by others
 - JudgeBench (arXiv:2410.12784) and RM-Bench (arXiv:2410.16184) show such judges fail when the pair differs in correctness rather than style.
 - Huang et al. (arXiv:2403.02839): fine-tuned judges are not a general substitute for GPT-4.
+- JudgeBench (2410.12784): 34.9-40.3% accuracy.
 
 ## What it leaves untried
 - Reasoning before the verdict trained with RL (taken up by J1, JudgeLRM, RM-R1).

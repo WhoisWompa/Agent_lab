@@ -22,9 +22,11 @@ A 7B LLaMA pairwise judge for choosing instruction-tuning hyperparameters, train
 ## Limitations admitted by the authors
 - Teacher is GPT-3.5, which caps quality.
 - Focus is relative ranking of models during tuning, not absolute grading.
+- Small judge; subjective criteria.
 
 ## Limitations found by others
 - Huang et al. (arXiv:2403.02839) include PandaLM among fine-tuned judges that do not transfer across formats/benchmarks.
+- JudgeBench (2410.12784): 13.1%.
 
 ## What it leaves untried
 - Multi-domain or reasoning-heavy evaluation.

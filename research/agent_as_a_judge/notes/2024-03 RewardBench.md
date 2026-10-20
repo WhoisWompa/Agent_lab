@@ -20,8 +20,10 @@ First standard RM benchmark (Chat, Chat-Hard, Safety, Reasoning) with a public l
 
 ## Limitations admitted by the authors
 - Saturated by late 2024 (90%+); RewardBench 2 shows scores overstate ability by about 20 points (arXiv:2506.01937).
+- Saturation and weak downstream correlation, addressed by RewardBench 2 (2506.01937) and RM-Bench (2410.16184).
 
 ## Limitations found by others
+- (added by alternative-paradigms researcher) Benchmark of chosen/rejected pairs (chat, chat-hard, safety, reasoning) for reward models and judges.
 
 
 ## What it leaves untried

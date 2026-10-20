@@ -22,6 +22,7 @@ Reports significant drops from no-user to dual-control mode.
 
 
 ## Limitations found by others
+- (added by alternative-paradigms researcher) Extends tau-bench so the user also acts on the environment (dual control), e.g. telecom troubleshooting.
 - User-simulator fidelity critiques of tau-bench (2603.11245, 2601.17087, 2609.38043) apply.
 
 ## What it leaves untried
