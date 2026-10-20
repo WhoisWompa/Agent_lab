@@ -1,0 +1,2 @@
+- Evaluation design discussion closed on all six practices; notes in `eval_design.md`. Open: turning the notes into the judge's actual design (scenario file format, check shapes, the round loop, what it asks the user and when). Nothing agreed yet on files or signatures.
+- `src/` is still the template stub (plain chat system prompt, empty `on_message`). Nothing of the judge is built yet.
