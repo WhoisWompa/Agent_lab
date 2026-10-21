@@ -6,7 +6,9 @@ arxiv: 2508.17536
 url: https://arxiv.org/abs/2508.17536
 venue: NeurIPS 2025 spotlight
 category: alternative-paradigms
-topics: ["alternative evaluation paradigms", "social choice"]
+pdf: research/multiagent_llm_systems/pdfs/2508.17536.pdf
+folder: ["multiagent_llm_systems"]
+topics: ["alternative evaluation paradigms", "social choice", "multi-agent debate and consensus"]
 ---
 # Debate or Vote: Which Yields Better Decisions in Multi-Agent Large Language Models?
 
@@ -29,4 +31,4 @@ Majority voting alone explains most MAD gains; debate induces a martingale over 
 - Same decomposition for judge panels (ChatEval-style) and agent-judges.
 
 ## Topics
-[[Topic - alternative evaluation paradigms]] · [[Topic - social choice]]
+[[Topic - alternative evaluation paradigms]] · [[Topic - social choice]] · [[Topic - multi-agent debate and consensus]]

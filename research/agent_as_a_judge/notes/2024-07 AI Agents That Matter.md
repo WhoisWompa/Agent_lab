@@ -6,6 +6,8 @@ arxiv: 2407.01502
 url: https://arxiv.org/abs/2407.01502
 venue: arXiv
 category: agent-evaluation-benchmarks
+pdf: research/multiagent_llm_systems/pdfs/2407.01502.pdf
+folder: ["multiagent_llm_systems"]
 topics: ["agent evaluation benchmarks"]
 ---
 # AI Agents That Matter

@@ -8,7 +8,7 @@ venue: arXiv (preprint, under review)
 category: topology-communication
 pdf: research/multiagent_llm_systems/pdfs/2406.02818.pdf
 folder: ["multiagent_llm_systems"]
-topics: ["orchestration and delegation"]
+topics: ["orchestration and delegation", "communication topology and channels"]
 ---
 # Chain of Agents: Large Language Models Collaborating on Long-Context Tasks
 
@@ -47,4 +47,4 @@ Assumptions: no training, same base model for every worker and the manager unles
 - The reading order is fixed or random. Nothing lets the manager or a worker choose which chunks to read, which could shorten the chain.
 
 ## Topics
-[[Topic - orchestration and delegation]]
+[[Topic - orchestration and delegation]] · [[Topic - communication topology and channels]]

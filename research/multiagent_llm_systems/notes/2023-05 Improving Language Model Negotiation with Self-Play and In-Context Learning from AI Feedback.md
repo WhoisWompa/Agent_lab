@@ -8,7 +8,7 @@ venue: arXiv
 category: generator-critic-loop
 pdf: research/multiagent_llm_systems/pdfs/2305.10142.pdf
 folder: ["multiagent_llm_systems"]
-topics: ["self-refinement and critique loops"]
+topics: ["self-refinement and critique loops", "strategic play among LLM agents"]
 ---
 # Improving Language Model Negotiation with Self-Play and In-Context Learning from AI Feedback
 
@@ -46,4 +46,4 @@ The authors choose in-context learning over RL because RL tuning is costly and b
 - Optimising across rounds to trade price against deal rate, which the authors raise but do not try.
 
 ## Topics
-[[Topic - self-refinement and critique loops]]
+[[Topic - self-refinement and critique loops]] · [[Topic - strategic play among LLM agents]]

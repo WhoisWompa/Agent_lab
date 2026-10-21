@@ -8,7 +8,7 @@ venue: arXiv
 category: failure-analysis-survey
 pdf: research/multiagent_llm_systems/pdfs/2509.05396.pdf
 folder: ["multiagent_llm_systems"]
-topics: ["multi-agent debate and consensus"]
+topics: ["multi-agent debate and consensus", "agent system failure analysis"]
 ---
 # Talk Isn't Always Cheap: Understanding Failure Modes in Multi-Agent Debate
 
@@ -45,4 +45,4 @@ Three tasks (CommonSenseQA, MMLU, GSM8K), 100 questions each, five seeds, three 
 - Isolating cause by intervention, for example hiding peers' answers or planting wrong answers, rather than inferring conformity from agreement counts.
 
 ## Topics
-[[Topic - multi-agent debate and consensus]]
+[[Topic - multi-agent debate and consensus]] · [[Topic - agent system failure analysis]]

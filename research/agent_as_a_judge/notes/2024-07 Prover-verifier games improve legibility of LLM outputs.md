@@ -6,6 +6,8 @@ arxiv: 2407.13692
 url: https://arxiv.org/abs/2407.13692
 venue: arXiv (OpenAI)
 category: alternative-paradigms
+pdf: research/multiagent_llm_systems/pdfs/2407.13692.pdf
+folder: ["multiagent_llm_systems"]
 topics: ["alternative evaluation paradigms", "trained judges and reward models", "stackelberg games", "judges as reward signals"]
 ---
 # Prover-Verifier Games improve legibility of LLM outputs

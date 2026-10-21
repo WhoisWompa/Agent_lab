@@ -6,7 +6,9 @@ arxiv: 2511.07784
 url: https://arxiv.org/abs/2511.07784
 venue: arXiv
 category: alternative-paradigms
-topics: ["alternative evaluation paradigms", "team theory and distributed decision making"]
+pdf: research/multiagent_llm_systems/pdfs/2511.07784.pdf
+folder: ["multiagent_llm_systems"]
+topics: ["alternative evaluation paradigms", "team theory and distributed decision making", "multi-agent debate and consensus"]
 ---
 # Can LLM Agents Really Debate? A Controlled Study
 
@@ -28,4 +30,4 @@ Controlled Knight-Knave-Spy puzzle study with verifiable ground truth; reports m
 ## What it leaves untried
 
 ## Topics
-[[Topic - alternative evaluation paradigms]] · [[Topic - team theory and distributed decision making]]
+[[Topic - alternative evaluation paradigms]] · [[Topic - team theory and distributed decision making]] · [[Topic - multi-agent debate and consensus]]

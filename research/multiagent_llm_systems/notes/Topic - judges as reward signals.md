@@ -1,0 +1,23 @@
+---
+type: topic
+group: Judging and evaluation
+---
+# Topic - judges as reward signals
+
+Using a judge, verifier, rubric or other automatic check as the reward that trains a policy (RLVR, RLAIF, judge-in-the-loop), and what that reward does to the policy: what it learns, reward hacking, spurious or noisy rewards, whether the reward is what drives the gain. The subject is the training signal and its effect, not the judge's own accuracy.
+
+Group: Judging and evaluation. See [[Topics]]. Same group: [[Topic - LLM and agent judges]], [[Topic - judge and decision-model audits]], [[Topic - trained judges and reward models]], [[Topic - agent evaluation benchmarks]], [[Topic - user simulation]], [[Topic - alternative evaluation paradigms]], [[Topic - self-evolving tests]], [[Topic - stopping rules]].
+
+## Papers (12)
+- [[2022-12 Constitutional AI]] — Trains a harmless but non-evasive assistant with no human harmlessness labels, using a short list of written principles that a model applies to critique its own answers and to judge answer pairs, then distilling those judgments into a reward for RL. (also: [[Topic - LLM and agent judges]], [[Topic - trained judges and reward models]], [[Topic - self-refinement and critique loops]])
+- [[2023-08 Automatically Correcting Large Language Models]] — A survey that sorts methods for fixing LLM output with automated feedback into a three-party framework (model, critic, refiner) and into training-time, generation-time and post-hoc correction. (also: [[Topic - self-refinement and critique loops]])
+- [[2024-09 Training Language Models to Self-Correct via Reinforcement Learning]] — SCoRe trains a single LLM with two-stage multi-turn RL on its own samples so that its second attempt reliably improves on its first, with no external feedback at test time. (also: [[Topic - self-refinement and critique loops]])
+- [[2024-10 Optima]] — Fine-tunes the agents of a two-agent LLM system with an iterative generate, rank, select, train loop whose reward trades off task score, token count and fluency, so the agents learn to talk with far fewer tokens and score higher. (also: [[Topic - communication topology and channels]])
+- [[2025-02 ScoreFlow]] — Trains a small open-weight LLM to write a task-specific multi-agent workflow as code for each input, using a DPO variant (Score-DPO) that learns from the numeric scores of executed workflows. (also: [[Topic - automated pipeline and topology search]])
+- [[2025-02 Self-rewarding correction for mathematical reasoning]] — Trains one LLM to solve a math problem, judge its own answer with a "[VERIFY] correct/wrong" token, and revise only when it judged itself wrong, so no external reward model is needed at inference. (also: [[Topic - self-refinement and critique loops]], [[Topic - trained judges and reward models]])
+- [[2025-03 Monitoring Reasoning Models for Misbehavior and the Risks of Promoting Obfuscation]] — A prompted weaker LLM that reads a frontier agent's chain-of-thought catches reward hacking far better than one that sees only actions, but training the agent against that monitor teaches it to hide its intent. (also: [[Topic - LLM and agent judges]])
+- [[2025-04 FlowReasoner]] — A 7B or 14B reasoning model is trained with reinforcement learning on code-execution feedback to write a separate multi-agent workflow for each user query, instead of searching for one workflow per task. (also: [[Topic - automated pipeline and topology search]])
+- [[2025-10 AgentFlow]] — AgentFlow trains only the planner of a four-module tool-using system with on-policy RL inside the live multi-turn loop, using one final-answer reward copied to every turn (Flow-GRPO), and a 7B backbone beats GPT-4o on ten benchmarks. (also: [[Topic - orchestration and delegation]])
+- [[2026-04 LLMs Gaming Verifiers]] — RLVR-trained reasoning models learn to list instance-level labels instead of inducing a rule because the verifier only checks the given examples, and a black-box invariance test (Isomorphic Perturbation Testing) exposes this. (also: [[Topic - alternative evaluation paradigms]])
+- [[2026-06 Hardening Agent Benchmarks with Adversarial Hacker-Fixer Loops]] — Three LLM agents (hacker, fixer, solver) take turns attacking and patching a benchmark's outcome verifier until it stops accepting shortcuts, replacing manual, task-by-task patching. (also: [[Topic - agent evaluation benchmarks]], [[Topic - role-based agent teams]])
+- [[2026-06 The Verification Horizon]] — Qwen's experience report argues that every reward for coding agents is a proxy for user intent that the policy eventually exploits, so the verifier must be rebuilt as the generator improves, and shows four verifier designs that do this. (also: [[Topic - LLM and agent judges]])

@@ -8,7 +8,7 @@ venue: TMLR (10/2024)
 category: debate-cooperative-reasoning
 pdf: research/multiagent_llm_systems/pdfs/2402.05120.pdf
 folder: ["multiagent_llm_systems"]
-topics: ["multi-agent debate and consensus", "reasoning prompting"]
+topics: ["multi-agent debate and consensus", "reasoning prompting", "communication topology and channels"]
 ---
 # More Agents Is All You Need
 
@@ -41,4 +41,4 @@ The second half explains where the gain is largest, using a synthetic task (sum 
 - The scaling is shown only on Llama2 and GPT-3.5/4, and the difficulty study uses a single synthetic arithmetic task on GPT-3.5, so whether the three properties hold elsewhere is unsupported.
 
 ## Topics
-[[Topic - multi-agent debate and consensus]] · [[Topic - reasoning prompting]]
+[[Topic - multi-agent debate and consensus]] · [[Topic - reasoning prompting]] · [[Topic - communication topology and channels]]

@@ -6,6 +6,8 @@ arxiv: 2505.06120
 url: https://arxiv.org/abs/2505.06120
 venue: arXiv
 category: alternative-paradigms
+pdf: research/multiagent_llm_systems/pdfs/2505.06120.pdf
+folder: ["multiagent_llm_systems"]
 topics: ["user simulation", "presentation sensitivity"]
 ---
 # LLMs Get Lost In Multi-Turn Conversation

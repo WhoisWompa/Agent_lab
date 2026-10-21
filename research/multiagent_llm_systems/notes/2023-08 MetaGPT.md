@@ -8,7 +8,7 @@ venue: ICLR 2024
 category: role-based-team
 pdf: research/multiagent_llm_systems/pdfs/2308.00352.pdf
 folder: ["multiagent_llm_systems"]
-topics: ["role-based agent teams", "self-refinement and critique loops"]
+topics: ["role-based agent teams", "self-refinement and critique loops", "communication topology and channels"]
 ---
 # MetaGPT: Meta Programming for a Multi-Agent Collaborative Framework
 
@@ -45,4 +45,4 @@ What it assumes: the task fits a waterfall-style software SOP, and the roles and
 - No test on non-software tasks, or on tasks where the fixed waterfall order does not fit. The dynamic, self-organising SOP is only sketched in the outlook.
 
 ## Topics
-[[Topic - role-based agent teams]] · [[Topic - self-refinement and critique loops]]
+[[Topic - role-based agent teams]] · [[Topic - self-refinement and critique loops]] · [[Topic - communication topology and channels]]

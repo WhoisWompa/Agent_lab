@@ -8,7 +8,7 @@ venue: COLM 2024
 category: topology-communication
 pdf: research/multiagent_llm_systems/pdfs/2310.02170.pdf
 folder: ["multiagent_llm_systems"]
-topics: ["role-based agent teams", "multi-agent debate and consensus"]
+topics: ["role-based agent teams", "multi-agent debate and consensus", "automated pipeline and topology search"]
 ---
 # A Dynamic LLM-Powered Agent Network for Task-Oriented Agent Collaboration
 
@@ -48,4 +48,4 @@ All with GPT-3.5-class backbones, cost counted in API calls.
 - Tasks where roles must be complementary rather than interchangeable. On MATH all agents share one prompt, because preliminary tests with domain experts showed no significant gain, so selection is untested there.
 
 ## Topics
-[[Topic - role-based agent teams]] · [[Topic - multi-agent debate and consensus]]
+[[Topic - role-based agent teams]] · [[Topic - multi-agent debate and consensus]] · [[Topic - automated pipeline and topology search]]

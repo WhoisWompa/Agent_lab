@@ -6,6 +6,8 @@ arxiv: 2207.10397
 url: https://arxiv.org/abs/2207.10397
 venue: ICLR 2023
 category: alternative-paradigms
+pdf: research/multiagent_llm_systems/pdfs/2207.10397.pdf
+folder: ["multiagent_llm_systems"]
 topics: ["alternative evaluation paradigms", "self-evolving tests"]
 ---
 # CodeT: Code Generation with Generated Tests

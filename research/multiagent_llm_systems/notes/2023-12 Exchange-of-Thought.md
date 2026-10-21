@@ -8,7 +8,7 @@ venue: arXiv (cs.CL)
 category: debate-cooperative-reasoning
 pdf: research/multiagent_llm_systems/pdfs/2312.01823.pdf
 folder: ["multiagent_llm_systems"]
-topics: ["multi-agent debate and consensus"]
+topics: ["multi-agent debate and consensus", "communication topology and channels"]
 ---
 # Exchange-of-Thought: Enhancing Large Language Model Capabilities through Cross-Model Communication
 
@@ -50,4 +50,4 @@ Main setup: three GPT-3.5 models, 10 datasets (six math, two commonsense, two sy
 - Confidence by answer stability is not compared with calibrated or verifier-based confidence, and the case where several models are confidently wrong together is not examined. Majority rule can also lock in a shared error; the paper does not measure how often.
 
 ## Topics
-[[Topic - multi-agent debate and consensus]]
+[[Topic - multi-agent debate and consensus]] · [[Topic - communication topology and channels]]

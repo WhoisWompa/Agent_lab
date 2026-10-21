@@ -6,7 +6,9 @@ arxiv: 2505.00212
 url: https://arxiv.org/abs/2505.00212
 venue: ICML 2025
 category: agent-evaluation-benchmarks
-topics: ["agent evaluation benchmarks", "LLM and agent judges"]
+pdf: research/multiagent_llm_systems/pdfs/2505.00212.pdf
+folder: ["multiagent_llm_systems"]
+topics: ["agent evaluation benchmarks", "LLM and agent judges", "agent system failure analysis"]
 ---
 # Which Agent Causes Task Failures and When? On Automated Failure Attribution of LLM Multi-Agent Systems
 
@@ -29,4 +31,4 @@ Best: 53.5% agent-level, 14.2% step-level accuracy; some methods below random; o
 - Agentic attribution that replays the system from the suspected step (counterfactual re-execution) instead of reading logs (added by agent-as-judge-core researcher).
 
 ## Topics
-[[Topic - agent evaluation benchmarks]] · [[Topic - LLM and agent judges]]
+[[Topic - agent evaluation benchmarks]] · [[Topic - LLM and agent judges]] · [[Topic - agent system failure analysis]]

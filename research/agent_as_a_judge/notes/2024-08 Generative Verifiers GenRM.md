@@ -6,6 +6,8 @@ arxiv: 2408.15240
 url: https://arxiv.org/abs/2408.15240
 venue: ICLR 2025
 category: trained-judges-reward-models
+pdf: research/multiagent_llm_systems/pdfs/2408.15240.pdf
+folder: ["multiagent_llm_systems"]
 topics: ["trained judges and reward models"]
 ---
 # Generative Verifiers: Reward Modeling as Next-Token Prediction

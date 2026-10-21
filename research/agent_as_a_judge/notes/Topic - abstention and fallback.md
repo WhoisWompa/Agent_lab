@@ -6,7 +6,7 @@ group: Mechanisms
 
 None-of-the-above, defer, other, ask a clarifying question, null gates: whether a model can decline to pick from the menu, and how reliably.
 
-Group: Mechanisms. See [[Topics]]. Same group: [[Topic - confidence-gated escalation]], [[Topic - calibration]], [[Topic - presentation sensitivity]], [[Topic - adaptive reasoning depth]].
+Group: Mechanisms. See [[Topics]]. Same group: [[Topic - confidence-gated escalation]], [[Topic - calibration]], [[Topic - presentation sensitivity]], [[Topic - adaptive reasoning depth]], [[Topic - reasoning prompting]].
 
 ## Papers (7)
 - [[2024-07 Trust or escalate]] — Selective evaluation: the judge abstains when unconfident, with a calibrated threshold giving a provable lower bound on human agreement; Cascaded Selective Evaluation escalates from cheap to strong judges. (also: [[Topic - LLM and agent judges]], [[Topic - confidence-gated escalation]])

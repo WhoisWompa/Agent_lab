@@ -6,6 +6,8 @@ arxiv: 2407.19594
 url: https://arxiv.org/abs/2407.19594
 venue: arXiv (Meta)
 category: trained-judges-reward-models
+pdf: research/multiagent_llm_systems/pdfs/2407.19594.pdf
+folder: ["multiagent_llm_systems"]
 topics: ["trained judges and reward models", "self-evolving tests", "preference learning", "judges as reward signals"]
 ---
 # Meta-Rewarding Language Models: Self-Improving Alignment with LLM-as-a-Meta-Judge

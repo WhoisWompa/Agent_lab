@@ -8,7 +8,7 @@ venue: ICLR 2024
 category: debate-cooperative-reasoning
 pdf: research/multiagent_llm_systems/pdfs/2310.06272.pdf
 folder: ["multiagent_llm_systems"]
-topics: ["multi-agent debate and consensus"]
+topics: ["multi-agent debate and consensus", "communication topology and channels"]
 ---
 # Let Models Speak Ciphers: Multiagent Debate through Embeddings
 
@@ -45,4 +45,4 @@ Final answer: take the debater with the lowest temperature. Majority vote is uns
 - Comparison with other ways of keeping uncertainty in text debate, such as sharing top-k tokens or verbalised confidence. NLD is the only debate baseline.
 
 ## Topics
-[[Topic - multi-agent debate and consensus]]
+[[Topic - multi-agent debate and consensus]] · [[Topic - communication topology and channels]]

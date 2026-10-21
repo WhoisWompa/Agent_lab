@@ -6,6 +6,8 @@ arxiv: 2401.10020
 url: https://arxiv.org/abs/2401.10020
 venue: ICML 2024
 category: trained-judges-reward-models
+pdf: research/multiagent_llm_systems/pdfs/2401.10020.pdf
+folder: ["multiagent_llm_systems"]
 topics: ["trained judges and reward models", "preference learning", "self-evolving tests", "judges as reward signals"]
 ---
 # Self-Rewarding Language Models

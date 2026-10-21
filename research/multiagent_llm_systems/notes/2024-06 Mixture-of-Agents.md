@@ -8,7 +8,7 @@ venue: arXiv (preprint, under review)
 category: topology-communication
 pdf: research/multiagent_llm_systems/pdfs/2406.04692.pdf
 folder: ["multiagent_llm_systems"]
-topics: ["multi-agent debate and consensus", "role-based agent teams"]
+topics: ["multi-agent debate and consensus", "role-based agent teams", "communication topology and channels"]
 ---
 # Mixture-of-Agents Enhances Large Language Model Capabilities
 
@@ -44,4 +44,4 @@ Models take two roles. Proposers supply diverse reference answers, even if their
 - No test of whether the aggregator can recover when most proposals are wrong, beyond two hand-picked case studies.
 
 ## Topics
-[[Topic - multi-agent debate and consensus]] · [[Topic - role-based agent teams]]
+[[Topic - multi-agent debate and consensus]] · [[Topic - role-based agent teams]] · [[Topic - communication topology and channels]]

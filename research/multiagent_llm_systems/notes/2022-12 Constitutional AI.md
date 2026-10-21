@@ -8,7 +8,7 @@ venue: arXiv
 category: generator-critic-loop
 pdf: research/multiagent_llm_systems/pdfs/2212.08073.pdf
 folder: ["multiagent_llm_systems"]
-topics: ["judges as reward signals", "LLM and agent judges", "trained judges and reward models"]
+topics: ["judges as reward signals", "LLM and agent judges", "trained judges and reward models", "self-refinement and critique loops"]
 ---
 # Constitutional AI: Harmlessness from AI Feedback
 
@@ -47,4 +47,4 @@ Stage 2 (RL from AI feedback): the stage-1 model produces two answers per prompt
 - Principles from a wider set of stakeholders, and testing robustness to attack with automated red teaming; both are named as future work with no evidence yet.
 
 ## Topics
-[[Topic - judges as reward signals]] · [[Topic - LLM and agent judges]] · [[Topic - trained judges and reward models]]
+[[Topic - judges as reward signals]] · [[Topic - LLM and agent judges]] · [[Topic - trained judges and reward models]] · [[Topic - self-refinement and critique loops]]

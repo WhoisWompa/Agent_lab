@@ -6,7 +6,7 @@ group: Mechanisms
 
 Decisions that change with option order, option names or labels, the set of listed options, question form or request serialisation, though the content is logically the same; and methods that remove the sensitivity.
 
-Group: Mechanisms. See [[Topics]]. Same group: [[Topic - confidence-gated escalation]], [[Topic - calibration]], [[Topic - abstention and fallback]], [[Topic - adaptive reasoning depth]].
+Group: Mechanisms. See [[Topics]]. Same group: [[Topic - confidence-gated escalation]], [[Topic - calibration]], [[Topic - abstention and fallback]], [[Topic - adaptive reasoning depth]], [[Topic - reasoning prompting]].
 
 ## Papers (36)
 - [[2023-05 LLMs are not Fair Evaluators]] — Shows that simply swapping answer order can flip GPT-4/ChatGPT verdicts and proposes multiple-evidence, balanced-position and human-in-the-loop calibration. (also: [[Topic - judge and decision-model audits]], [[Topic - LLM and agent judges]])

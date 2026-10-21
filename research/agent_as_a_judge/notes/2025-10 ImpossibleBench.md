@@ -6,6 +6,8 @@ arxiv: 2510.20270
 url: https://arxiv.org/abs/2510.20270
 venue: arXiv
 category: alternative-paradigms
+pdf: research/multiagent_llm_systems/pdfs/2510.20270.pdf
+folder: ["multiagent_llm_systems"]
 topics: ["agent evaluation benchmarks", "self-evolving tests"]
 ---
 # ImpossibleBench: Measuring LLMs' Propensity of Exploiting Test Cases

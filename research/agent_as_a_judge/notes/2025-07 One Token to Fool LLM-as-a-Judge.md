@@ -6,6 +6,8 @@ arxiv: 2507.08794
 url: https://arxiv.org/abs/2507.08794
 venue: NeurIPS 2025
 category: llm-judge-foundations
+pdf: research/multiagent_llm_systems/pdfs/2507.08794.pdf
+folder: ["multiagent_llm_systems"]
 topics: ["judge and decision-model audits", "trained judges and reward models", "judges as reward signals"]
 ---
 # One Token to Fool LLM-as-a-Judge

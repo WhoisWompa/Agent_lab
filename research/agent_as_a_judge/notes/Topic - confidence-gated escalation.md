@@ -6,7 +6,7 @@ group: Mechanisms
 
 A cheap model or judge answers first and its low-confidence cases go to a stronger model, a judge or a human. Cascades, deferral, how the threshold is chosen, whether it transfers to new data, whether the stages make the same errors.
 
-Group: Mechanisms. See [[Topics]]. Same group: [[Topic - calibration]], [[Topic - presentation sensitivity]], [[Topic - abstention and fallback]], [[Topic - adaptive reasoning depth]].
+Group: Mechanisms. See [[Topics]]. Same group: [[Topic - calibration]], [[Topic - presentation sensitivity]], [[Topic - abstention and fallback]], [[Topic - adaptive reasoning depth]], [[Topic - reasoning prompting]].
 
 ## Papers (13)
 - [[2024-01 Scalable meta-evaluation via agent debate ScaleEval]] — ScaleEval uses debate among several LLM agents to meta-evaluate LLM evaluators, escalating to humans only when agents disagree. (also: [[Topic - judge and decision-model audits]], [[Topic - alternative evaluation paradigms]])

@@ -6,6 +6,8 @@ arxiv: 2407.00215
 url: https://arxiv.org/abs/2407.00215
 venue: arXiv (OpenAI)
 category: trained-judges-reward-models
+pdf: research/multiagent_llm_systems/pdfs/2407.00215.pdf
+folder: ["multiagent_llm_systems"]
 topics: ["trained judges and reward models", "preference learning", "LLM and agent judges"]
 ---
 # LLM Critics Help Catch LLM Bugs (CriticGPT)

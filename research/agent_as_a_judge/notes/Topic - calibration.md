@@ -6,7 +6,7 @@ group: Mechanisms
 
 Making reported probabilities mean what they say: proper-scoring-rule training (Brier, log score), post-hoc recalibration (temperature, Platt, isotonic), probabilistic coherence, and when a fix transfers.
 
-Group: Mechanisms. See [[Topics]]. Same group: [[Topic - confidence-gated escalation]], [[Topic - presentation sensitivity]], [[Topic - abstention and fallback]], [[Topic - adaptive reasoning depth]].
+Group: Mechanisms. See [[Topics]]. Same group: [[Topic - confidence-gated escalation]], [[Topic - presentation sensitivity]], [[Topic - abstention and fallback]], [[Topic - adaptive reasoning depth]], [[Topic - reasoning prompting]].
 
 ## Papers (31)
 - [[2022-07 Language models mostly know what they know]] — Large LMs are reasonably calibrated on multiple-choice questions and can be trained to predict P(IK), whether they know the answer. (also: [[Topic - judge and decision-model audits]])

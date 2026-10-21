@@ -8,7 +8,7 @@ venue: arXiv (preprint, under review)
 category: failure-analysis-survey
 pdf: research/multiagent_llm_systems/pdfs/2309.17234.pdf
 folder: ["multiagent_llm_systems"]
-topics: ["agent evaluation benchmarks", "reasoning prompting"]
+topics: ["agent evaluation benchmarks", "reasoning prompting", "strategic play among LLM agents"]
 ---
 # Cooperation, Competition, and Maliciousness: LLM-Stakeholders Interactive Negotiation
 
@@ -46,4 +46,4 @@ Three variants are set only through natural-language incentives, never through w
 - Better planning or reasoning methods than hand-written chain-of-thought. The prompt ablation is on a single game (and mostly GPT-4), so how far it transfers to the new games is not shown.
 
 ## Topics
-[[Topic - agent evaluation benchmarks]] · [[Topic - reasoning prompting]]
+[[Topic - agent evaluation benchmarks]] · [[Topic - reasoning prompting]] · [[Topic - strategic play among LLM agents]]

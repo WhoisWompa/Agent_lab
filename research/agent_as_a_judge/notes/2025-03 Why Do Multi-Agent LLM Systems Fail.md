@@ -6,7 +6,9 @@ arxiv: 2503.13657
 url: https://arxiv.org/abs/2503.13657
 venue: arXiv
 category: agent-evaluation-benchmarks
-topics: ["agent evaluation benchmarks", "LLM and agent judges"]
+pdf: research/multiagent_llm_systems/pdfs/2503.13657.pdf
+folder: ["multiagent_llm_systems"]
+topics: ["agent evaluation benchmarks", "LLM and agent judges", "agent system failure analysis"]
 ---
 # Why Do Multi-Agent LLM Systems Fail?
 
@@ -28,4 +30,4 @@ Inter-annotator Cohen kappa 0.88; LLM annotator reported high agreement with hum
 ## What it leaves untried
 
 ## Topics
-[[Topic - agent evaluation benchmarks]] · [[Topic - LLM and agent judges]]
+[[Topic - agent evaluation benchmarks]] · [[Topic - LLM and agent judges]] · [[Topic - agent system failure analysis]]

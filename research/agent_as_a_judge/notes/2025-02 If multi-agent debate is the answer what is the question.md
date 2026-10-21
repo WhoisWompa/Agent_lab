@@ -6,7 +6,9 @@ arxiv: 2502.08788
 url: https://arxiv.org/abs/2502.08788
 venue: arXiv
 category: alternative-paradigms
-topics: ["alternative evaluation paradigms"]
+pdf: research/multiagent_llm_systems/pdfs/2502.08788.pdf
+folder: ["multiagent_llm_systems"]
+topics: ["alternative evaluation paradigms", "multi-agent debate and consensus"]
 ---
 # If Multi-Agent Debate is the Answer, What is the Question?
 
@@ -28,4 +30,4 @@ Systematic evaluation of MAD methods across benchmarks finds they often fail to 
 ## What it leaves untried
 
 ## Topics
-[[Topic - alternative evaluation paradigms]]
+[[Topic - alternative evaluation paradigms]] · [[Topic - multi-agent debate and consensus]]

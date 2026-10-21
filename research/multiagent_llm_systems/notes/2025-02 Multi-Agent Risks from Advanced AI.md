@@ -8,7 +8,7 @@ venue: arXiv (Cooperative AI Foundation Technical Report #1)
 category: failure-analysis-survey
 pdf: research/multiagent_llm_systems/pdfs/2502.14143.pdf
 folder: ["multiagent_llm_systems"]
-topics: ["strategic play among LLM agents", "communication topology and channels", "team theory and distributed decision making"]
+topics: ["strategic play among LLM agents", "communication topology and channels", "team theory and distributed decision making", "agent system failure analysis"]
 ---
 # Multi-Agent Risks from Advanced AI
 
@@ -62,4 +62,4 @@ It is a position and survey report. The evidence is a set of case studies, some 
 - No check that the small case-study results transfer to real deployments. The authors list studying how well tests and simulations match the real world as future work.
 
 ## Topics
-[[Topic - strategic play among LLM agents]] · [[Topic - communication topology and channels]] · [[Topic - team theory and distributed decision making]]
+[[Topic - strategic play among LLM agents]] · [[Topic - communication topology and channels]] · [[Topic - team theory and distributed decision making]] · [[Topic - agent system failure analysis]]

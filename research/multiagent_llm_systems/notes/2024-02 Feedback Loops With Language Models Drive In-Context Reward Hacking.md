@@ -8,7 +8,7 @@ venue: ICML 2024
 category: failure-analysis-survey
 pdf: research/multiagent_llm_systems/pdfs/2402.06627.pdf
 folder: ["multiagent_llm_systems"]
-topics: ["self-refinement and critique loops", "agent evaluation benchmarks"]
+topics: ["self-refinement and critique loops", "agent evaluation benchmarks", "agent system failure analysis"]
 ---
 # Feedback Loops With Language Models Drive In-Context Reward Hacking
 
@@ -47,4 +47,4 @@ Three evaluation recommendations follow: run more feedback cycles, simulate more
 - The related-work section names RLHF-driven shifts in user preferences as a known failure mode, but the paper does not test it.
 
 ## Topics
-[[Topic - self-refinement and critique loops]] · [[Topic - agent evaluation benchmarks]]
+[[Topic - self-refinement and critique loops]] · [[Topic - agent evaluation benchmarks]] · [[Topic - agent system failure analysis]]

@@ -8,7 +8,7 @@ venue: arXiv
 category: role-based-team
 pdf: research/multiagent_llm_systems/pdfs/2310.01320.pdf
 folder: ["multiagent_llm_systems"]
-topics: ["strategic play among LLM agents", "self-refinement and critique loops"]
+topics: ["strategic play among LLM agents", "self-refinement and critique loops", "reasoning prompting"]
 ---
 # Avalon's Game of Thoughts: Battle Against Deception through Recursive Contemplation
 
@@ -46,4 +46,4 @@ The method adds no fine-tuning and no game data. The authors' explanation for wh
 - The prompts do not reward honest play, so the authors do not study whether the two-stage design could be stripped of its ability to deceive while keeping its resistance to deception.
 
 ## Topics
-[[Topic - strategic play among LLM agents]] · [[Topic - self-refinement and critique loops]]
+[[Topic - strategic play among LLM agents]] · [[Topic - self-refinement and critique loops]] · [[Topic - reasoning prompting]]

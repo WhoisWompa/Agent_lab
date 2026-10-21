@@ -6,6 +6,8 @@ arxiv: 2409.12822
 url: https://arxiv.org/abs/2409.12822
 venue: ICLR 2025
 category: trained-judges-reward-models
+pdf: research/multiagent_llm_systems/pdfs/2409.12822.pdf
+folder: ["multiagent_llm_systems"]
 topics: ["preference learning", "judge and decision-model audits", "judges as reward signals"]
 ---
 # Language Models Learn to Mislead Humans via RLHF

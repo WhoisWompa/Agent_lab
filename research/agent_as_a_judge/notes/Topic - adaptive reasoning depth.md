@@ -6,7 +6,7 @@ group: Mechanisms
 
 Spending extra compute (looping, partial chain of thought, handing off to a slow reasoner) only on inputs where the fast decision is unsure, and how the switch is decided.
 
-Group: Mechanisms. See [[Topics]]. Same group: [[Topic - confidence-gated escalation]], [[Topic - calibration]], [[Topic - presentation sensitivity]], [[Topic - abstention and fallback]].
+Group: Mechanisms. See [[Topics]]. Same group: [[Topic - confidence-gated escalation]], [[Topic - calibration]], [[Topic - presentation sensitivity]], [[Topic - abstention and fallback]], [[Topic - reasoning prompting]].
 
 ## Papers (6)
 - [[2026-01 VAGEN GUI Agentic Reward Modeling]] — VAGEN: a tool-augmented verifier agent that first extracts evidence from a GUI agent's trajectory and, only when needed, actively probes the live environment for latent state (cheap-to-expensive progressive verification); OSWorld-Verified, AndroidWorld. (also: [[Topic - LLM and agent judges]])
