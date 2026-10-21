@@ -6,6 +6,7 @@ arxiv: 2410.16184
 url: https://arxiv.org/abs/2410.16184
 venue: ICLR 2025
 category: trained-judges-reward-models
+topics: ["judge and decision-model audits", "trained judges and reward models"]
 ---
 # RM-Bench: Benchmarking Reward Models of Language Models with Subtlety and Style
 
@@ -28,3 +29,5 @@ Benchmark pairing responses that differ by subtle content errors while varying s
 ## What it leaves untried
 - Testing generative LLM judges with explicit rubrics on the Hard split as a style-bias mitigation.
 
+## Topics
+[[Topic - judge and decision-model audits]] · [[Topic - trained judges and reward models]]

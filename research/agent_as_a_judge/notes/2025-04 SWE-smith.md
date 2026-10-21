@@ -6,6 +6,7 @@ arxiv: 2504.21798
 url: https://arxiv.org/abs/2504.21798
 venue: NeurIPS 2025 D&B
 category: self-evolving-tests
+topics: ["self-evolving tests", "agent evaluation benchmarks"]
 ---
 # SWE-smith: Scaling Data for Software Engineering Agents
 
@@ -26,3 +27,5 @@ Synthesises tens of thousands of task instances by injecting bugs into repositor
 
 ## What it leaves untried
 
+## Topics
+[[Topic - self-evolving tests]] · [[Topic - agent evaluation benchmarks]]

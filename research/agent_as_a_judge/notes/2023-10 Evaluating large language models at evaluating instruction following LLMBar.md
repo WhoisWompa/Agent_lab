@@ -6,6 +6,7 @@ arxiv: 2310.07641
 url: https://arxiv.org/abs/2310.07641
 venue: ICLR 2024
 category: alternative-paradigms
+topics: ["judge and decision-model audits", "LLM and agent judges"]
 ---
 # Evaluating Large Language Models at Evaluating Instruction Following
 
@@ -30,3 +31,5 @@ LLMBar meta-evaluation set of adversarial pairs where the superficially better o
 ## What it leaves untried
 - Multi-turn and long-form instruction following; checking whether reasoning-model judges still fail the adversarial split.
 
+## Topics
+[[Topic - judge and decision-model audits]] · [[Topic - LLM and agent judges]]

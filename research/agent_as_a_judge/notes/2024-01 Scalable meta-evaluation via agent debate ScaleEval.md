@@ -6,6 +6,7 @@ arxiv: 2401.16788
 url: https://arxiv.org/abs/2401.16788
 venue: arXiv
 category: alternative-paradigms
+topics: ["judge and decision-model audits", "alternative evaluation paradigms", "confidence-gated escalation"]
 ---
 # Can Large Language Models be Trusted for Evaluation? Scalable Meta-Evaluation of LLMs as Evaluators via Agent Debate
 
@@ -26,3 +27,5 @@ ScaleEval uses debate among several LLM agents to meta-evaluate LLM evaluators, 
 
 ## What it leaves untried
 
+## Topics
+[[Topic - judge and decision-model audits]] · [[Topic - alternative evaluation paradigms]] · [[Topic - confidence-gated escalation]]

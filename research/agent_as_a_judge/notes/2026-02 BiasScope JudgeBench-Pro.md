@@ -6,6 +6,7 @@ arxiv: 2602.09383
 url: https://arxiv.org/abs/2602.09383
 venue: ICLR 2026
 category: llm-judge-foundations
+topics: ["judge and decision-model audits", "self-evolving tests"]
 ---
 # BiasScope: Towards Automated Detection of Bias in LLM-as-a-Judge Evaluation
 
@@ -26,3 +27,5 @@ LLM-driven automatic discovery of unknown judge biases; yields JudgeBench-Pro on
 
 ## What it leaves untried
 
+## Topics
+[[Topic - judge and decision-model audits]] · [[Topic - self-evolving tests]]

@@ -6,6 +6,7 @@ arxiv: 2402.08699
 url: https://arxiv.org/abs/2402.08699
 venue: ICML 2024
 category: alternative-paradigms
+topics: ["alternative evaluation paradigms"]
 ---
 # Unsupervised Evaluation of Code LLMs with Round-Trip Correctness
 
@@ -26,3 +27,5 @@ Round-trip correctness: code -> description -> code, check semantic equivalence 
 
 ## What it leaves untried
 
+## Topics
+[[Topic - alternative evaluation paradigms]]

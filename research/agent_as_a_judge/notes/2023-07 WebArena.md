@@ -6,6 +6,7 @@ arxiv: 2307.13854
 url: https://arxiv.org/abs/2307.13854
 venue: ICLR 2024
 category: agent-evaluation-benchmarks
+topics: ["agent evaluation benchmarks"]
 ---
 # WebArena: A Realistic Web Environment for Building Autonomous Agents
 
@@ -27,3 +28,5 @@ GPT-4 agent 14.41% vs human 78.24% at release.
 
 ## What it leaves untried
 
+## Topics
+[[Topic - agent evaluation benchmarks]]

@@ -6,6 +6,7 @@ arxiv: 2308.04592
 url: https://arxiv.org/abs/2308.04592
 venue: arXiv
 category: trained-judges-reward-models
+topics: ["trained judges and reward models", "LLM and agent judges"]
 ---
 # Shepherd: A Critic for Language Model Generation
 
@@ -28,3 +29,6 @@ A 7B LLaMA critic that writes natural-language critiques and suggested refinemen
 
 ## What it leaves untried
 - Measuring whether the critique helps a human or a model fix the answer.
+
+## Topics
+[[Topic - trained judges and reward models]] · [[Topic - LLM and agent judges]]

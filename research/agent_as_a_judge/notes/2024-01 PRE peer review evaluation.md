@@ -6,6 +6,7 @@ arxiv: 2401.15641
 url: https://arxiv.org/abs/2401.15641
 venue: arXiv
 category: alternative-paradigms
+topics: ["LLM and agent judges", "alternative evaluation paradigms", "social choice"]
 ---
 # PRE: A Peer Review Based Large Language Model Evaluator
 
@@ -26,3 +27,5 @@ Peer-review evaluation: candidate LLMs act as reviewers after passing a qualific
 
 ## What it leaves untried
 
+## Topics
+[[Topic - LLM and agent judges]] · [[Topic - alternative evaluation paradigms]] · [[Topic - social choice]]

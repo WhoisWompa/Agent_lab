@@ -6,6 +6,7 @@ arxiv: 2501.12948
 url: https://arxiv.org/abs/2501.12948
 venue: arXiv; Nature 2025
 category: alternative-paradigms
+topics: ["trained judges and reward models", "alternative evaluation paradigms", "judges as reward signals"]
 ---
 # DeepSeek-R1: Incentivizing Reasoning Capability in LLMs via Reinforcement Learning
 
@@ -26,3 +27,5 @@ Large-scale RL with rule-based accuracy and format rewards (no neural reward mod
 
 ## What it leaves untried
 
+## Topics
+[[Topic - trained judges and reward models]] · [[Topic - alternative evaluation paradigms]] · [[Topic - judges as reward signals]]

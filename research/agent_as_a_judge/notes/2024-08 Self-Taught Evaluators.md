@@ -6,6 +6,7 @@ arxiv: 2408.02666
 url: https://arxiv.org/abs/2408.02666
 venue: arXiv (Meta)
 category: trained-judges-reward-models
+topics: ["trained judges and reward models", "self-evolving tests"]
 ---
 # Self-Taught Evaluators
 
@@ -32,3 +33,6 @@ Trains an LLM judge with no human preference labels by generating contrasting re
 
 ## What it leaves untried
 - Hard pairs where both answers look plausible; tool-based checks.
+
+## Topics
+[[Topic - trained judges and reward models]] · [[Topic - self-evolving tests]]

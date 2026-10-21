@@ -6,6 +6,7 @@ arxiv: 2406.19314
 url: https://arxiv.org/abs/2406.19314
 venue: ICLR 2025
 category: self-evolving-tests
+topics: ["self-evolving tests"]
 ---
 # LiveBench: A Challenging, Contamination-Limited LLM Benchmark
 
@@ -27,3 +28,6 @@ Initial release: 18 tasks in 6 categories (math, coding, reasoning, language, in
 
 ## What it leaves untried
 - Target the refresh at where top systems still fail rather than at recency alone.
+
+## Topics
+[[Topic - self-evolving tests]]

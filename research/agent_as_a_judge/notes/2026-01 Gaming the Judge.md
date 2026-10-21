@@ -6,6 +6,7 @@ arxiv: 2601.14691
 url: https://arxiv.org/abs/2601.14691
 venue: arXiv
 category: agent-as-judge
+topics: ["judge and decision-model audits", "LLM and agent judges"]
 ---
 # Gaming the Judge: Unfaithful Chain of Thought Can Undermine Agent Evaluation
 
@@ -30,3 +31,6 @@ Shows that rewriting only a web agent's chain-of-thought (actions and screenshot
 ## What it leaves untried
 - Judges that verify narrated claims against environment state with tools (suggested, untested) - an Agent-as-a-Judge that ignores CoT and checks the world.
 - Trained (not prompted) robustness to manipulated reasoning.
+
+## Topics
+[[Topic - judge and decision-model audits]] · [[Topic - LLM and agent judges]]

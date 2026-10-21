@@ -6,6 +6,7 @@ arxiv: 2501.17858
 url: https://arxiv.org/abs/2501.17858
 venue: ICML 2025 (as recalled)
 category: alternative-paradigms
+topics: ["alternative evaluation paradigms", "social choice"]
 ---
 # Improving Your Model Ranking on Chatbot Arena by Vote Rigging
 
@@ -26,3 +27,5 @@ Omnipresent vote-rigging strategies that vote on battles not involving the targe
 
 ## What it leaves untried
 
+## Topics
+[[Topic - alternative evaluation paradigms]] · [[Topic - social choice]]

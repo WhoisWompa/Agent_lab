@@ -6,6 +6,7 @@ arxiv: 2411.16646
 url: https://arxiv.org/abs/2411.16646
 venue: NAACL 2025
 category: trained-judges-reward-models
+topics: ["trained judges and reward models"]
 ---
 # Self-Generated Critiques Boost Reward Modeling for Language Models (Critic-RM)
 
@@ -26,3 +27,5 @@ RM generates and filters its own critiques, then jointly learns critique generat
 
 ## What it leaves untried
 
+## Topics
+[[Topic - trained judges and reward models]]

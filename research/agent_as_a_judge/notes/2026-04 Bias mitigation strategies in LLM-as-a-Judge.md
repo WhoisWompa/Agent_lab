@@ -6,6 +6,7 @@ arxiv: 2604.23178
 url: https://arxiv.org/abs/2604.23178
 venue: TMLR 2026
 category: llm-judge-foundations
+topics: ["judge and decision-model audits", "LLM and agent judges", "presentation sensitivity"]
 ---
 # Judging the Judges: A Systematic Evaluation of Bias Mitigation Strategies in LLM-as-a-Judge Pipelines
 
@@ -26,3 +27,6 @@ Best: Gemini 2.5 Flash + Combined Budget 71.0% agreement (kappa 0.549) at ~$0.00
 
 ## What it leaves untried
 - Testing whether the gains hold on objective-correctness sets (JudgeBench, RewardBench 2).
+
+## Topics
+[[Topic - judge and decision-model audits]] · [[Topic - LLM and agent judges]] · [[Topic - presentation sensitivity]]

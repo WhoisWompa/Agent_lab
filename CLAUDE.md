@@ -34,6 +34,25 @@ the `one-job-per-file` skill. The main session runs
 the result; what happens feeds back into discussion. Git discards what
 did not work.
 
+## Paper team
+
+Called when PDFs need notes: the user says so, or a research run has
+downloaded papers. The main session invokes the `paper-ingest` skill, which
+spawns one `paper-reader` per paper, five at a time. The reader writes the
+note and picks its topics from `research/topics.md`, the one registry. A paper
+carries every topic whose definition it satisfies; the definition decides, not
+the folder the PDF sits in.
+
+Topics are classified by this rule. The reader proposes a new topic if and
+only if no topic in the registry fits the paper. The main session then reads
+the whole registry and decides: if an existing topic fits, it tells the reader
+`use <names>`; if the proposal names a real gap, it adds the row (name,
+one-sentence definition, right group) and tells the reader `added <name>`.
+Readers never edit the registry, and the main session never adds a topic
+without a proposal. When a topic is added mid-run, the notes already classified
+are swept for it before the run is reported. After the run, `build_topics.py`
+regenerates the topic notes and the graph is rebuilt.
+
 # Rules that must be followed during the session
 
 `list_of_agents.md` is one table with two columns:
@@ -94,9 +113,10 @@ python provider.py remove <agent> <label>
 | `provider.py` | Adds or removes a provider in one agent: the settings block and the `.env` line together. |
 | `git_sync.py` | Commits, then pulls or pushes so the laptop and GitHub match. Run by the session hooks; see **Commits**. |
 | `mcp/` | Shared MCP servers that agents may list in their `base_settings.json`. |
-| `.claude/agents/` | Subagents. `agent-builder` writes an agent's logic from a brief; `mcp-builder` writes an MCP server in `mcp/<name>/` from a brief. `research-searcher`, `research-reader`, `research-librarian` and `deep-reader` are the deep-read team, spawned by the deep-read workflow only. |
+| `research/` | Paper corpora: one folder per topic area, each with `notes/` (one note per paper, in `_TEMPLATE.md`'s shape, with `topics:` from the registry). `research/topics.md` is the topic registry; `research/_tools/` is the ingest pipeline. The graphify graph over all of it lives in `graphify-out/` at the root, gitignored, rebuilt with `graphify update . --force`. |
+| `.claude/agents/` | Subagents. `agent-builder` writes an agent's logic from a brief; `mcp-builder` writes an MCP server in `mcp/<name>/` from a brief. `research-searcher`, `research-reader`, `research-librarian` and `deep-reader` are the deep-read team, spawned by the deep-read workflow only. `paper-reader` writes one paper's note from its extracted text and picks its topics from `research/topics.md`, spawned by the `paper-ingest` skill. |
 | `.claude/hooks/` | `builder_paths.py` and `mcp_builder_paths.py` enforce the two builders' read and write limits. |
-| `.claude/skills/` | `one-job-per-file` is how code is split into files; both builders load it before writing. `vault-notes` is the note conventions for the vault. `deep-read` launches a deep read of one paper. |
+| `.claude/skills/` | `one-job-per-file` is how code is split into files; both builders load it before writing. `vault-notes` is the note conventions for the vault. `deep-read` launches a deep read of one paper. `paper-ingest` turns a folder of PDFs into notes, topic links and the graphify graph. |
 | `.claude/workflows/` | Workflow scripts. `deep-read.js` is `deep-read-run`, led by the deep reader. |
 
 ### Inside an agent folder

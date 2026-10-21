@@ -6,6 +6,7 @@ arxiv: 2501.11067
 url: https://arxiv.org/abs/2501.11067
 venue: arXiv
 category: self-evolving-tests
+topics: ["user simulation", "agent evaluation benchmarks", "self-evolving tests"]
 ---
 # IntellAgent: A Multi-Agent Framework for Evaluating Conversational AI Systems
 
@@ -26,3 +27,5 @@ Generates synthetic, policy-grounded multi-turn scenarios from a policy graph an
 
 ## What it leaves untried
 
+## Topics
+[[Topic - user simulation]] · [[Topic - agent evaluation benchmarks]] · [[Topic - self-evolving tests]]

@@ -6,6 +6,7 @@ arxiv: 2603.05293
 url: https://arxiv.org/abs/2603.05293
 venue: arXiv
 category: alternative-paradigms
+topics: ["alternative evaluation paradigms"]
 ---
 # Knowledge Divergence and the Value of Debate for Scalable Oversight
 
@@ -26,3 +27,5 @@ Reports a sharp threshold separating effective from ineffective debate, with str
 
 ## What it leaves untried
 
+## Topics
+[[Topic - alternative evaluation paradigms]]

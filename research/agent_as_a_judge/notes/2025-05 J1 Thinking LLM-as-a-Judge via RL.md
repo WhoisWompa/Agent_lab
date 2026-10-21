@@ -6,6 +6,7 @@ arxiv: 2505.10320
 url: https://arxiv.org/abs/2505.10320
 venue: arXiv (Meta)
 category: trained-judges-reward-models
+topics: ["trained judges and reward models"]
 ---
 # J1: Incentivizing Thinking in LLM-as-a-Judge via Reinforcement Learning
 
@@ -30,3 +31,6 @@ RL-trained thinking judge: converts both verifiable and non-verifiable judgment 
 
 ## What it leaves untried
 - Tools (code execution, retrieval) inside the thinking trace (TIR-Judge does this).
+
+## Topics
+[[Topic - trained judges and reward models]]

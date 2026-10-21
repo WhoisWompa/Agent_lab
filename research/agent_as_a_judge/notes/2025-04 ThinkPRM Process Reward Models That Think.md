@@ -6,6 +6,7 @@ arxiv: 2504.16828
 url: https://arxiv.org/abs/2504.16828
 venue: TMLR 2026
 category: trained-judges-reward-models
+topics: ["trained judges and reward models"]
 ---
 # Process Reward Models That Think
 
@@ -26,3 +27,5 @@ Long-CoT generative PRM fine-tuned on about 8K process labels (1K synthetic exam
 
 ## What it leaves untried
 
+## Topics
+[[Topic - trained judges and reward models]]

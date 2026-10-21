@@ -6,6 +6,7 @@ arxiv: 2311.08702
 url: https://arxiv.org/abs/2311.08702
 venue: arXiv
 category: alternative-paradigms
+topics: ["alternative evaluation paradigms"]
 ---
 # Debate Helps Supervise Unreliable Experts
 
@@ -26,3 +27,5 @@ Human expert debaters on QuALITY: judges reached 84% accuracy with debate vs 74%
 
 ## What it leaves untried
 
+## Topics
+[[Topic - alternative evaluation paradigms]]

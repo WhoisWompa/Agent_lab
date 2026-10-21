@@ -6,6 +6,7 @@ arxiv: 2410.21819
 url: https://arxiv.org/abs/2410.21819
 venue: NeurIPS 2024 SafeGenAI Workshop
 category: llm-judge-foundations
+topics: ["judge and decision-model audits"]
 ---
 # Self-Preference Bias in LLM-as-a-Judge
 
@@ -26,3 +27,5 @@ Quantifies GPT-4's self-preference and links it to perplexity: judges rate lower
 
 ## What it leaves untried
 
+## Topics
+[[Topic - judge and decision-model audits]]

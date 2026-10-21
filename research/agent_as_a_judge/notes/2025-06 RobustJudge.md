@@ -6,6 +6,7 @@ arxiv: 2506.09443
 url: https://arxiv.org/abs/2506.09443
 venue: arXiv
 category: llm-judge-foundations
+topics: ["judge and decision-model audits"]
 ---
 # LLMs Cannot Reliably Judge (Yet?): A Comprehensive Assessment on the Robustness of LLM-as-a-Judge
 
@@ -26,3 +27,5 @@ RobustJudge tests 15 attacks and 8 defences on 13 judges: judges are vulnerable 
 
 ## What it leaves untried
 
+## Topics
+[[Topic - judge and decision-model audits]]

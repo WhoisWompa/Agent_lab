@@ -6,6 +6,7 @@ arxiv: 2410.07095
 url: https://arxiv.org/abs/2410.07095
 venue: ICLR 2025
 category: agent-evaluation-benchmarks
+topics: ["agent evaluation benchmarks"]
 ---
 # MLE-bench: Evaluating Machine Learning Agents on Machine Learning Engineering
 
@@ -27,3 +28,5 @@ o1-preview with AIDE reached at least a bronze medal in 16.9% of competitions.
 
 ## What it leaves untried
 
+## Topics
+[[Topic - agent evaluation benchmarks]]

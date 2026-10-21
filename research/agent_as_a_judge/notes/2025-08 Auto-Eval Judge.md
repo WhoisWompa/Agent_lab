@@ -6,6 +6,7 @@ arxiv: 2508.05508
 url: https://arxiv.org/abs/2508.05508
 venue: arXiv
 category: agent-as-judge
+topics: ["LLM and agent judges", "agent evaluation benchmarks"]
 ---
 # Auto-Eval Judge: Towards a General Agentic Framework for Task Completion Evaluation
 
@@ -26,3 +27,6 @@ Domain-independent judge agent that decomposes a task into sub-tasks and checks 
 
 ## What it leaves untried
 - Testing generality across many actor agents and domains; reporting cost and variance.
+
+## Topics
+[[Topic - LLM and agent judges]] · [[Topic - agent evaluation benchmarks]]

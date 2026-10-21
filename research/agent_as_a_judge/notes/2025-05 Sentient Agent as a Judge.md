@@ -6,6 +6,7 @@ arxiv: 2505.02847
 url: https://arxiv.org/abs/2505.02847
 venue: arXiv
 category: agent-as-judge
+topics: ["LLM and agent judges", "user simulation"]
 ---
 # Sentient Agent as a Judge: Evaluating Higher-Order Social Cognition in Large Language Models
 
@@ -26,3 +27,5 @@ Simulated human-like agent with an emotional state converses with the tested mod
 
 ## What it leaves untried
 
+## Topics
+[[Topic - LLM and agent judges]] · [[Topic - user simulation]]

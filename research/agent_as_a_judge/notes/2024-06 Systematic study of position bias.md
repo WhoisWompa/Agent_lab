@@ -6,6 +6,7 @@ arxiv: 2406.07791
 url: https://arxiv.org/abs/2406.07791
 venue: AACL-IJCNLP 2025
 category: llm-judge-foundations
+topics: ["judge and decision-model audits", "presentation sensitivity"]
 ---
 # Judging the Judges: A Systematic Study of Position Bias in LLM-as-a-Judge
 
@@ -26,3 +27,5 @@ category: llm-judge-foundations
 
 ## What it leaves untried
 
+## Topics
+[[Topic - judge and decision-model audits]] · [[Topic - presentation sensitivity]]

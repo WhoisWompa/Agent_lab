@@ -6,6 +6,7 @@ arxiv: none
 url: https://aclanthology.org/2022.acl-long.230/
 venue: ACL 2022
 category: self-evolving-tests
+topics: ["self-evolving tests"]
 ---
 # Adaptive Testing and Debugging of NLP Models
 
@@ -26,3 +27,5 @@ Human-in-the-loop: an LLM proposes tests organised in a topic tree, a human labe
 
 ## What it leaves untried
 
+## Topics
+[[Topic - self-evolving tests]]

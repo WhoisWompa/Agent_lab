@@ -6,6 +6,7 @@ arxiv: 2207.05221
 url: https://arxiv.org/abs/2207.05221
 venue: arXiv (Anthropic)
 category: alternative-paradigms
+topics: ["calibration", "judge and decision-model audits"]
 ---
 # Language Models (Mostly) Know What They Know
 
@@ -26,3 +27,5 @@ Large LMs are reasonably calibrated on multiple-choice questions and can be trai
 
 ## What it leaves untried
 
+## Topics
+[[Topic - calibration]] · [[Topic - judge and decision-model audits]]

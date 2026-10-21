@@ -6,6 +6,7 @@ arxiv: 2306.05087
 url: https://arxiv.org/abs/2306.05087
 venue: ICLR 2024
 category: trained-judges-reward-models
+topics: ["trained judges and reward models", "LLM and agent judges"]
 ---
 # PandaLM: An Automatic Evaluation Benchmark for LLM Instruction Tuning Optimization
 
@@ -30,3 +31,6 @@ A 7B LLaMA pairwise judge for choosing instruction-tuning hyperparameters, train
 
 ## What it leaves untried
 - Multi-domain or reasoning-heavy evaluation.
+
+## Topics
+[[Topic - trained judges and reward models]] · [[Topic - LLM and agent judges]]

@@ -6,6 +6,7 @@ arxiv: 2404.13076
 url: https://arxiv.org/abs/2404.13076
 venue: NeurIPS 2024
 category: llm-judge-foundations
+topics: ["judge and decision-model audits", "LLM and agent judges"]
 ---
 # LLM Evaluators Recognize and Favor Their Own Generations
 
@@ -27,3 +28,6 @@ Non-trivial out-of-box self-recognition for GPT-4 and Llama 2; linear correlatio
 
 ## What it leaves untried
 - Testing whether blinding (paraphrasing outputs to strip style) removes the bias.
+
+## Topics
+[[Topic - judge and decision-model audits]] · [[Topic - LLM and agent judges]]

@@ -6,6 +6,9 @@ arxiv: 2609.26550
 url: https://arxiv.org/abs/2609.26550
 venue: arXiv
 category: trained-judges-reward-models
+pdf: agent as a judge papers/decision models/JEV-as-a-Judge - Accept When Confident, Escalate When Unsure (2026).pdf
+folder: ["agent as a judge", "decision models"]
+topics: ["decision models", "LLM and agent judges", "confidence-gated escalation"]
 ---
 # JEV-as-a-Judge: Accept When Confident, Escalate When Unsure
 
@@ -26,3 +29,5 @@ Decision-only judge outputs label probabilities and escalates low-confidence cas
 
 ## What it leaves untried
 
+## Topics
+[[Topic - decision models]] · [[Topic - LLM and agent judges]] · [[Topic - confidence-gated escalation]]

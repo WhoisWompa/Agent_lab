@@ -6,6 +6,7 @@ arxiv: 2402.01830
 url: https://arxiv.org/abs/2402.01830
 venue: ICLR 2025 (as recalled)
 category: alternative-paradigms
+topics: ["alternative evaluation paradigms", "social choice", "LLM and agent judges"]
 ---
 # PiCO: Peer Review in LLMs based on the Consistency Optimization
 
@@ -26,3 +27,5 @@ Unsupervised peer evaluation: models answer unlabeled questions and score each o
 
 ## What it leaves untried
 
+## Topics
+[[Topic - alternative evaluation paradigms]] · [[Topic - social choice]] · [[Topic - LLM and agent judges]]

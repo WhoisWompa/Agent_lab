@@ -6,6 +6,7 @@ arxiv: 2610.12083
 url: https://arxiv.org/abs/2610.12083
 venue: AACL-IJCNLP 2026
 category: llm-judge-foundations
+topics: ["judge and decision-model audits", "presentation sensitivity"]
 ---
 # All Verdicts are Not Equal: Rethinking LLM Judge Reliability
 
@@ -26,3 +27,6 @@ Position swaps flip the majority of verdicts on challenging tasks; most determin
 
 ## What it leaves untried
 - Combining rubric scoring with verification tools on the items where T is low.
+
+## Topics
+[[Topic - judge and decision-model audits]] · [[Topic - presentation sensitivity]]

@@ -6,6 +6,7 @@ arxiv: 2305.16291
 url: https://arxiv.org/abs/2305.16291
 venue: TMLR 2024
 category: self-evolving-tests
+topics: ["self-evolving tests"]
 ---
 # Voyager: An Open-Ended Embodied Agent with Large Language Models
 
@@ -26,3 +27,5 @@ Automatic curriculum proposes Minecraft tasks from the agent's state and skill l
 
 ## What it leaves untried
 
+## Topics
+[[Topic - self-evolving tests]]

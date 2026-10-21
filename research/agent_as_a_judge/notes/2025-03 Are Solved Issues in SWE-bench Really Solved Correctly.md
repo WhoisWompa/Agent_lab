@@ -6,6 +6,7 @@ arxiv: 2503.15223
 url: https://arxiv.org/abs/2503.15223
 venue: arXiv (cs.SE)
 category: agent-evaluation-benchmarks
+topics: ["agent evaluation benchmarks", "alternative evaluation paradigms", "self-evolving tests"]
 ---
 # Are "Solved Issues" in SWE-bench Really Solved Correctly? An Empirical Study
 
@@ -27,3 +28,6 @@ Run plausible patches against all developer tests; generate differential tests c
 
 ## What it leaves untried
 - Feeding differential tests back as a standard part of the verifier.
+
+## Topics
+[[Topic - agent evaluation benchmarks]] · [[Topic - alternative evaluation paradigms]] · [[Topic - self-evolving tests]]

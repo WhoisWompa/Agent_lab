@@ -6,6 +6,7 @@ arxiv: 2610.21179
 url: https://arxiv.org/abs/2610.21179
 venue: arXiv
 category: trained-judges-reward-models
+topics: ["judges as reward signals", "LLM and agent judges", "social choice"]
 ---
 # Judging the Judges: Confidence and Disagreement in Rubrics as Rewards
 
@@ -26,3 +27,5 @@ RaRE ensembles five rubric judges with logprob-weighted soft-Likert rewards and 
 
 ## What it leaves untried
 
+## Topics
+[[Topic - judges as reward signals]] · [[Topic - LLM and agent judges]] · [[Topic - social choice]]

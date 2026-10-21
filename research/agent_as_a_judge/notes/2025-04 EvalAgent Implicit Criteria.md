@@ -6,6 +6,7 @@ arxiv: 2504.15219
 url: https://arxiv.org/abs/2504.15219
 venue: COLM 2025
 category: agent-as-judge
+topics: ["LLM and agent judges"]
 ---
 # EvalAgent: Discovering Implicit Evaluation Criteria from the Web
 
@@ -26,3 +27,5 @@ Agent that searches the web for expert guidance to synthesise implicit evaluatio
 
 ## What it leaves untried
 
+## Topics
+[[Topic - LLM and agent judges]]

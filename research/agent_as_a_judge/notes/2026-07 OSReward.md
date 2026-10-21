@@ -6,6 +6,7 @@ arxiv: 2607.28609
 url: https://arxiv.org/abs/2607.28609
 venue: arXiv
 category: agent-evaluation-benchmarks
+topics: ["trained judges and reward models", "agent evaluation benchmarks", "judge and decision-model audits"]
 ---
 # OSReward: Instituting Standardized Evaluation for Cross-Platform Computer-Use Reward Models
 
@@ -26,3 +27,5 @@ Pilot: best VLM judges disagree with benchmarks' own verifiers on ~a quarter of 
 
 ## What it leaves untried
 
+## Topics
+[[Topic - trained judges and reward models]] · [[Topic - agent evaluation benchmarks]] · [[Topic - judge and decision-model audits]]

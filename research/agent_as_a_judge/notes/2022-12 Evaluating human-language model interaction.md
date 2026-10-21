@@ -6,6 +6,7 @@ arxiv: 2212.09746
 url: https://arxiv.org/abs/2212.09746
 venue: TMLR 2023
 category: alternative-paradigms
+topics: ["alternative evaluation paradigms"]
 ---
 # Evaluating Human-Language Model Interaction
 
@@ -26,3 +27,5 @@ HALIE framework evaluates the interactive process and first-person user experien
 
 ## What it leaves untried
 
+## Topics
+[[Topic - alternative evaluation paradigms]]

@@ -6,6 +6,7 @@ arxiv: 2402.19464
 url: https://arxiv.org/abs/2402.19464
 venue: ICLR 2024
 category: self-evolving-tests
+topics: ["self-evolving tests"]
 ---
 # Curiosity-driven Red-teaming for Large Language Models
 
@@ -26,3 +27,5 @@ Adds novelty (curiosity) rewards to RL red teaming to counter the low-diversity 
 
 ## What it leaves untried
 
+## Topics
+[[Topic - self-evolving tests]]

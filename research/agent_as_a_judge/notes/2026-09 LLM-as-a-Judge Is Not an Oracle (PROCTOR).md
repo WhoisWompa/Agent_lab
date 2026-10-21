@@ -6,6 +6,7 @@ arxiv: 2609.02246
 url: https://arxiv.org/abs/2609.02246
 venue: arXiv
 category: self-evolving-tests
+topics: ["judge and decision-model audits", "alternative evaluation paradigms", "judges as reward signals"]
 ---
 # LLM-as-a-Judge Is Not an Oracle: Why Self-Improving Agents Need Deterministic Guardrails
 
@@ -27,3 +28,6 @@ Months of production use (contract analysis, compliance review, code quality). 1
 
 ## What it leaves untried
 - Measure which guardrail catches which failure on a public benchmark.
+
+## Topics
+[[Topic - judge and decision-model audits]] · [[Topic - alternative evaluation paradigms]] · [[Topic - judges as reward signals]]

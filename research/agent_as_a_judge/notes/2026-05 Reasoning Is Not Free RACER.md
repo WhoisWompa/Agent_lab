@@ -6,6 +6,7 @@ arxiv: 2605.10805
 url: https://arxiv.org/abs/2605.10805
 venue: ICML 2026
 category: llm-judge-foundations
+topics: ["LLM and agent judges", "adaptive reasoning depth", "judge and decision-model audits"]
 ---
 # Reasoning Is Not Free: Robust Adaptive Cost-Efficient Routing for LLM-as-a-Judge
 
@@ -26,3 +27,5 @@ Reasoning judges help on structured-verification tasks (math, code) but give lit
 
 ## What it leaves untried
 
+## Topics
+[[Topic - LLM and agent judges]] · [[Topic - adaptive reasoning depth]] · [[Topic - judge and decision-model audits]]

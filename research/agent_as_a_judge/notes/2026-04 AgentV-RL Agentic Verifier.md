@@ -6,6 +6,7 @@ arxiv: 2604.16004
 url: https://arxiv.org/abs/2604.16004
 venue: ACL 2026
 category: trained-judges-reward-models
+topics: ["trained judges and reward models", "LLM and agent judges"]
 ---
 # AgentV-RL: Scaling Reward Modeling with Agentic Verifier
 
@@ -26,3 +27,5 @@ Multi-turn tool-augmented verifier with forward (premise to conclusion) and back
 
 ## What it leaves untried
 
+## Topics
+[[Topic - trained judges and reward models]] · [[Topic - LLM and agent judges]]

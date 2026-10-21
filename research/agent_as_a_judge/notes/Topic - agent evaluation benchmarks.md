@@ -1,0 +1,77 @@
+---
+type: topic
+group: Judging and evaluation
+---
+# Topic - agent evaluation benchmarks
+
+Benchmarks and harnesses for agents: task suites, environments, trajectory and step-level scoring, verifier failures, deployment-aware evaluation.
+
+Group: Judging and evaluation. See [[Topics]]. Same group: [[Topic - LLM and agent judges]], [[Topic - judge and decision-model audits]], [[Topic - trained judges and reward models]], [[Topic - user simulation]], [[Topic - alternative evaluation paradigms]], [[Topic - self-evolving tests]], [[Topic - judges as reward signals]], [[Topic - stopping rules]].
+
+## Papers (66)
+- [[2023-07 WebArena]] — Self-hosted websites (shopping, CMS, Reddit-like forum, GitLab, maps) with 812 tasks graded by functional checks on final state or answer.
+- [[2023-08 AgentBench]] — Eight interactive environments (OS, DB, knowledge graph, card game, puzzles, house-holding, web shopping, web browsing) scored by per-environment outcome metrics.
+- [[2023-09 MINT]] — Evaluates multi-turn problem solving with code execution and GPT-4-simulated natural-language feedback. (also: [[Topic - user simulation]])
+- [[2023-09 ToolEmu]] — An LM emulates tool execution, including an adversarial emulator that steers into risky states, and an LM safety evaluator scores the agent's trajectory. (also: [[Topic - LLM and agent judges]], [[Topic - self-evolving tests]])
+- [[2023-10 SOTOPIA]] — Role-play environment where LLM agents pursue social goals with other agents; SOTOPIA-EVAL scores seven dimensions with a GPT-4 judge. (also: [[Topic - LLM and agent judges]])
+- [[2023-10 SWE-bench]] — Outcome benchmark of 2,294 real GitHub issues from 12 Python repos, graded by running the repo's FAIL_TO_PASS / PASS_TO_PASS unit tests on the agent's patch. (also: [[Topic - alternative evaluation paradigms]])
+- [[2023-11 GAIA]] — 466 assistant questions needing browsing, tools and multi-modality, each with a short unambiguous answer graded by quasi-exact match.
+- [[2023-11 TaskBench]] — Generates tool-use evaluation data by sampling subgraphs of a tool graph and back-instructing an LLM to write user requests, with human verification. (also: [[Topic - self-evolving tests]])
+- [[2024-01 WebVoyager]] — Live-web multimodal agent benchmark that uses GPT-4V as an automatic judge over screenshots of the trajectory. (also: [[Topic - LLM and agent judges]])
+- [[2024-03 The misleading success of simulating social interactions with LLMs]] — Shows omniscient single-LLM simulation of both sides succeeds far more than non-omniscient agent-agent interaction, so simulation-based social evaluation overestimates ability. (also: [[Topic - user simulation]])
+- [[2024-04 Autonomous Evaluation and Refinement of Digital Agents]] — Domain-general VLM/LLM evaluators for web and device-control trajectories, then used as reward for refinement (Reflexion-style and filtered fine-tuning). (also: [[Topic - LLM and agent judges]], [[Topic - judges as reward signals]])
+- [[2024-04 OSWorld]] — 369 real desktop tasks in VMs (Ubuntu/Windows) with per-task execution-based evaluation scripts on final machine state. (also: [[Topic - alternative evaluation paradigms]])
+- [[2024-05 OMNI-EPIC]] — Foundation models generate an open-ended stream of new environments as code plus success detectors, filtered by a model of interestingness; ancestor of Automated Capability Discovery. (also: [[Topic - self-evolving tests]])
+- [[2024-06 AgentDojo]] — Extensible environment of 97 user tasks and 629 security test cases where tool outputs carry injections; scored on utility and attack success by checking environment state.
+- [[2024-06 tau-bench]] — Customer-service agent (retail, airline) talks to an LLM-simulated user and calls APIs under a policy; graded by comparing final database state to the goal state, with pass^k for reliability. (also: [[Topic - user simulation]])
+- [[2024-07 AI Agents That Matter]] — Critique of agent evaluation: accuracy-only reporting, no cost control, overfitting through missing holdouts, and poor reproducibility.
+- [[2024-08 SWE-bench Verified]] — Human-screened 500-task subset of SWE-bench meant to remove underspecified issues and unfair tests.
+- [[2024-10 Agent-as-a-Judge]] — An agentic judge that explores the evaluated agent's workspace (and optionally trajectory) to check each of a task's hierarchical requirements; introduced with DevAI. (also: [[Topic - LLM and agent judges]])
+- [[2024-10 AgentHarm]] — Static benchmark of 110 explicitly malicious agent tasks (440 with augmentations) across 11 harm categories with synthetic tools; a fixed counterpoint to adaptive red teaming.
+- [[2024-10 MLE-bench]] — 75 Kaggle competitions; agent submissions scored by the competition metric against the human leaderboard (medals).
+- [[2024-10 SWE-Bench+]] — Manual audit of SWE-bench passing patches showing solution leakage and weak tests, plus a post-cutoff rebuilt set.
+- [[2024-12 SWE-Gym]] — 2,438 real Python task instances with executable environments; trains agents and outcome verifiers on agent trajectories. (also: [[Topic - trained judges and reward models]])
+- [[2025-01 IntellAgent]] — Generates synthetic, policy-grounded multi-turn scenarios from a policy graph and runs simulated users against a conversational agent, with a critic grading. (also: [[Topic - user simulation]], [[Topic - self-evolving tests]])
+- [[2025-03 Are Solved Issues in SWE-bench Really Solved Correctly]] — Shows SWE-bench's PR-test verifier accepts wrong patches, via full developer test suites and differential testing (PatchDiff). (also: [[Topic - alternative evaluation paradigms]], [[Topic - self-evolving tests]])
+- [[2025-03 Why Do Multi-Agent LLM Systems Fail]] — MAST: taxonomy of 14 failure modes in 3 categories (system design, inter-agent misalignment, task verification) from multi-agent traces, plus an LLM-as-judge annotator. (also: [[Topic - LLM and agent judges]])
+- [[2025-04 AgentRewardBench]] — Meta-benchmark of 1,302 expert-labelled web-agent trajectories (5 benchmarks, 4 agent LLMs) for testing LLM judges on success, side effects and repetition. (also: [[Topic - judge and decision-model audits]])
+- [[2025-04 An Illusion of Progress - Online-Mind2Web]] — Online-Mind2Web (300 live tasks, 136 websites) plus WebJudge, an LLM-as-a-judge that reaches ~85% agreement with humans; finds prior web-agent results over-optimistic. (also: [[Topic - LLM and agent judges]])
+- [[2025-04 BrowseComp]] — 1,266 hard-to-find, easy-to-verify browsing questions with short answers graded by an LLM grader against the reference.
+- [[2025-04 R2E-Gym]] — Builds executable SWE tasks from commits (back-translated issues, generated tests) and combines execution-based and execution-free verifiers. (also: [[Topic - self-evolving tests]], [[Topic - alternative evaluation paradigms]])
+- [[2025-04 SWE-smith]] — Synthesises tens of thousands of task instances by injecting bugs into repositories so existing tests break; the tests are the verifier. (also: [[Topic - self-evolving tests]])
+- [[2025-05 TRAIL]] — Benchmark of 148 human-annotated agent traces (single and multi-agent, SWE and open-world search) with an error taxonomy; LLMs must locate and categorise errors. (also: [[Topic - judge and decision-model audits]])
+- [[2025-05 Web-Shepherd]] — First process reward model for web navigation: scores each step against an instruction-derived checklist of subgoals. (also: [[Topic - trained judges and reward models]])
+- [[2025-05 Which Agent Causes Task Failures and When]] — Defines automated failure attribution and the Who&When dataset of failure logs from 127 multi-agent systems, labelled with responsible agent and decisive step. (also: [[Topic - LLM and agent judges]])
+- [[2025-06 Mind2Web 2]] — Benchmark of 130 long-horizon agentic-search tasks judged by task-specific judge agents that walk a tree-structured rubric and verify each claim and its cited source. (also: [[Topic - LLM and agent judges]])
+- [[2025-06 The SWE-Bench Illusion]] — Contamination probes showing models identify SWE-bench buggy file paths from the issue alone, far better than on unseen repos.
+- [[2025-06 UTBoost]] — LLM-driven test-case augmentation finds SWE-bench tasks whose tests let wrong patches pass and re-ranks the leaderboards. (also: [[Topic - self-evolving tests]])
+- [[2025-06 tau2-bench]] — Extends tau-bench with a telecom domain where the user also has tools and acts on a shared state, plus a compositional task generator. (also: [[Topic - user simulation]])
+- [[2025-07 Establishing Best Practices for Building Rigorous Agentic Benchmarks]] — Agentic Benchmark Checklist (ABC) for task validity and outcome validity, applied to popular agent benchmarks to expose setup and reward-design flaws.
+- [[2025-07 FinResearchBench]] — Agent-as-a-Judge that extracts a logic tree from a financial research report and scores using it; 70 questions, 7 task types. (also: [[Topic - LLM and agent judges]])
+- [[2025-07 UserBench]] — Gym where simulated users reveal underspecified, evolving preferences gradually; agents must elicit them while using tools (travel planning). (also: [[Topic - user simulation]])
+- [[2025-08 Auto-Eval Judge]] — Domain-independent judge agent that decomposes a task into sub-tasks and checks each step of the actor agent's trajectory before aggregating a completion verdict. (also: [[Topic - LLM and agent judges]])
+- [[2025-10 Holistic Agent Leaderboard]] — Standardised harness and leaderboard (HAL) running 21,730 rollouts over 9 models x 9 benchmarks, with LLM-aided log inspection.
+- [[2025-10 ImpossibleBench]] — Creates 'impossible' variants of LiveCodeBench and SWE-bench tasks where spec and tests conflict, so any pass is cheating; measures agents' propensity to exploit tests. (also: [[Topic - self-evolving tests]])
+- [[2025-10 SimulatorArena]] — A benchmark of 909 real human-LLM conversations that scores LLM user simulators on how human their messages look and whether their assistant ratings match real users', and shows that a user profile lifts that match from about 0.6 to 0.7-0.77 Spearman. (also: [[Topic - user simulation]])
+- [[2025-11 AgentPRM]] — Process reward model for multi-turn agents scoring steps by promise (chance of reaching goal) and progress (dependence between steps), not step correctness. (also: [[Topic - trained judges and reward models]])
+- [[2026-01 Lost in Simulation]] — User study (US, India, Kenya, Nigeria) on tau-bench retail showing simulated users are unstable and miscalibrated proxies. (also: [[Topic - user simulation]])
+- [[2026-01 Terminal-Bench]] — Terminal-Bench 2.0: 89 hard terminal tasks, each with its own container, a human reference solution and automated tests.
+- [[2026-02 DREAM Deep Research Evaluation]] — Agentic metrics (tool-using evaluator) for deep-research reports. (also: [[Topic - LLM and agent judges]])
+- [[2026-02 Why we no longer evaluate SWE-bench Verified]] — OpenAI retires SWE-bench Verified as a frontier metric because of flawed tests and training-data contamination.
+- [[2026-03 AgentAssay]] — A framework for regression-testing stochastic agents: three-valued verdicts (Pass / Fail / Inconclusive) from confidence intervals and Wald's SPRT, plus a "behavioral fingerprint" of each trace tested with Hotelling's T², to decide whether a changed agent got worse while running as few paid trials as possible. (also: [[Topic - stopping rules]])
+- [[2026-03 Many SWE-bench-passing PRs would not be merged]] — Maintainers of SWE-bench Verified repos review test-passing agent PRs; about half would not be merged.
+- [[2026-03 Mind the Sim2Real Gap in User Simulation]] — Runs the tau-bench protocol with 451 real people and 31 LLM user simulators and defines a User-Sim Index of simulator realism. (also: [[Topic - user simulation]])
+- [[2026-05 An Empirical Study of Automating Agent Evaluation]] — EvalAgent: a coding-assistant agent that writes a whole evaluation (criteria, executable code, report) for a target agent from its source code and traces, using 'evaluation skills'; positions itself against Agent-as-a-Judge, which judges directly. (also: [[Topic - LLM and agent judges]])
+- [[2026-06 BabelJudge]] — Judge-reliability benchmark with an agentic extension that perturbs trajectories to measure biases such as preferring longer trajectories and missing hallucinated tool calls. (also: [[Topic - judge and decision-model audits]])
+- [[2026-06 Counsel]] — Human labels on process-level critiques by open-weight LLM judges over tau-bench and DA-Code trajectories. (also: [[Topic - judge and decision-model audits]])
+- [[2026-06 Simulated Customers Never Walk Away]] — Measures whether LLM user simulators decide like real customers; notes tau-bench's simulator is built to always reach its goal and cannot decline. (also: [[Topic - user simulation]])
+- [[2026-06 VISTA]] — A user-simulation toolkit that tests customer-facing agents with a simulated user who can both click through the real web UI and call user-side APIs, plus six metrics that score how realistic and how thorough the simulated conversations were. (also: [[Topic - user simulation]])
+- [[2026-07 Model or Harness]] — Failure-localisation taxonomy that uses an agent-as-a-judge method (seen only in a search snippet). (also: [[Topic - LLM and agent judges]])
+- [[2026-07 OSReward]] — Benchmark for VLM judges / reward models on computer-use trajectories with multi-stage human verdicts; releases OS-Shepherd-100K and OS-Shepherd 9B/35B judges. (also: [[Topic - trained judges and reward models]], [[Topic - judge and decision-model audits]])
+- [[2026-07 PAIChecker]] — Detects tasks where the gold PR does not match the linked issue; 13.6% of SWE-bench Verified instances affected (per secondary source).
+- [[2026-08 AgentJudgeBench]] — Benchmark of 3,808 tool-calling workflow instances across DAG topologies and difficulty tiers, showing judge alignment hits a 77-82% ceiling on hard queries regardless of judge size. (also: [[Topic - judge and decision-model audits]])
+- [[2026-08 Benchmarking LLM Judges for Mobile Agent Evaluation]] — MobileJudgeBench: 931 human-annotated mobile-agent trajectories (6 benchmarks, 4 agents, 68 apps) to compare LLM-judge methods. (also: [[Topic - judge and decision-model audits]])
+- [[2026-09 OmniStepBench]] — A 233-task agent benchmark that runs every model in one shared runtime, reports accuracy per workload type (text or multimodal, crossed with single-step, multi-step or tool-using), and adds an audit step: a second judge checks whether the first judge's positive scores are backed by what the agent actually did. (also: [[Topic - alternative evaluation paradigms]])
+- [[2026-09 UserProxyBench]] — Scores the simulated user (User Fidelity Score, rubric-based) separately from agent success on tau-bench-family tasks. (also: [[Topic - user simulation]])
+- [[2026-09 trajectory-judge]] — Injects single-step faults into correct customer-support agent runs and shows that judges seeing only the final reply cannot detect faults that leave the reply unchanged, while step-level trajectory judges can; proposes paired discrimination as the metric. (also: [[Topic - LLM and agent judges]])
+- [[2026-10 CUEing User Simulators]] — Steers any LLM to play a benchmark user from a continuous user embedding decoded into persona commands, and argues simulators should be judged by whether agents fail with them as they do with real users. (also: [[Topic - user simulation]])

@@ -1,0 +1,238 @@
+{
+ "assignments": [
+  {
+   "note": "2025-03 Why Do Multi-Agent LLM Systems Fail",
+   "topics": [
+    "agent evaluation benchmarks",
+    "LLM and agent judges"
+   ],
+   "why": "MAST failure taxonomy and MAST-Data trace set for scoring multi-agent runs (benchmarks), with an LLM-as-a-judge pipeline that annotates failure modes (judges)."
+  },
+  {
+   "note": "2025-04 AgentRewardBench",
+   "topics": [
+    "judge and decision-model audits",
+    "agent evaluation benchmarks"
+   ],
+   "why": "Meta-benchmark measuring 12 LLM judges against expert labels with their failure modes (audit), built on web-agent trajectory scoring (agent benchmarks)."
+  },
+  {
+   "note": "2025-04 An Illusion of Progress - Online-Mind2Web",
+   "topics": [
+    "agent evaluation benchmarks",
+    "LLM and agent judges"
+   ],
+   "why": "Online-Mind2Web live web-agent task suite (benchmark) plus WebJudge, an LLM judge over key screenshots and actions (judge)."
+  },
+  {
+   "note": "2025-04 Assessing Judging Bias in Large Reasoning Models",
+   "topics": [
+    "judge and decision-model audits",
+    "presentation sensitivity"
+   ],
+   "why": "Empirical study of bandwagon, authority, distraction and position biases in reasoning-model judges (audit), with preference for later positions as a main finding (presentation sensitivity)."
+  },
+  {
+   "note": "2025-04 BrowseComp",
+   "topics": [
+    "agent evaluation benchmarks"
+   ],
+   "why": "Benchmark of 1,266 hard browsing questions for browsing agents, graded against reference answers."
+  },
+  {
+   "note": "2025-04 CodeVisionary",
+   "topics": [
+    "LLM and agent judges"
+   ],
+   "why": "Agent-based evaluator that distils context and scores generated code; the judge itself is the subject."
+  },
+  {
+   "note": "2025-04 DeepSeek GRM Inference-Time Scaling for Generalist Reward Modeling",
+   "topics": [
+    "trained judges and reward models"
+   ],
+   "why": "Generative reward model trained with Self-Principled Critique Tuning and scaled at inference with a meta RM filtering samples."
+  },
+  {
+   "note": "2025-04 Do LLM Evaluators Prefer Themselves for a Reason",
+   "topics": [
+    "judge and decision-model audits"
+   ],
+   "why": "Measures legitimate versus harmful self-preference of LLM judges against ground truth across seven model families."
+  },
+  {
+   "note": "2025-04 Does RL really incentivize reasoning capacity beyond the base model",
+   "topics": [
+    "judges as reward signals"
+   ],
+   "why": "Studies what RL with verifiable rewards does to a policy's reasoning (pass@k vs base model); no judge, benchmark, mechanism or game-theory topic covers it, see proposal. | main session: assigned to the new topic 'judges as reward signals' created from this proposal."
+  },
+  {
+   "note": "2025-04 EvalAgent Implicit Criteria",
+   "topics": [
+    "LLM and agent judges"
+   ],
+   "why": "An agent that searches the web to synthesise implicit evaluation criteria for judging writing responses."
+  },
+  {
+   "note": "2025-04 JudgeLRM",
+   "topics": [
+    "trained judges and reward models"
+   ],
+   "why": "Reasoning judges trained with GRPO and judge-specific outcome rewards."
+  },
+  {
+   "note": "2025-04 Pairwise or Pointwise feedback protocols",
+   "topics": [
+    "judge and decision-model audits",
+    "presentation sensitivity"
+   ],
+   "why": "Measures how often injected distractors flip judge verdicts (audit), comparing pairwise vs absolute question form on the same content (presentation sensitivity)."
+  },
+  {
+   "note": "2025-04 R2E-Gym",
+   "topics": [
+    "agent evaluation benchmarks",
+    "self-evolving tests",
+    "alternative evaluation paradigms"
+   ],
+   "why": "Procedural executable SWE environments (benchmarks/harness), with tests generated from commits (generated test sets), and hybrid execution-based plus execution-free verifiers (execution-based verification)."
+  },
+  {
+   "note": "2025-04 SPC Self-Play Critic",
+   "topics": [
+    "self-evolving tests",
+    "trained judges and reward models"
+   ],
+   "why": "Sneaky generator produces adversarial subtle errors that the critic learns from over rounds (adversarial, self-improving judge), and the critic is an RL-trained step-level critic (trained judge)."
+  },
+  {
+   "note": "2025-04 SWE-smith",
+   "topics": [
+    "self-evolving tests",
+    "agent evaluation benchmarks"
+   ],
+   "why": "Synthesises tens of thousands of task instances by injecting bugs (generated test sets) as task suites for SWE agents (agent benchmarks)."
+  },
+  {
+   "note": "2025-04 Scaling laws for scalable oversight",
+   "topics": [
+    "alternative evaluation paradigms"
+   ],
+   "why": "Models oversight via Debate, Mafia and other overseer-vs-overseen games with Elo, deriving scaling laws for debate-style oversight."
+  },
+  {
+   "note": "2025-04 The Leaderboard Illusion",
+   "topics": [
+    "alternative evaluation paradigms"
+   ],
+   "why": "Audit of how Chatbot Arena's pairwise arena rankings are distorted by private testing, unequal sampling and deprecations."
+  },
+  {
+   "note": "2025-04 ThinkPRM Process Reward Models That Think",
+   "topics": [
+    "trained judges and reward models"
+   ],
+   "why": "Long-CoT generative process reward model fine-tuned on a small set of process labels."
+  },
+  {
+   "note": "2025-05 Absolute Zero",
+   "topics": [
+    "self-evolving tests",
+    "alternative evaluation paradigms"
+   ],
+   "why": "Model proposes its own tasks with a learnability reward (self-generated test sets), verified by a code executor (execution-based verification)."
+  },
+  {
+   "note": "2025-05 Confirmation bias a challenge for scalable oversight",
+   "topics": [
+    "alternative evaluation paradigms"
+   ],
+   "why": "Human studies of oversight protocols such as showing arguments for both answers (debate-style evaluation) versus plain deference."
+  },
+  {
+   "note": "2025-05 J1 Thinking LLM-as-a-Judge via RL",
+   "topics": [
+    "trained judges and reward models"
+   ],
+   "why": "Thinking judge trained with GRPO on verifiable-reward versions of judgment tasks."
+  },
+  {
+   "note": "2025-05 LLMs get lost in multi-turn conversation",
+   "topics": [
+    "user simulation",
+    "presentation sensitivity"
+   ],
+   "why": "Builds a sharded simulated user for multi-turn evaluation (user simulation) and shows performance drops when the same instruction content is split across turns (request serialisation)."
+  },
+  {
+   "note": "2025-05 Prompt-injection on LLM-as-a-Judge architectures",
+   "topics": [
+    "judge and decision-model audits"
+   ],
+   "why": "Measures attack success of GCG suffixes against open judges' decisions and justifications (adversarial robustness of judges)."
+  },
+  {
+   "note": "2025-05 RM-R1 Reward Modeling as Reasoning",
+   "topics": [
+    "trained judges and reward models"
+   ],
+   "why": "Reasoning reward models trained by distillation then GRPO with Chain-of-Rubrics rollouts."
+  },
+  {
+   "note": "2025-05 Reward Reasoning Model",
+   "topics": [
+    "trained judges and reward models",
+    "alternative evaluation paradigms"
+   ],
+   "why": "RL-trained reward models that deliberate before verdicts (trained judges), applied to many candidates via ELO and knockout tournaments (pairwise tournaments)."
+  },
+  {
+   "note": "2025-05 SILENCER self-bias in LLM-generated benchmarks",
+   "topics": [
+    "self-evolving tests"
+   ],
+   "why": "Studies self-bias in LLM-generated benchmarks and mitigates it by mixing generators, i.e. the quality of generated test sets."
+  },
+  {
+   "note": "2025-05 Sentient Agent as a Judge",
+   "topics": [
+    "LLM and agent judges",
+    "user simulation"
+   ],
+   "why": "A simulated human-like agent with emotional state that converses with the tested model (simulated user) and judges its social cognition (agent judge)."
+  },
+  {
+   "note": "2025-05 TRAIL",
+   "topics": [
+    "agent evaluation benchmarks",
+    "judge and decision-model audits"
+   ],
+   "why": "Benchmark of annotated agent traces with an error taxonomy (trajectory-level agent evaluation), measuring how well LLM judges localise errors, best only 11% (meta-evaluation of judges)."
+  },
+  {
+   "note": "2025-05 Think-J",
+   "topics": [
+    "trained judges and reward models"
+   ],
+   "why": "Generative judge trained with curated thinking data then offline or online RL."
+  },
+  {
+   "note": "2025-05 Web-Shepherd",
+   "topics": [
+    "trained judges and reward models",
+    "agent evaluation benchmarks"
+   ],
+   "why": "Process reward model for web navigation trained on step-level preference pairs (trained PRM), meta-evaluated on WebRewardBench with checklist-based step-level scoring of agents (agent benchmarks)."
+  }
+ ],
+ "proposals": [
+  {
+   "note": "2025-04 Does RL really incentivize reasoning capacity beyond the base model",
+   "name": "verifiable-reward training",
+   "definition": "Training policies with reinforcement learning against automatic verifiers (RLVR, executor- or answer-checked rewards) and what that training does or does not add to the base model's capabilities.",
+   "why_none_fit": "trained judges and reward models: no judge or RM is trained, the verifier is a fixed answer check; self-evolving tests: no tests are generated or refined; alternative evaluation paradigms: pass@k is used as a measurement, not proposed as an evaluation method; agent evaluation benchmarks: no benchmark or harness is contributed; adaptive reasoning depth: compute is not allocated per input; preference learning: no pairwise feedback or reward model is learned.",
+   "decision": "accepted as 'judges as reward signals'"
+  }
+ ]
+}

@@ -6,6 +6,7 @@ arxiv: 2410.13341
 url: https://arxiv.org/abs/2410.13341
 venue: ICLR 2025
 category: alternative-paradigms
+topics: ["LLM and agent judges", "stopping rules"]
 ---
 # Limits to scalable evaluation at the frontier: LLM as Judge won't beat twice the data
 
@@ -30,3 +31,5 @@ Main bound: at most a factor-two saving in labels; empirically savings are small
 - Same analysis for agentic judges whose accuracy may exceed the evaluated agent's in narrow checks (e.g. execution).
 - Bounds when the judge has tools or references that make it more accurate than the evaluatee.
 
+## Topics
+[[Topic - LLM and agent judges]] · [[Topic - stopping rules]]

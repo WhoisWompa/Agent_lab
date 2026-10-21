@@ -6,6 +6,7 @@ arxiv: 2503.04474
 url: https://arxiv.org/abs/2503.04474
 venue: ICLR 2025 ICBINB Workshop
 category: llm-judge-foundations
+topics: ["judge and decision-model audits", "presentation sensitivity", "LLM and agent judges"]
 ---
 # Know Thy Judge: On the Robustness Meta-Evaluation of LLM Safety Judges
 
@@ -26,3 +27,5 @@ Output style changes shift safety judges' false-negative rate by up to 0.24; adv
 
 ## What it leaves untried
 
+## Topics
+[[Topic - judge and decision-model audits]] · [[Topic - presentation sensitivity]] · [[Topic - LLM and agent judges]]

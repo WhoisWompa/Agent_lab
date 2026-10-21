@@ -6,6 +6,7 @@ arxiv: 2406.08598
 url: https://arxiv.org/abs/2406.08598
 venue: NAACL 2025 (as recalled)
 category: alternative-paradigms
+topics: ["social choice", "alternative evaluation paradigms", "LLM and agent judges"]
 ---
 # Language Model Council: Democratically Benchmarking Foundation Models on Highly Subjective Tasks
 
@@ -26,3 +27,5 @@ A council of 20 LLMs writes test prompts, answers them and judges one another, p
 
 ## What it leaves untried
 
+## Topics
+[[Topic - social choice]] · [[Topic - alternative evaluation paradigms]] · [[Topic - LLM and agent judges]]

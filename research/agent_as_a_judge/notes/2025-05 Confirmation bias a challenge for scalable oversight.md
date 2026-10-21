@@ -6,6 +6,7 @@ arxiv: 2507.19486
 url: https://arxiv.org/abs/2507.19486
 venue: arXiv
 category: alternative-paradigms
+topics: ["alternative evaluation paradigms"]
 ---
 # Confirmation bias: A challenge for scalable oversight
 
@@ -26,3 +27,6 @@ No overall advantage of protocols. Arguments for both sides helped only when the
 
 ## What it leaves untried
 - Recommended baseline: compare every oversight protocol against plain deference to the model.
+
+## Topics
+[[Topic - alternative evaluation paradigms]]

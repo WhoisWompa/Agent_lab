@@ -6,6 +6,7 @@ arxiv: 2602.04254
 url: https://arxiv.org/abs/2602.04254
 venue: arXiv
 category: agent-as-judge
+topics: ["LLM and agent judges", "alternative evaluation paradigms"]
 ---
 # Scaling Agentic Verifier for Competitive Coding
 
@@ -27,3 +28,5 @@ Agentic verifier for competitive-programming solutions.
 
 ## What it leaves untried
 
+## Topics
+[[Topic - LLM and agent judges]] · [[Topic - alternative evaluation paradigms]]

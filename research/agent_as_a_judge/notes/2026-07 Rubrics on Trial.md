@@ -6,6 +6,7 @@ arxiv: 2607.15092
 url: https://arxiv.org/abs/2607.15092
 venue: arXiv
 category: self-evolving-tests
+topics: ["self-evolving tests", "LLM and agent judges"]
 ---
 # Rubrics on Trial: Evolving Rubrics from a Single Query via Synthetic Pairwise Evidence
 
@@ -26,3 +27,5 @@ Rubric evolution where competing rubrics are compared via synthetic responses wr
 
 ## What it leaves untried
 
+## Topics
+[[Topic - self-evolving tests]] · [[Topic - LLM and agent judges]]

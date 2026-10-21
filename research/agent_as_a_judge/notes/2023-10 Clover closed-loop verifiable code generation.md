@@ -6,6 +6,7 @@ arxiv: 2310.17807
 url: https://arxiv.org/abs/2310.17807
 venue: arXiv
 category: alternative-paradigms
+topics: ["alternative evaluation paradigms"]
 ---
 # Clover: Closed-Loop Verifiable Code Generation
 
@@ -26,3 +27,5 @@ Checks consistency among code, docstring and formal (Dafny) annotations using a 
 
 ## What it leaves untried
 
+## Topics
+[[Topic - alternative evaluation paradigms]]

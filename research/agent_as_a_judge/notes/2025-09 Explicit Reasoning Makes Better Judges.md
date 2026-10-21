@@ -6,6 +6,7 @@ arxiv: 2509.13332
 url: https://arxiv.org/abs/2509.13332
 venue: NeurIPS 2025 FoRLM Workshop
 category: llm-judge-foundations
+topics: ["judge and decision-model audits", "LLM and agent judges"]
 ---
 # Explicit Reasoning Makes Better Judges: A Systematic Study on Accuracy, Efficiency, and Robustness
 
@@ -26,3 +27,5 @@ Small Qwen3 thinking judges beat non-thinking ones by ~10 points on RewardBench 
 
 ## What it leaves untried
 
+## Topics
+[[Topic - judge and decision-model audits]] · [[Topic - LLM and agent judges]]

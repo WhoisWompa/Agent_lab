@@ -6,6 +6,7 @@ arxiv: 2407.08351
 url: https://arxiv.org/abs/2407.08351
 venue: ICLR 2025
 category: self-evolving-tests
+topics: ["self-evolving tests"]
 ---
 # AutoBencher: Towards Declarative Benchmark Construction
 
@@ -28,3 +29,6 @@ Datasets elicit 22% more model errors than existing benchmarks. Found Gemini-Pro
 
 ## What it leaves untried
 - Target a single system and rewrite the benchmark around that system's failures across rounds.
+
+## Topics
+[[Topic - self-evolving tests]]

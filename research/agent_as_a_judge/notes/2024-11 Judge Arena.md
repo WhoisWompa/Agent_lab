@@ -6,6 +6,7 @@ arxiv: none
 url: https://huggingface.co/blog/arena-atla
 venue: blog
 category: alternative-paradigms
+topics: ["alternative evaluation paradigms", "judge and decision-model audits"]
 ---
 # Judge Arena (Atla / Hugging Face blog)
 
@@ -26,3 +27,5 @@ Crowdsourced arena where users vote on which LLM judge's verdict and critique is
 
 ## What it leaves untried
 
+## Topics
+[[Topic - alternative evaluation paradigms]] · [[Topic - judge and decision-model audits]]

@@ -6,6 +6,7 @@ arxiv: 2502.14191
 url: https://arxiv.org/abs/2502.14191
 venue: arXiv
 category: llm-judge-foundations
+topics: ["judge and decision-model audits", "trained judges and reward models"]
 ---
 # Multimodal RewardBench: Holistic Evaluation of Reward Models for Vision Language Models
 
@@ -26,3 +27,5 @@ category: llm-judge-foundations
 
 ## What it leaves untried
 
+## Topics
+[[Topic - judge and decision-model audits]] · [[Topic - trained judges and reward models]]

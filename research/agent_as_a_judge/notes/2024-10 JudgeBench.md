@@ -6,6 +6,7 @@ arxiv: 2410.12784
 url: https://arxiv.org/abs/2410.12784
 venue: ICLR 2025
 category: trained-judges-reward-models
+topics: ["judge and decision-model audits"]
 ---
 # JudgeBench: A Benchmark for Evaluating LLM-based Judges
 
@@ -34,3 +35,5 @@ Benchmark of hard response pairs whose correctness is objectively verifiable (kn
 ## What it leaves untried
 - Letting the judge execute code or check math with tools; the benchmark measures text-only judging.
 
+## Topics
+[[Topic - judge and decision-model audits]]

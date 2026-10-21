@@ -6,6 +6,7 @@ arxiv: 2606.22329
 url: https://arxiv.org/abs/2606.22329
 venue: arXiv
 category: agent-as-judge
+topics: ["judge and decision-model audits", "agent evaluation benchmarks"]
 ---
 # BabelJudge: Measuring LLM-as-a-Judge Reliability Across Languages and Agent Trajectories
 
@@ -26,3 +27,5 @@ Judge-reliability benchmark with an agentic extension that perturbs trajectories
 
 ## What it leaves untried
 
+## Topics
+[[Topic - judge and decision-model audits]] · [[Topic - agent evaluation benchmarks]]

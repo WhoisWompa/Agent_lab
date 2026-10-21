@@ -6,6 +6,7 @@ arxiv: 2310.11667
 url: https://arxiv.org/abs/2310.11667
 venue: ICLR 2024
 category: alternative-paradigms
+topics: ["agent evaluation benchmarks", "LLM and agent judges"]
 ---
 # SOTOPIA: Interactive Evaluation for Social Intelligence in Language Agents
 
@@ -26,3 +27,5 @@ Role-play environment where LLM agents pursue social goals with other agents; SO
 
 ## What it leaves untried
 
+## Topics
+[[Topic - agent evaluation benchmarks]] · [[Topic - LLM and agent judges]]

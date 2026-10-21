@@ -6,6 +6,7 @@ arxiv: 2605.11378
 url: https://arxiv.org/abs/2605.11378
 venue: arXiv (v3 Sep 2026)
 category: agent-as-judge
+topics: ["LLM and agent judges", "agent evaluation benchmarks"]
 ---
 # An Empirical Study of Automating Agent Evaluation
 
@@ -28,3 +29,6 @@ EvalAgent: a coding-assistant agent that writes a whole evaluation (criteria, ex
 
 ## What it leaves untried
 - Cross-model-family evaluators to rule out self-preference; checking whether generated evals catch injected faults.
+
+## Topics
+[[Topic - LLM and agent judges]] · [[Topic - agent evaluation benchmarks]]

@@ -6,6 +6,7 @@ arxiv: 2410.06992
 url: https://arxiv.org/abs/2410.06992
 venue: arXiv
 category: agent-evaluation-benchmarks
+topics: ["agent evaluation benchmarks"]
 ---
 # SWE-Bench+: Enhanced Coding Benchmark for LLMs
 
@@ -26,3 +27,6 @@ Manual inspection of SWE-Agent+GPT-4 passing patches.
 
 ## What it leaves untried
 - Automated leakage detection at scale.
+
+## Topics
+[[Topic - agent evaluation benchmarks]]

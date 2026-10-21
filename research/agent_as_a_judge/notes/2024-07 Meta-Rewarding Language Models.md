@@ -6,6 +6,7 @@ arxiv: 2407.19594
 url: https://arxiv.org/abs/2407.19594
 venue: arXiv (Meta)
 category: trained-judges-reward-models
+topics: ["trained judges and reward models", "self-evolving tests", "preference learning", "judges as reward signals"]
 ---
 # Meta-Rewarding Language Models: Self-Improving Alignment with LLM-as-a-Meta-Judge
 
@@ -32,3 +33,6 @@ Adds a meta-judge role that judges the model's own judgments, so the judge skill
 
 ## What it leaves untried
 - Grounding the meta-judge in verifiable outcomes.
+
+## Topics
+[[Topic - trained judges and reward models]] · [[Topic - self-evolving tests]] · [[Topic - preference learning]] · [[Topic - judges as reward signals]]

@@ -6,6 +6,7 @@ arxiv: 2405.15568
 url: https://arxiv.org/abs/2405.15568
 venue: ICLR 2025
 category: self-evolving-tests
+topics: ["self-evolving tests", "agent evaluation benchmarks"]
 ---
 # OMNI-EPIC: Open-endedness via Models of human Notions of Interestingness with Environments Programmed in Code
 
@@ -26,3 +27,5 @@ Foundation models generate an open-ended stream of new environments as code plus
 
 ## What it leaves untried
 
+## Topics
+[[Topic - self-evolving tests]] · [[Topic - agent evaluation benchmarks]]

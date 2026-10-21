@@ -6,6 +6,7 @@ arxiv: 2506.09289
 url: https://arxiv.org/abs/2506.09289
 venue: ACL 2025
 category: agent-evaluation-benchmarks
+topics: ["agent evaluation benchmarks", "self-evolving tests"]
 ---
 # UTBoost: Rigorous Evaluation of Coding Agents on SWE-Bench
 
@@ -27,3 +28,5 @@ LLM generates extra unit tests from the codebase and gold patch; patches that pa
 
 ## What it leaves untried
 
+## Topics
+[[Topic - agent evaluation benchmarks]] · [[Topic - self-evolving tests]]

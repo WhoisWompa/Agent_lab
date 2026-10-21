@@ -6,6 +6,7 @@ arxiv: 2602.13110
 url: https://arxiv.org/abs/2602.13110
 venue: ICML 2026
 category: alternative-paradigms
+topics: ["LLM and agent judges", "abstention and fallback", "presentation sensitivity"]
 ---
 # SCOPE: Selective Conformal Optimized Pairwise LLM Judging
 
@@ -26,3 +27,6 @@ At alpha = 0.10 empirical FDR 0.097-0.099; up to 2.4x more judgments accepted th
 
 ## What it leaves untried
 - Extension to graded/rubric judgments of agent runs.
+
+## Topics
+[[Topic - LLM and agent judges]] · [[Topic - abstention and fallback]] · [[Topic - presentation sensitivity]]

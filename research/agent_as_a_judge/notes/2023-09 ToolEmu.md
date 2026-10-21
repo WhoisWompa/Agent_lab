@@ -6,6 +6,7 @@ arxiv: 2309.15817
 url: https://arxiv.org/abs/2309.15817
 venue: ICLR 2024
 category: self-evolving-tests
+topics: ["agent evaluation benchmarks", "LLM and agent judges", "self-evolving tests"]
 ---
 # Identifying the Risks of LM Agents with an LM-Emulated Sandbox (ToolEmu)
 
@@ -26,3 +27,5 @@ An LM emulates tool execution, including an adversarial emulator that steers int
 
 ## What it leaves untried
 
+## Topics
+[[Topic - agent evaluation benchmarks]] · [[Topic - LLM and agent judges]] · [[Topic - self-evolving tests]]

@@ -6,6 +6,7 @@ arxiv: 2507.01352
 url: https://arxiv.org/abs/2507.01352
 venue: ICLR 2026
 category: trained-judges-reward-models
+topics: ["trained judges and reward models", "preference learning"]
 ---
 # Skywork-Reward-V2: Scaling Preference Data Curation via Human-AI Synergy
 
@@ -27,3 +28,6 @@ Scalar Bradley-Terry RMs (0.6B-8B) trained on 26M pairs curated from a 40M-pair 
 
 ## What it leaves untried
 - Reasoning or tool use; classifier cannot explain verdicts.
+
+## Topics
+[[Topic - trained judges and reward models]] · [[Topic - preference learning]]

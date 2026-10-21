@@ -6,6 +6,7 @@ arxiv: 2402.14809
 url: https://arxiv.org/abs/2402.14809
 venue: ACL 2024 Findings
 category: trained-judges-reward-models
+topics: ["judge and decision-model audits", "LLM and agent judges"]
 ---
 # CriticBench: Benchmarking LLMs for Critique-Correct Reasoning
 
@@ -26,3 +27,5 @@ Benchmark of LLMs' ability to critique and correct reasoning across math, common
 
 ## What it leaves untried
 
+## Topics
+[[Topic - judge and decision-model audits]] · [[Topic - LLM and agent judges]]

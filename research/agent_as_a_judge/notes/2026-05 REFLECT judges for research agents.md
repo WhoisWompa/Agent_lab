@@ -6,6 +6,7 @@ arxiv: 2605.19196
 url: https://arxiv.org/abs/2605.19196
 venue: arXiv
 category: llm-judge-foundations
+topics: ["judge and decision-model audits", "LLM and agent judges"]
 ---
 # Time to REFLECT: Can We Trust LLM Judges for Evidence-based Research Agents?
 
@@ -26,3 +27,5 @@ Controlled interventions on deep-research agent traces: best LLM judges stay bel
 
 ## What it leaves untried
 
+## Topics
+[[Topic - judge and decision-model audits]] · [[Topic - LLM and agent judges]]

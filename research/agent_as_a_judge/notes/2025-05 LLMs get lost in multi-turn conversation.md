@@ -6,6 +6,7 @@ arxiv: 2505.06120
 url: https://arxiv.org/abs/2505.06120
 venue: arXiv
 category: alternative-paradigms
+topics: ["user simulation", "presentation sensitivity"]
 ---
 # LLMs Get Lost In Multi-Turn Conversation
 
@@ -26,3 +27,5 @@ Sharded simulation of underspecified multi-turn instructions shows average perfo
 
 ## What it leaves untried
 
+## Topics
+[[Topic - user simulation]] · [[Topic - presentation sensitivity]]

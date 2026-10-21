@@ -6,6 +6,7 @@ arxiv: 2510.23038
 url: https://arxiv.org/abs/2510.23038
 venue: ICLR 2026
 category: trained-judges-reward-models
+topics: ["trained judges and reward models", "LLM and agent judges"]
 ---
 # Incentivizing Agentic Reasoning in LLM Judges via Tool-Integrated Reinforcement Learning (TIR-Judge)
 
@@ -26,3 +27,6 @@ End-to-end RL for judges that can call a code executor while reasoning, across p
 
 ## What it leaves untried
 - Retrieval/web tools, multi-file code.
+
+## Topics
+[[Topic - trained judges and reward models]] · [[Topic - LLM and agent judges]]

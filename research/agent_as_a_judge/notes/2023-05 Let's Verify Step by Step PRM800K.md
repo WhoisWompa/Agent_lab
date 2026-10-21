@@ -6,6 +6,7 @@ arxiv: 2305.20050
 url: https://arxiv.org/abs/2305.20050
 venue: ICLR 2024
 category: trained-judges-reward-models
+topics: ["trained judges and reward models"]
 ---
 # Let's Verify Step by Step (PRM800K)
 
@@ -29,3 +30,6 @@ Shows process supervision (human labels on every reasoning step) trains better m
 
 ## What it leaves untried
 - RL against the PRM and its hackability.
+
+## Topics
+[[Topic - trained judges and reward models]]

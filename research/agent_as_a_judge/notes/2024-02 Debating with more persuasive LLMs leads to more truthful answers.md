@@ -6,6 +6,7 @@ arxiv: 2402.06782
 url: https://arxiv.org/abs/2402.06782
 venue: ICML 2024 (best paper)
 category: alternative-paradigms
+topics: ["alternative evaluation paradigms", "LLM and agent judges"]
 ---
 # Debating with More Persuasive LLMs Leads to More Truthful Answers
 
@@ -32,3 +33,6 @@ Judge accuracy: LLM judges 76% with debate vs 48% naive baseline; human judges 8
 ## What it leaves untried
 - Debaters with tool access and a judge that can verify claims by execution.
 - Applying the protocol to judging long agent trajectories, where the 'hidden text' is the trajectory.
+
+## Topics
+[[Topic - alternative evaluation paradigms]] · [[Topic - LLM and agent judges]]

@@ -6,6 +6,7 @@ arxiv: 2507.02825
 url: https://arxiv.org/abs/2507.02825
 venue: arXiv
 category: agent-evaluation-benchmarks
+topics: ["agent evaluation benchmarks"]
 ---
 # Establishing Best Practices for Building Rigorous Agentic Benchmarks
 
@@ -27,3 +28,6 @@ Flaws can under- or overestimate performance by up to 100% relative. Examples: S
 
 ## What it leaves untried
 - An automated checker (agent) that applies ABC to a benchmark.
+
+## Topics
+[[Topic - agent evaluation benchmarks]]

@@ -6,6 +6,7 @@ arxiv: 2510.20270
 url: https://arxiv.org/abs/2510.20270
 venue: arXiv
 category: alternative-paradigms
+topics: ["agent evaluation benchmarks", "self-evolving tests"]
 ---
 # ImpossibleBench: Measuring LLMs' Propensity of Exploiting Test Cases
 
@@ -26,3 +27,5 @@ Creates 'impossible' variants of LiveCodeBench and SWE-bench tasks where spec an
 
 ## What it leaves untried
 
+## Topics
+[[Topic - agent evaluation benchmarks]] · [[Topic - self-evolving tests]]

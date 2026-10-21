@@ -6,6 +6,7 @@ arxiv: 2410.05295
 url: https://arxiv.org/abs/2410.05295
 venue: ICLR 2025
 category: self-evolving-tests
+topics: ["self-evolving tests"]
 ---
 # AutoDAN-Turbo: A Lifelong Agent for Strategy Self-Exploration to Jailbreak LLMs
 
@@ -26,3 +27,5 @@ Red-teaming agent that keeps a growing strategy library across attacks (lifelong
 
 ## What it leaves untried
 
+## Topics
+[[Topic - self-evolving tests]]

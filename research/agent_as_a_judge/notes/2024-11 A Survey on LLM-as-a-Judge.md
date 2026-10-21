@@ -6,6 +6,7 @@ arxiv: 2411.15594
 url: https://arxiv.org/abs/2411.15594
 venue: arXiv (revised through Oct 2025)
 category: llm-judge-foundations
+topics: ["LLM and agent judges", "judge and decision-model audits"]
 ---
 # A Survey on LLM-as-a-Judge
 
@@ -27,3 +28,6 @@ Proposes a reliability-oriented meta-evaluation benchmark (results in its Sectio
 
 ## What it leaves untried
 - A quantitative ranking of which mitigation fixes which bias at what cost (partly done later by Soumik 2026, 2604.23178).
+
+## Topics
+[[Topic - LLM and agent judges]] · [[Topic - judge and decision-model audits]]

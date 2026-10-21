@@ -6,6 +6,7 @@ arxiv: 2504.02495
 url: https://arxiv.org/abs/2504.02495
 venue: arXiv (DeepSeek)
 category: trained-judges-reward-models
+topics: ["trained judges and reward models"]
 ---
 # Inference-Time Scaling for Generalist Reward Modeling (DeepSeek-GRM)
 
@@ -29,3 +30,6 @@ Pointwise generative RM that writes its own principles then critiques; trained w
 
 ## What it leaves untried
 - Tool-backed verification for correctness-heavy prompts.
+
+## Topics
+[[Topic - trained judges and reward models]]

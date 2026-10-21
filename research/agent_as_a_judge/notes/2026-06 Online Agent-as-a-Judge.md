@@ -6,6 +6,7 @@ arxiv: 2606.08200
 url: https://arxiv.org/abs/2606.08200
 venue: ICML 2026 Workshop (Trustworthy AI for Good)
 category: self-evolving-tests
+topics: ["LLM and agent judges", "self-evolving tests"]
 ---
 # Online Agent-as-a-Judge: Situation-Generating Evaluation for Interactive Agents
 
@@ -27,3 +28,6 @@ Life-simulation environment with 32 designer-authored social criteria; improves 
 
 ## What it leaves untried
 - Persist the situations as a test set and refine them across rounds based on which criteria went unobserved or were misjudged.
+
+## Topics
+[[Topic - LLM and agent judges]] · [[Topic - self-evolving tests]]

@@ -6,6 +6,7 @@ arxiv: 2504.14716
 url: https://arxiv.org/abs/2504.14716
 venue: COLM 2025
 category: llm-judge-foundations
+topics: ["judge and decision-model audits", "presentation sensitivity"]
 ---
 # Pairwise or Pointwise? Evaluating Feedback Protocols for Bias in LLM-Based Evaluation
 
@@ -27,3 +28,6 @@ Pairwise preferences flip ~35% of the time, absolute scores ~9%. Recommends choo
 
 ## What it leaves untried
 - Hybrid protocols (pointwise screening, pairwise for close calls).
+
+## Topics
+[[Topic - judge and decision-model audits]] · [[Topic - presentation sensitivity]]

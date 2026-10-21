@@ -6,6 +6,7 @@ arxiv: 2207.10397
 url: https://arxiv.org/abs/2207.10397
 venue: ICLR 2023
 category: alternative-paradigms
+topics: ["alternative evaluation paradigms", "self-evolving tests"]
 ---
 # CodeT: Code Generation with Generated Tests
 
@@ -27,3 +28,5 @@ Model generates both code and tests; dual execution agreement ranks candidate so
 
 ## What it leaves untried
 
+## Topics
+[[Topic - alternative evaluation paradigms]] · [[Topic - self-evolving tests]]

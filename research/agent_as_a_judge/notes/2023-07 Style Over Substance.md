@@ -6,6 +6,7 @@ arxiv: 2307.03025
 url: https://arxiv.org/abs/2307.03025
 venue: COLING 2025
 category: llm-judge-foundations
+topics: ["judge and decision-model audits", "LLM and agent judges"]
 ---
 # Style Over Substance: Evaluation Biases for Large Language Models
 
@@ -26,3 +27,5 @@ Humans and LLM judges rate answers with factual errors above answers that are sh
 
 ## What it leaves untried
 
+## Topics
+[[Topic - judge and decision-model audits]] · [[Topic - LLM and agent judges]]

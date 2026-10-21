@@ -6,6 +6,7 @@ arxiv: 2412.09645
 url: https://arxiv.org/abs/2412.09645
 venue: ACL 2025
 category: agent-as-judge
+topics: ["LLM and agent judges", "self-evolving tests"]
 ---
 # Evaluation Agent: Efficient and Promptable Evaluation Framework for Visual Generative Models
 
@@ -28,3 +29,5 @@ Agent that plans dynamic multi-round evaluation of image/video generators with e
 
 ## What it leaves untried
 
+## Topics
+[[Topic - LLM and agent judges]] · [[Topic - self-evolving tests]]

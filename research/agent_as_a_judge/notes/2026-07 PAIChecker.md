@@ -6,6 +6,7 @@ arxiv: 2607.28587
 url: https://arxiv.org/abs/2607.28587
 venue: ASE 2026 (per secondary source)
 category: agent-evaluation-benchmarks
+topics: ["agent evaluation benchmarks"]
 ---
 # PAIChecker: Uncovering and Checking PR-Issue Misalignment in SWE-Bench-Like Benchmarks
 
@@ -26,3 +27,5 @@ Detector accuracy 92.12% (per secondary source).
 
 ## What it leaves untried
 
+## Topics
+[[Topic - agent evaluation benchmarks]]

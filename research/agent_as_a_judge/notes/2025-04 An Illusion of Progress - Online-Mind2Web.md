@@ -6,6 +6,7 @@ arxiv: 2504.01382
 url: https://arxiv.org/abs/2504.01382
 venue: COLM 2025
 category: agent-evaluation-benchmarks
+topics: ["agent evaluation benchmarks", "LLM and agent judges"]
 ---
 # An Illusion of Progress? Assessing the Current State of Web Agents
 
@@ -26,3 +27,5 @@ WebJudge: LLM judge over key screenshots and actions, identifying key points of 
 
 ## What it leaves untried
 
+## Topics
+[[Topic - agent evaluation benchmarks]] · [[Topic - LLM and agent judges]]

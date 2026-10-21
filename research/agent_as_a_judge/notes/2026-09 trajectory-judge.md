@@ -6,6 +6,7 @@ arxiv: 2609.00038
 url: https://arxiv.org/abs/2609.00038
 venue: arXiv (workshop paper on verifying agents)
 category: agent-as-judge
+topics: ["LLM and agent judges", "agent evaluation benchmarks"]
 ---
 # trajectory-judge: What Outcome-Only LLM Judges Miss on Agent Trajectories
 
@@ -31,3 +32,6 @@ Injects single-step faults into correct customer-support agent runs and shows th
 
 ## What it leaves untried
 - Same paired-fault protocol applied to tool-using agentic judges and to multi-step / compounding faults.
+
+## Topics
+[[Topic - LLM and agent judges]] · [[Topic - agent evaluation benchmarks]]

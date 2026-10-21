@@ -6,6 +6,7 @@ arxiv: 2606.01629
 url: https://arxiv.org/abs/2606.01629
 venue: EMNLP 2026
 category: llm-judge-foundations
+topics: ["judge and decision-model audits", "LLM and agent judges"]
 ---
 # Benchmarking LLM-as-a-Judge for Long-Form Output Evaluation
 
@@ -26,3 +27,5 @@ LongJudgeBench: judges evaluating long-form outputs are unstable across scenario
 
 ## What it leaves untried
 
+## Topics
+[[Topic - judge and decision-model audits]] · [[Topic - LLM and agent judges]]

@@ -6,6 +6,7 @@ arxiv: 2503.05061
 url: https://arxiv.org/abs/2503.05061
 venue: arXiv
 category: llm-judge-foundations
+topics: ["judge and decision-model audits", "LLM and agent judges"]
 ---
 # No Free Labels: Limitations of LLM-as-a-Judge Without Human Grounding
 
@@ -26,3 +27,6 @@ LLM judges beat other automatic graders, but without a correct reference agreeme
 
 ## What it leaves untried
 - Tool-augmented judges that verify instead of relying on their own knowledge.
+
+## Topics
+[[Topic - judge and decision-model audits]] · [[Topic - LLM and agent judges]]

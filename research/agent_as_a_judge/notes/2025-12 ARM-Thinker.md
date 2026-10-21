@@ -6,6 +6,7 @@ arxiv: 2512.05111
 url: https://arxiv.org/abs/2512.05111
 venue: arXiv
 category: agent-as-judge
+topics: ["trained judges and reward models", "LLM and agent judges"]
 ---
 # ARM-Thinker: Reinforcing Multimodal Generative Reward Models with Agentic Tool Use and Visual Reasoning
 
@@ -26,3 +27,5 @@ Multimodal generative reward model trained with RL to call tools while judging.
 
 ## What it leaves untried
 
+## Topics
+[[Topic - trained judges and reward models]] · [[Topic - LLM and agent judges]]

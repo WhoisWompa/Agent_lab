@@ -6,6 +6,7 @@ arxiv: 2406.16714
 url: https://arxiv.org/abs/2406.16714
 venue: Findings of EMNLP 2024
 category: self-evolving-tests
+topics: ["self-evolving tests", "LLM and agent judges"]
 ---
 # AutoDetect: Towards a Unified Framework for Automated Weakness Detection in Large Language Models
 
@@ -27,3 +28,6 @@ Identification success rate above 30% on prominent models (ChatGPT, Claude). Fin
 
 ## What it leaves untried
 - Check the Assessor's own errors and refine grading criteria across rounds; only the question side evolves.
+
+## Topics
+[[Topic - self-evolving tests]] · [[Topic - LLM and agent judges]]

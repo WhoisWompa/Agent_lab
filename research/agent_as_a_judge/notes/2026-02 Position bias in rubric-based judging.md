@@ -6,6 +6,7 @@ arxiv: 2602.02219
 url: https://arxiv.org/abs/2602.02219
 venue: Findings of EMNLP 2026
 category: llm-judge-foundations
+topics: ["judge and decision-model audits", "presentation sensitivity"]
 ---
 # Am I More Pointwise or Pairwise? Revealing Position Bias in Rubric-Based LLM-as-a-Judge
 
@@ -26,3 +27,5 @@ Rubric scoring behaves like multiple choice: judges prefer score options at mode
 
 ## What it leaves untried
 
+## Topics
+[[Topic - judge and decision-model audits]] · [[Topic - presentation sensitivity]]

@@ -6,6 +6,7 @@ arxiv: 2506.01937
 url: https://arxiv.org/abs/2506.01937
 venue: ICLR 2026
 category: trained-judges-reward-models
+topics: ["trained judges and reward models", "judge and decision-model audits"]
 ---
 # RewardBench 2: Advancing Reward Model Evaluation
 
@@ -34,3 +35,5 @@ Harder successor to RewardBench (1,865 prompts, best-of-4 format, new human prom
 - Agentic/multi-turn and tool-using judges.
 - Agentic or multi-step trajectories; adversarial/master-key robustness of the scored RMs.
 
+## Topics
+[[Topic - trained judges and reward models]] · [[Topic - judge and decision-model audits]]

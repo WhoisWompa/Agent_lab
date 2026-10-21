@@ -6,6 +6,7 @@ arxiv: 2407.04622
 url: https://arxiv.org/abs/2407.04622
 venue: NeurIPS 2024
 category: alternative-paradigms
+topics: ["alternative evaluation paradigms", "LLM and agent judges"]
 ---
 # On scalable oversight with weak LLMs judging strong LLMs
 
@@ -29,3 +30,6 @@ Debate outperforms consultancy across all tasks when sides are assigned. Debate 
 
 ## What it leaves untried
 - Debate training (RL) on the same suite; agentic tasks with tools.
+
+## Topics
+[[Topic - alternative evaluation paradigms]] · [[Topic - LLM and agent judges]]

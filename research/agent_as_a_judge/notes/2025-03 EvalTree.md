@@ -6,6 +6,7 @@ arxiv: 2503.08893
 url: https://arxiv.org/abs/2503.08893
 venue: COLM 2025
 category: self-evolving-tests
+topics: ["self-evolving tests", "alternative evaluation paradigms"]
 ---
 # EvalTree: Profiling Language Model Weaknesses via Hierarchical Capability Trees
 
@@ -26,3 +27,5 @@ Builds a capability tree over a benchmark's instances and reports low-accuracy s
 
 ## What it leaves untried
 
+## Topics
+[[Topic - self-evolving tests]] · [[Topic - alternative evaluation paradigms]]

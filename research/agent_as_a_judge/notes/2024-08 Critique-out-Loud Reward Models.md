@@ -6,6 +6,7 @@ arxiv: 2408.11791
 url: https://arxiv.org/abs/2408.11791
 venue: arXiv
 category: trained-judges-reward-models
+topics: ["trained judges and reward models", "preference learning"]
 ---
 # Critique-out-Loud Reward Models
 
@@ -27,3 +28,6 @@ Reward model first generates a natural-language critique, then a reward head sco
 
 ## What it leaves untried
 - Using the critique for self-consistency voting at scale (DeepSeek GRM does).
+
+## Topics
+[[Topic - trained judges and reward models]] · [[Topic - preference learning]]

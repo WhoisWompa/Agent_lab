@@ -6,6 +6,7 @@ arxiv: 2411.15124
 url: https://arxiv.org/abs/2411.15124
 venue: arXiv (AI2)
 category: alternative-paradigms
+topics: ["alternative evaluation paradigms", "judges as reward signals"]
 ---
 # Tulu 3: Pushing Frontiers in Open Language Model Post-Training
 
@@ -26,3 +27,5 @@ Introduces Reinforcement Learning with Verifiable Rewards (RLVR): reward is 1 on
 
 ## What it leaves untried
 
+## Topics
+[[Topic - alternative evaluation paradigms]] · [[Topic - judges as reward signals]]

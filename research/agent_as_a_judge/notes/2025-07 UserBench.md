@@ -6,6 +6,7 @@ arxiv: 2507.22034
 url: https://arxiv.org/abs/2507.22034
 venue: arXiv
 category: alternative-paradigms
+topics: ["user simulation", "agent evaluation benchmarks"]
 ---
 # UserBench: An Interactive Gym Environment for User-Centric Agents
 
@@ -26,3 +27,5 @@ Gym where simulated users reveal underspecified, evolving preferences gradually;
 
 ## What it leaves untried
 
+## Topics
+[[Topic - user simulation]] · [[Topic - agent evaluation benchmarks]]

@@ -6,6 +6,9 @@ arxiv: 2410.10934
 url: https://arxiv.org/abs/2410.10934
 venue: ICML 2025
 category: agent-evaluation-benchmarks
+pdf: agent as a judge papers/Agent-as-a-Judge - Evaluate Agents with Agents (Zhuge 2024).pdf
+folder: ["agent as a judge"]
+topics: ["LLM and agent judges", "agent evaluation benchmarks"]
 ---
 # Agent-as-a-Judge: Evaluate Agents with Agents
 
@@ -42,3 +45,6 @@ DevAI: 55 AI-dev tasks, 365 requirements, agents MetaGPT, GPT-Pilot, OpenHands. 
 - Self-play between judge and evaluated agents (named as future work).
 - Testing on tasks with side effects outside a code workspace.
 - Executing the generated code/tests in a sandbox as part of judging; interactive questioning of the judged agent; re-testing memory/planning/search on large repositories; run-to-run variance (added by agent-as-judge-core researcher).
+
+## Topics
+[[Topic - LLM and agent judges]] · [[Topic - agent evaluation benchmarks]]

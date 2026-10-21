@@ -6,6 +6,7 @@ arxiv: 2403.04132
 url: https://arxiv.org/abs/2403.04132
 venue: ICML 2024
 category: alternative-paradigms
+topics: ["alternative evaluation paradigms", "preference learning", "social choice"]
 ---
 # Chatbot Arena: An Open Platform for Evaluating LLMs by Human Preference
 
@@ -30,3 +31,6 @@ Over 240K votes at the time of the paper (as recalled); reported prompts diverse
 
 ## What it leaves untried
 - Arena-style human preference over agent trajectories (not single replies).
+
+## Topics
+[[Topic - alternative evaluation paradigms]] · [[Topic - preference learning]] · [[Topic - social choice]]

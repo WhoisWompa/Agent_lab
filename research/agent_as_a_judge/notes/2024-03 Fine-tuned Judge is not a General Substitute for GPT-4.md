@@ -6,6 +6,7 @@ arxiv: 2403.02839
 url: https://arxiv.org/abs/2403.02839
 venue: ACL 2025 Findings
 category: trained-judges-reward-models
+topics: ["judge and decision-model audits", "trained judges and reward models"]
 ---
 # An Empirical Study of LLM-as-a-Judge for LLM Evaluation: Fine-tuned Judge Model is not a General Substitute for GPT-4
 
@@ -27,3 +28,5 @@ Tests JudgeLM, PandaLM, Auto-J, Prometheus out of their training format: strong 
 
 ## What it leaves untried
 
+## Topics
+[[Topic - judge and decision-model audits]] · [[Topic - trained judges and reward models]]

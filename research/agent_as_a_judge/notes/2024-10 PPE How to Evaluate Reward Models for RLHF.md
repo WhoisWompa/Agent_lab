@@ -6,6 +6,7 @@ arxiv: 2410.14872
 url: https://arxiv.org/abs/2410.14872
 venue: ICLR 2025
 category: trained-judges-reward-models
+topics: ["judge and decision-model audits", "trained judges and reward models"]
 ---
 # How to Evaluate Reward Models for RLHF (Preference Proxy Evaluations)
 
@@ -26,3 +27,5 @@ Benchmark tying RM metrics to downstream RLHF outcomes, with human-preference (C
 
 ## What it leaves untried
 
+## Topics
+[[Topic - judge and decision-model audits]] · [[Topic - trained judges and reward models]]

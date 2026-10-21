@@ -6,6 +6,7 @@ arxiv: 2503.09347
 url: https://arxiv.org/abs/2503.09347
 venue: ACL 2025
 category: llm-judge-foundations
+topics: ["judge and decision-model audits", "presentation sensitivity"]
 ---
 # Safer or Luckier? LLMs as Safety Evaluators Are Not Robust to Artifacts
 
@@ -26,3 +27,5 @@ category: llm-judge-foundations
 
 ## What it leaves untried
 
+## Topics
+[[Topic - judge and decision-model audits]] · [[Topic - presentation sensitivity]]

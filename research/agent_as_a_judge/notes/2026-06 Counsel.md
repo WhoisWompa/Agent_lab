@@ -6,6 +6,7 @@ arxiv: 2606.21627
 url: https://arxiv.org/abs/2606.21627
 venue: arXiv
 category: agent-evaluation-benchmarks
+topics: ["judge and decision-model audits", "agent evaluation benchmarks"]
 ---
 # Counsel: A Meta-Evaluation Dataset for Agentic Tasks
 
@@ -26,3 +27,6 @@ Krippendorff alpha 0.78; strongest judge ~88% on error location, ~65% on reasoni
 
 ## What it leaves untried
 - Closed frontier judges; more than two benchmarks.
+
+## Topics
+[[Topic - judge and decision-model audits]] · [[Topic - agent evaluation benchmarks]]

@@ -6,6 +6,7 @@ arxiv: 2404.04475
 url: https://arxiv.org/abs/2404.04475
 venue: COLM 2024
 category: alternative-paradigms
+topics: ["LLM and agent judges"]
 ---
 # Length-Controlled AlpacaEval: A Simple Way to Debias Automatic Evaluators
 
@@ -31,3 +32,5 @@ Regression-based length control for AlpacaEval raised Spearman correlation with 
 ## What it leaves untried
 - Regression control for style/markdown features (Chatbot Arena later added style control) and for self-preference is not attempted here.
 
+## Topics
+[[Topic - LLM and agent judges]]

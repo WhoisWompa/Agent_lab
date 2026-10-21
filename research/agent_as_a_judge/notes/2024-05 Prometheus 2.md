@@ -6,6 +6,7 @@ arxiv: 2405.01535
 url: https://arxiv.org/abs/2405.01535
 venue: EMNLP 2024
 category: trained-judges-reward-models
+topics: ["trained judges and reward models", "LLM and agent judges"]
 ---
 # Prometheus 2: An Open Source Language Model Specialized in Evaluating Other Language Models
 
@@ -32,3 +33,6 @@ Open 7B and 8x7B judges that do both direct (1-5) assessment and pairwise rankin
 
 ## What it leaves untried
 - Reasoning before the verdict trained with RL (taken up by J1, JudgeLRM, RM-R1).
+
+## Topics
+[[Topic - trained judges and reward models]] · [[Topic - LLM and agent judges]]

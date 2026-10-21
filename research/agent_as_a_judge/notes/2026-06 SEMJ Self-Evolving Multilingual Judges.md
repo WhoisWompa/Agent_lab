@@ -6,6 +6,7 @@ arxiv: 2606.08092
 url: https://arxiv.org/abs/2606.08092
 venue: arXiv
 category: self-evolving-tests
+topics: ["LLM and agent judges", "self-evolving tests", "alternative evaluation paradigms"]
 ---
 # When Languages Disagree: Self-Evolving Multilingual LLM Judges
 
@@ -26,3 +27,5 @@ Uses cross-lingual inconsistency as the trigger: verdicts that differ across lan
 
 ## What it leaves untried
 
+## Topics
+[[Topic - LLM and agent judges]] · [[Topic - self-evolving tests]] · [[Topic - alternative evaluation paradigms]]

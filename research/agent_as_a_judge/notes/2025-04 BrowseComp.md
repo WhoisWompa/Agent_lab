@@ -6,6 +6,7 @@ arxiv: 2504.12516
 url: https://arxiv.org/abs/2504.12516
 venue: arXiv (OpenAI)
 category: agent-evaluation-benchmarks
+topics: ["agent evaluation benchmarks"]
 ---
 # BrowseComp: A Simple Yet Challenging Benchmark for Browsing Agents
 
@@ -26,3 +27,5 @@ OpenAI Deep Research 51.5%.
 
 ## What it leaves untried
 
+## Topics
+[[Topic - agent evaluation benchmarks]]

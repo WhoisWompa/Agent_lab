@@ -6,6 +6,7 @@ arxiv: 2305.14387
 url: https://arxiv.org/abs/2305.14387
 venue: NeurIPS 2023 (Spotlight)
 category: llm-judge-foundations
+topics: ["LLM and agent judges", "preference learning"]
 ---
 # AlpacaFarm: A Simulation Framework for Methods that Learn from Human Feedback
 
@@ -26,3 +27,5 @@ Simulates human feedback with LLM annotators (50x cheaper) and introduced the au
 
 ## What it leaves untried
 
+## Topics
+[[Topic - LLM and agent judges]] · [[Topic - preference learning]]

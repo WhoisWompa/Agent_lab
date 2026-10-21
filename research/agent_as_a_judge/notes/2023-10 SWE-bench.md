@@ -6,6 +6,7 @@ arxiv: 2310.06770
 url: https://arxiv.org/abs/2310.06770
 venue: ICLR 2024
 category: agent-evaluation-benchmarks
+topics: ["agent evaluation benchmarks", "alternative evaluation paradigms"]
 ---
 # SWE-bench: Can Language Models Resolve Real-World GitHub Issues?
 
@@ -32,3 +33,6 @@ At release the best model (Claude 2 with retrieval) resolved 1.96%.
 ## What it leaves untried
 - Grading on maintainer acceptance or code review rather than tests.
 - Judging the trajectory (did the agent read the tests, did it test at all).
+
+## Topics
+[[Topic - agent evaluation benchmarks]] · [[Topic - alternative evaluation paradigms]]

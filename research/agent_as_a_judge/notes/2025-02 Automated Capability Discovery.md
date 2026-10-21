@@ -6,6 +6,7 @@ arxiv: 2502.07577
 url: https://arxiv.org/abs/2502.07577
 venue: arXiv
 category: self-evolving-tests
+topics: ["self-evolving tests"]
 ---
 # Automated Capability Discovery via Foundation Model Self-Exploration
 
@@ -28,3 +29,6 @@ Thousands of tasks per run, clustered into dozens of capability/failure areas, o
 ## What it leaves untried
 - Close the loop: use human-disagreement cases to recalibrate the scorer.
 - Point it at an agent with tools rather than a chat model.
+
+## Topics
+[[Topic - self-evolving tests]]

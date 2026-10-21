@@ -6,6 +6,7 @@ arxiv: 2104.14337
 url: https://arxiv.org/abs/2104.14337
 venue: NAACL 2021
 category: self-evolving-tests
+topics: ["self-evolving tests"]
 ---
 # Dynabench: Rethinking Benchmarking in NLP
 
@@ -26,3 +27,5 @@ Human-and-model-in-the-loop dynamic benchmarking: annotators write examples that
 
 ## What it leaves untried
 
+## Topics
+[[Topic - self-evolving tests]]

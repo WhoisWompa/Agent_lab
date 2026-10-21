@@ -6,6 +6,9 @@ arxiv: 2406.12045
 url: https://arxiv.org/abs/2406.12045
 venue: arXiv / ICLR 2025
 category: agent-evaluation-benchmarks
+pdf: agent as a judge papers/tau-bench - A Benchmark for Tool-Agent-User Interaction (Yao 2024).pdf
+folder: ["agent as a judge"]
+topics: ["agent evaluation benchmarks", "user simulation"]
 ---
 # τ-bench: A Benchmark for Tool-Agent-User Interaction in Real-World Domains
 
@@ -33,3 +36,5 @@ GPT-4o function-calling agent under 50% in retail at release, pass^8 below 25%.
 
 ## What it leaves untried
 
+## Topics
+[[Topic - agent evaluation benchmarks]] · [[Topic - user simulation]]

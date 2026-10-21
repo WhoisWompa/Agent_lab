@@ -6,6 +6,7 @@ arxiv: 2204.05212
 url: https://arxiv.org/abs/2204.05212
 venue: ACL Workshop 2022
 category: alternative-paradigms
+topics: ["alternative evaluation paradigms"]
 ---
 # Single-Turn Debate Does Not Help Humans Answer Hard Reading-Comprehension Questions
 
@@ -26,3 +27,5 @@ Human-written single-turn arguments for each answer did not improve time-limited
 
 ## What it leaves untried
 
+## Topics
+[[Topic - alternative evaluation paradigms]]

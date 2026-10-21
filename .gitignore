@@ -20,3 +20,6 @@ agents/*/test data/telegram chats/
 
 # Papers saved for discussion, too large for the repo
 agent as a judge papers/
+
+# graphify knowledge graph, rebuilt in a minute with `graphify update . --force` then `graphify cluster-only . --no-label`
+graphify-out/

@@ -6,6 +6,7 @@ arxiv: 2311.17371
 url: https://arxiv.org/abs/2311.17371
 venue: ICML 2024
 category: alternative-paradigms
+topics: ["alternative evaluation paradigms", "social choice"]
 ---
 # Should we be going MAD? A Look at Multi-Agent Debate Strategies for LLMs
 
@@ -26,3 +27,5 @@ Benchmarks multi-agent debate strategies and finds they do not reliably beat sel
 
 ## What it leaves untried
 
+## Topics
+[[Topic - alternative evaluation paradigms]] · [[Topic - social choice]]

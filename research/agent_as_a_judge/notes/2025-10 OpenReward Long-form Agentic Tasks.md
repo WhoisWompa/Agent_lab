@@ -6,6 +6,7 @@ arxiv: 2510.24636
 url: https://arxiv.org/abs/2510.24636
 venue: arXiv
 category: trained-judges-reward-models
+topics: ["trained judges and reward models", "LLM and agent judges"]
 ---
 # OpenReward: Learning to Reward Long-form Agentic Tasks via Reinforcement Learning
 
@@ -26,3 +27,5 @@ Tool-calling RM: plans tool calls to gather evidence, verifies each response aga
 
 ## What it leaves untried
 
+## Topics
+[[Topic - trained judges and reward models]] · [[Topic - LLM and agent judges]]

@@ -6,6 +6,7 @@ arxiv: 2308.03688
 url: https://arxiv.org/abs/2308.03688
 venue: ICLR 2024
 category: agent-evaluation-benchmarks
+topics: ["agent evaluation benchmarks"]
 ---
 # AgentBench: Evaluating LLMs as Agents
 
@@ -26,3 +27,5 @@ Eight interactive environments (OS, DB, knowledge graph, card game, puzzles, hou
 
 ## What it leaves untried
 
+## Topics
+[[Topic - agent evaluation benchmarks]]

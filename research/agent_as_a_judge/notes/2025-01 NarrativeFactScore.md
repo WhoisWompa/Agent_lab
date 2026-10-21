@@ -6,6 +6,7 @@ arxiv: 2501.09993
 url: https://arxiv.org/abs/2501.09993
 venue: EMNLP 2025
 category: agent-as-judge
+topics: ["LLM and agent judges"]
 ---
 # Agent-as-Judge for Factual Summarization of Long Narratives
 
@@ -26,3 +27,5 @@ Applies an agent-as-a-judge to check factual consistency of summaries of >100K-t
 
 ## What it leaves untried
 
+## Topics
+[[Topic - LLM and agent judges]]

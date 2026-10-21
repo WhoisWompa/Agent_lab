@@ -6,6 +6,7 @@ arxiv: 2310.01045
 url: https://arxiv.org/abs/2310.01045
 venue: ICLR 2024
 category: trained-judges-reward-models
+topics: ["trained judges and reward models", "LLM and agent judges"]
 ---
 # Tool-Augmented Reward Modeling (Themis)
 
@@ -26,3 +27,5 @@ Early reward model that calls calculators, code interpreters and search before s
 
 ## What it leaves untried
 
+## Topics
+[[Topic - trained judges and reward models]] · [[Topic - LLM and agent judges]]

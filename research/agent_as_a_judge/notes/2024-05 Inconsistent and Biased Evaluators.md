@@ -6,6 +6,7 @@ arxiv: 2405.01724
 url: https://arxiv.org/abs/2405.01724
 venue: arXiv
 category: llm-judge-foundations
+topics: ["judge and decision-model audits", "presentation sensitivity"]
 ---
 # Large Language Models are Inconsistent and Biased Evaluators
 
@@ -26,3 +27,5 @@ On SummEval, LLM evaluators show familiarity bias, skewed rating distributions, 
 
 ## What it leaves untried
 
+## Topics
+[[Topic - judge and decision-model audits]] · [[Topic - presentation sensitivity]]

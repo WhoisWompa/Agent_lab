@@ -6,6 +6,7 @@ arxiv: 2412.10424
 url: https://arxiv.org/abs/2412.10424
 venue: arXiv
 category: alternative-paradigms
+topics: ["alternative evaluation paradigms", "LLM and agent judges"]
 ---
 # LLM-as-an-Interviewer: Beyond Static Testing Through Dynamic LLM Evaluation
 
@@ -26,3 +27,5 @@ Interviewer LLM adapts questions and gives feedback across turns, producing an i
 
 ## What it leaves untried
 
+## Topics
+[[Topic - alternative evaluation paradigms]] · [[Topic - LLM and agent judges]]

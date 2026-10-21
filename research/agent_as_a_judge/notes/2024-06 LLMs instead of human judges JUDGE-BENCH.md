@@ -6,6 +6,7 @@ arxiv: 2406.18403
 url: https://arxiv.org/abs/2406.18403
 venue: ACL 2025 (as recalled)
 category: alternative-paradigms
+topics: ["judge and decision-model audits", "LLM and agent judges"]
 ---
 # LLMs instead of Human Judges? A Large Scale Empirical Study across 20 NLP Evaluation Tasks
 
@@ -26,3 +27,5 @@ Across 20 human-annotated datasets, LLM judges' correlation with humans varies w
 
 ## What it leaves untried
 
+## Topics
+[[Topic - judge and decision-model audits]] · [[Topic - LLM and agent judges]]

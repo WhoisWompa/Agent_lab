@@ -6,6 +6,7 @@ arxiv: 2511.08325
 url: https://arxiv.org/abs/2511.08325
 venue: arXiv
 category: agent-evaluation-benchmarks
+topics: ["trained judges and reward models", "agent evaluation benchmarks"]
 ---
 # AgentPRM: Process Reward Models for LLM Agents via Step-Wise Promise and Progress
 
@@ -26,3 +27,5 @@ Over 8x more compute-efficient than baselines; robust gains when scaling test-ti
 
 ## What it leaves untried
 
+## Topics
+[[Topic - trained judges and reward models]] · [[Topic - agent evaluation benchmarks]]

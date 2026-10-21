@@ -6,6 +6,7 @@ arxiv: 2408.15240
 url: https://arxiv.org/abs/2408.15240
 venue: ICLR 2025
 category: trained-judges-reward-models
+topics: ["trained judges and reward models"]
 ---
 # Generative Verifiers: Reward Modeling as Next-Token Prediction
 
@@ -30,3 +31,6 @@ Trains the verifier with next-token prediction (P('Yes')) and optional chain-of-
 
 ## What it leaves untried
 - Open-ended, non-verifiable tasks.
+
+## Topics
+[[Topic - trained judges and reward models]]

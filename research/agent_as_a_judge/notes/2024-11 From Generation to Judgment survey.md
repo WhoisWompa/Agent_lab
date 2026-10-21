@@ -6,6 +6,7 @@ arxiv: 2411.16594
 url: https://arxiv.org/abs/2411.16594
 venue: EMNLP 2025
 category: llm-judge-foundations
+topics: ["LLM and agent judges"]
 ---
 # From Generation to Judgment: Opportunities and Challenges of LLM-as-a-judge
 
@@ -29,3 +30,6 @@ Survey; no new experiments. Companion list github.com/llm-as-a-judge/Awesome-LLM
 
 ## What it leaves untried
 - Its own author group's Preference Leakage paper (2502.01534) shows a contamination bias the taxonomy does not yet cover: judges favour students distilled from them.
+
+## Topics
+[[Topic - LLM and agent judges]]

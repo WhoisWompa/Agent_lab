@@ -6,6 +6,7 @@ arxiv: 2504.19162
 url: https://arxiv.org/abs/2504.19162
 venue: arXiv
 category: self-evolving-tests
+topics: ["self-evolving tests", "trained judges and reward models"]
 ---
 # SPC: Evolving Self-Play Critic via Adversarial Games for LLM Reasoning
 
@@ -26,3 +27,6 @@ ProcessBench error-detection accuracy 70.8% -> 77.7%; gains on PRM800K and Delta
 
 ## What it leaves untried
 - Generalise generative-adversarial evaluation to agent trajectories, where validity of a 'subtle error' is harder to verify.
+
+## Topics
+[[Topic - self-evolving tests]] · [[Topic - trained judges and reward models]]

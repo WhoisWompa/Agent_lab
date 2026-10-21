@@ -6,6 +6,7 @@ arxiv: 2606.13685
 url: https://arxiv.org/abs/2606.13685
 venue: arXiv
 category: llm-judge-foundations
+topics: ["judge and decision-model audits", "presentation sensitivity"]
 ---
 # The Coin Flip Judge? Reliability and Bias in LLM-as-a-Judge Evaluation
 
@@ -26,3 +27,5 @@ Repeated identical judging: pairwise verdicts flip 13.6% on average (28% of ques
 
 ## What it leaves untried
 
+## Topics
+[[Topic - judge and decision-model audits]] · [[Topic - presentation sensitivity]]

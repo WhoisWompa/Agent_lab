@@ -6,6 +6,7 @@ arxiv: 2608.00017
 url: https://arxiv.org/abs/2608.00017
 venue: arXiv
 category: self-evolving-tests
+topics: ["judge and decision-model audits", "LLM and agent judges"]
 ---
 # Memory Reward Inflation in Self-Improving LLM Agents
 
@@ -26,3 +27,6 @@ BIRD text-to-SQL execution accuracy: LUCID 56.9% vs. Memento-style self-graded m
 
 ## What it leaves untried
 - Apply the EIA test to a judge that keeps memory of its own past verdicts.
+
+## Topics
+[[Topic - judge and decision-model audits]] · [[Topic - LLM and agent judges]]

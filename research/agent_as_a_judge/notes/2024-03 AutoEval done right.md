@@ -6,6 +6,7 @@ arxiv: 2403.07008
 url: https://arxiv.org/abs/2403.07008
 venue: arXiv
 category: alternative-paradigms
+topics: ["stopping rules", "LLM and agent judges"]
 ---
 # AutoEval Done Right: Using Synthetic Data for Model Evaluation
 
@@ -26,3 +27,5 @@ Prediction-powered inference for evaluation: unbiased metric estimates from many
 
 ## What it leaves untried
 
+## Topics
+[[Topic - stopping rules]] · [[Topic - LLM and agent judges]]

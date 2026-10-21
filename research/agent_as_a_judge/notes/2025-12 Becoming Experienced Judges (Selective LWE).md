@@ -6,6 +6,7 @@ arxiv: 2512.06751
 url: https://arxiv.org/abs/2512.06751
 venue: arXiv
 category: self-evolving-tests
+topics: ["self-evolving tests", "LLM and agent judges"]
 ---
 # Becoming Experienced Judges: Selective Test-Time Learning for Evaluators
 
@@ -28,3 +29,6 @@ Two pairwise comparison benchmarks; Selective LWE beats strong baselines (number
 ## What it leaves untried
 - Use disagreement with a human or execution oracle, not only self-inconsistency, as the trigger.
 - Carry the learned meta-prompt across evaluations of one specific target.
+
+## Topics
+[[Topic - self-evolving tests]] · [[Topic - LLM and agent judges]]

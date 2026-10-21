@@ -6,6 +6,7 @@ arxiv: 2605.30568
 url: https://arxiv.org/abs/2605.30568
 venue: arXiv
 category: self-evolving-tests
+topics: ["LLM and agent judges", "self-evolving tests"]
 ---
 # Generating and Refining Dynamic Evaluation Rubrics for LLM-as-a-Judge
 
@@ -26,3 +27,5 @@ Training-free dataset- and instance-level rubric generation, plus iterative fine
 
 ## What it leaves untried
 
+## Topics
+[[Topic - LLM and agent judges]] · [[Topic - self-evolving tests]]

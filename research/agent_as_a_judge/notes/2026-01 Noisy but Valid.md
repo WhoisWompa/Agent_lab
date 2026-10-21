@@ -6,6 +6,7 @@ arxiv: 2601.20913
 url: https://arxiv.org/abs/2601.20913
 venue: ICLR 2026
 category: llm-judge-foundations
+topics: ["LLM and agent judges", "alternative evaluation paradigms"]
 ---
 # Noisy but Valid: Robust Statistical Evaluation of LLMs with Imperfect Judges
 
@@ -26,3 +27,5 @@ Hypothesis-testing framework using a small human calibration set to estimate jud
 
 ## What it leaves untried
 
+## Topics
+[[Topic - LLM and agent judges]] · [[Topic - alternative evaluation paradigms]]

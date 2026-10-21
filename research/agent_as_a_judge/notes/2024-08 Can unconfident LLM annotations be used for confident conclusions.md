@@ -6,6 +6,7 @@ arxiv: 2408.15204
 url: https://arxiv.org/abs/2408.15204
 venue: arXiv
 category: alternative-paradigms
+topics: ["LLM and agent judges", "confidence-gated escalation", "stopping rules"]
 ---
 # Can Unconfident LLM Annotations Be Used for Confident Conclusions?
 
@@ -26,3 +27,5 @@ Confidence-driven inference: combine LLM annotations with a few strategically ch
 
 ## What it leaves untried
 
+## Topics
+[[Topic - LLM and agent judges]] · [[Topic - confidence-gated escalation]] · [[Topic - stopping rules]]

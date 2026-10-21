@@ -6,6 +6,7 @@ arxiv: 2607.28802
 url: https://arxiv.org/abs/2607.28802
 venue: arXiv
 category: agent-as-judge
+topics: ["agent evaluation benchmarks", "LLM and agent judges"]
 ---
 # Model or Harness? An Interaction-Centric Taxonomy for Localizing Agent Failures
 
@@ -26,3 +27,5 @@ Failure-localisation taxonomy that uses an agent-as-a-judge method (seen only in
 
 ## What it leaves untried
 
+## Topics
+[[Topic - agent evaluation benchmarks]] · [[Topic - LLM and agent judges]]

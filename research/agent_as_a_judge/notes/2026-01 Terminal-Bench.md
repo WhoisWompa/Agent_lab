@@ -6,6 +6,7 @@ arxiv: 2601.11868
 url: https://arxiv.org/abs/2601.11868
 venue: ICLR 2026
 category: agent-evaluation-benchmarks
+topics: ["agent evaluation benchmarks"]
 ---
 # Terminal-Bench: Benchmarking Agents on Hard, Realistic Tasks in Command Line Interfaces
 
@@ -26,3 +27,5 @@ Frontier models/agents score below 65%; includes error analysis.
 
 ## What it leaves untried
 
+## Topics
+[[Topic - agent evaluation benchmarks]]

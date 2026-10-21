@@ -6,6 +6,7 @@ arxiv: 2311.18760
 url: https://arxiv.org/abs/2311.18760
 venue: NeurIPS 2024 D&B
 category: self-evolving-tests
+topics: ["agent evaluation benchmarks", "self-evolving tests"]
 ---
 # TaskBench: Benchmarking Large Language Models for Task Automation
 
@@ -26,3 +27,5 @@ Generates tool-use evaluation data by sampling subgraphs of a tool graph and bac
 
 ## What it leaves untried
 
+## Topics
+[[Topic - agent evaluation benchmarks]] · [[Topic - self-evolving tests]]

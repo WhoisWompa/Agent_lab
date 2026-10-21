@@ -6,6 +6,7 @@ arxiv: 2610.13303
 url: https://arxiv.org/abs/2610.13303
 venue: arXiv
 category: self-evolving-tests
+topics: ["LLM and agent judges", "self-evolving tests"]
 ---
 # Agreement Without Alignment: Label-Free Rubric Clarification Increases LLM-Judge Consensus but Not Agreement with Humans
 
@@ -27,3 +28,6 @@ SummEval: judge-judge Krippendorff alpha +0.069 (95% CI 0.046-0.092) over the or
 
 ## What it leaves untried
 - Combine disagreement-driven selection with a small human-labelled anchor set to separate consensus gains from alignment gains.
+
+## Topics
+[[Topic - LLM and agent judges]] · [[Topic - self-evolving tests]]

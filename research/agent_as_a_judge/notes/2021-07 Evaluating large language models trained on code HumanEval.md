@@ -6,6 +6,7 @@ arxiv: 2107.03374
 url: https://arxiv.org/abs/2107.03374
 venue: arXiv (OpenAI)
 category: alternative-paradigms
+topics: ["alternative evaluation paradigms"]
 ---
 # Evaluating Large Language Models Trained on Code
 
@@ -26,3 +27,5 @@ Introduces HumanEval and pass@k: functional correctness by executing hidden unit
 
 ## What it leaves untried
 
+## Topics
+[[Topic - alternative evaluation paradigms]]

@@ -6,6 +6,7 @@ arxiv: 2504.09946
 url: https://arxiv.org/abs/2504.09946
 venue: arXiv
 category: llm-judge-foundations
+topics: ["judge and decision-model audits", "presentation sensitivity"]
 ---
 # Assessing Judging Bias in Large Reasoning Models: An Empirical Study
 
@@ -26,3 +27,5 @@ Reasoning models (R1, o1) remain susceptible to bandwagon, authority, position a
 
 ## What it leaves untried
 
+## Topics
+[[Topic - judge and decision-model audits]] · [[Topic - presentation sensitivity]]

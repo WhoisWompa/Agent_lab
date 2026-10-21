@@ -6,6 +6,7 @@ arxiv: none
 url: https://metr.org/notes/2026-03-10-many-swe-bench-passing-prs-would-not-be-merged-into-main/
 venue: METR note
 category: agent-evaluation-benchmarks
+topics: ["agent evaluation benchmarks"]
 ---
 # Many SWE-bench-Passing PRs Would Not Be Merged into Main
 
@@ -27,3 +28,6 @@ Merge rate about 24 pp (24.2) below SWE-bench score on average, statistically si
 
 ## What it leaves untried
 - Using maintainer-style review as an automated (LLM-agent) judge and validating it against these labels.
+
+## Topics
+[[Topic - agent evaluation benchmarks]]

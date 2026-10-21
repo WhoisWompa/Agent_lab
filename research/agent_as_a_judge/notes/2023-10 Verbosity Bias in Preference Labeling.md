@@ -6,6 +6,7 @@ arxiv: 2310.10076
 url: https://arxiv.org/abs/2310.10076
 venue: arXiv
 category: llm-judge-foundations
+topics: ["judge and decision-model audits"]
 ---
 # Verbosity Bias in Preference Labeling by Large Language Models
 
@@ -26,3 +27,5 @@ Measures that GPT-4 prefers longer answers more than humans do and proposes a me
 
 ## What it leaves untried
 
+## Topics
+[[Topic - judge and decision-model audits]]

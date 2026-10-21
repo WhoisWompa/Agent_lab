@@ -6,6 +6,7 @@ arxiv: 2409.15268
 url: https://arxiv.org/abs/2409.15268
 venue: ICLR 2025
 category: llm-judge-foundations
+topics: ["judge and decision-model audits"]
 ---
 # Style Outweighs Substance: Failure Modes of LLM Judges in Alignment Benchmarking
 
@@ -26,3 +27,5 @@ SOS-Bench meta-benchmark: LLM-judge preferences do not correlate with concrete m
 
 ## What it leaves untried
 
+## Topics
+[[Topic - judge and decision-model audits]]

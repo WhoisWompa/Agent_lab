@@ -6,6 +6,7 @@ arxiv: 2507.21028
 url: https://arxiv.org/abs/2507.21028
 venue: arXiv
 category: agent-as-judge
+topics: ["LLM and agent judges", "alternative evaluation paradigms"]
 ---
 # Multi-Agent-as-Judge: Aligning LLM-Agent-Based Automated Evaluation with Multi-Dimensional Human Evaluation
 
@@ -26,3 +27,5 @@ Builds evaluator personas from domain documents and has them debate to produce m
 
 ## What it leaves untried
 
+## Topics
+[[Topic - LLM and agent judges]] · [[Topic - alternative evaluation paradigms]]

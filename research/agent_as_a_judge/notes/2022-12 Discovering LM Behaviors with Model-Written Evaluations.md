@@ -6,6 +6,7 @@ arxiv: 2212.09251
 url: https://arxiv.org/abs/2212.09251
 venue: Findings of ACL 2023
 category: self-evolving-tests
+topics: ["self-evolving tests"]
 ---
 # Discovering Language Model Behaviors with Model-Written Evaluations
 
@@ -26,3 +27,5 @@ LMs generate 154 evaluation datasets (persona, sycophancy, advanced-AI risk) fil
 
 ## What it leaves untried
 
+## Topics
+[[Topic - self-evolving tests]]

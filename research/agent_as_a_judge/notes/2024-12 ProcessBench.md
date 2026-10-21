@@ -6,6 +6,7 @@ arxiv: 2412.06559
 url: https://arxiv.org/abs/2412.06559
 venue: ACL 2025
 category: trained-judges-reward-models
+topics: ["judge and decision-model audits", "trained judges and reward models"]
 ---
 # ProcessBench: Identifying Process Errors in Mathematical Reasoning
 
@@ -27,3 +28,6 @@ Benchmark of 3,400 competition-level math solutions with expert-annotated earlie
 
 ## What it leaves untried
 - Process benchmarks for code, agents and proofs.
+
+## Topics
+[[Topic - judge and decision-model audits]] · [[Topic - trained judges and reward models]]

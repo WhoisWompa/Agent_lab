@@ -6,6 +6,7 @@ arxiv: 2503.00596
 url: https://arxiv.org/abs/2503.00596
 venue: ICLR 2025
 category: llm-judge-foundations
+topics: ["judge and decision-model audits", "trained judges and reward models"]
 ---
 # BadJudge: Backdoor Vulnerabilities of LLM-as-a-Judge
 
@@ -26,3 +27,5 @@ Poisoning 1% of evaluator training data with a single-token trigger triples the 
 
 ## What it leaves untried
 
+## Topics
+[[Topic - judge and decision-model audits]] · [[Topic - trained judges and reward models]]

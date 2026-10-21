@@ -6,6 +6,7 @@ arxiv: 2407.18370
 url: https://arxiv.org/abs/2407.18370
 venue: ICLR 2025
 category: alternative-paradigms
+topics: ["LLM and agent judges", "confidence-gated escalation", "abstention and fallback"]
 ---
 # Trust or Escalate: LLM Judges with Provable Guarantees for Human Agreement
 
@@ -32,3 +33,5 @@ On a Chatbot Arena subset where GPT-4 alone almost never reaches 80% human agree
 - Selective evaluation of agent trajectories with escalation to an agentic judge, then to a human.
 - Applying guarantees under distribution shift or adversarial candidates.
 
+## Topics
+[[Topic - LLM and agent judges]] · [[Topic - confidence-gated escalation]] · [[Topic - abstention and fallback]]

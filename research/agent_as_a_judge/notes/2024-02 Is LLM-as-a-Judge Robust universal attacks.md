@@ -6,6 +6,7 @@ arxiv: 2402.14016
 url: https://arxiv.org/abs/2402.14016
 venue: EMNLP 2024
 category: llm-judge-foundations
+topics: ["judge and decision-model audits"]
 ---
 # Is LLM-as-a-Judge Robust? Investigating Universal Adversarial Attacks on Zero-shot LLM Assessment
 
@@ -26,3 +27,5 @@ Short universal adversarial phrases learned on a surrogate transfer to unseen ju
 
 ## What it leaves untried
 
+## Topics
+[[Topic - judge and decision-model audits]]

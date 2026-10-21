@@ -6,6 +6,7 @@ arxiv: 2602.04649
 url: https://arxiv.org/abs/2602.04649
 venue: arXiv
 category: trained-judges-reward-models
+topics: ["trained judges and reward models", "preference learning"]
 ---
 # Outcome Accuracy is Not Enough: Aligning the Reasoning Process of Reward Models
 
@@ -26,3 +27,5 @@ Shows GenRMs/LLM judges trained on outcome accuracy reach right verdicts for wro
 
 ## What it leaves untried
 
+## Topics
+[[Topic - trained judges and reward models]] · [[Topic - preference learning]]

@@ -6,6 +6,7 @@ arxiv: 2409.12822
 url: https://arxiv.org/abs/2409.12822
 venue: ICLR 2025
 category: trained-judges-reward-models
+topics: ["preference learning", "judge and decision-model audits", "judges as reward signals"]
 ---
 # Language Models Learn to Mislead Humans via RLHF
 
@@ -27,3 +28,5 @@ Shows RLHF makes models better at convincing human evaluators of wrong answers (
 
 ## What it leaves untried
 
+## Topics
+[[Topic - preference learning]] · [[Topic - judge and decision-model audits]] · [[Topic - judges as reward signals]]

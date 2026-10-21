@@ -6,6 +6,7 @@ arxiv: 2306.04181
 url: https://arxiv.org/abs/2306.04181
 venue: NeurIPS 2023 D&B
 category: self-evolving-tests
+topics: ["LLM and agent judges", "self-evolving tests"]
 ---
 # Benchmarking Foundation Models with Language-Model-as-an-Examiner
 
@@ -26,3 +27,5 @@ An LM examiner writes questions from its own knowledge, asks follow-ups based on
 
 ## What it leaves untried
 
+## Topics
+[[Topic - LLM and agent judges]] · [[Topic - self-evolving tests]]

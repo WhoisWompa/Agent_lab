@@ -6,6 +6,7 @@ arxiv: 2305.13281
 url: https://arxiv.org/abs/2305.13281
 venue: EMNLP 2023
 category: alternative-paradigms
+topics: ["alternative evaluation paradigms", "LLM and agent judges"]
 ---
 # LM vs LM: Detecting Factual Errors via Cross Examination
 
@@ -26,3 +27,6 @@ Factual closed-book QA claims (e.g. LAMA, TriviaQA, Natural Questions, PopQA); r
 
 ## What it leaves untried
 - Cross-examining an agent about its trajectory (why it took an action) as an evaluation signal.
+
+## Topics
+[[Topic - alternative evaluation paradigms]] · [[Topic - LLM and agent judges]]

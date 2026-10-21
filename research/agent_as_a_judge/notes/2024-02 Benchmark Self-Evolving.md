@@ -6,6 +6,7 @@ arxiv: 2402.11443
 url: https://arxiv.org/abs/2402.11443
 venue: arXiv (later venue not verified)
 category: self-evolving-tests
+topics: ["self-evolving tests"]
 ---
 # Benchmark Self-Evolving: A Multi-Agent Framework for Dynamic LLM Evaluation
 
@@ -26,3 +27,5 @@ Multi-agent system applies six reframing operations to existing benchmark instan
 
 ## What it leaves untried
 
+## Topics
+[[Topic - self-evolving tests]]

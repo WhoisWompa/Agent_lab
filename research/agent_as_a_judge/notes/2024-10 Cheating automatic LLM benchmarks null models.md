@@ -6,6 +6,7 @@ arxiv: 2410.07137
 url: https://arxiv.org/abs/2410.07137
 venue: ICLR 2025
 category: alternative-paradigms
+topics: ["judge and decision-model audits"]
 ---
 # Cheating Automatic LLM Benchmarks: Null Models Achieve High Win Rates
 
@@ -29,3 +30,5 @@ A constant, input-independent output crafted against the judge prompt achieves t
 ## What it leaves untried
 - A certified or detection-based defence; judging inside a structured-output protocol where candidate text cannot rewrite the template.
 
+## Topics
+[[Topic - judge and decision-model audits]]

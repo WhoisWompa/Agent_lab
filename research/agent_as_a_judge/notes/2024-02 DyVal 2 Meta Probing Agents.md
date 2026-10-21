@@ -6,6 +6,7 @@ arxiv: 2402.14865
 url: https://arxiv.org/abs/2402.14865
 venue: ICML 2024
 category: self-evolving-tests
+topics: ["self-evolving tests"]
 ---
 # Dynamic Evaluation of Large Language Models by Meta Probing Agents (DyVal 2)
 
@@ -26,3 +27,5 @@ LLM probing agents transform existing benchmark questions along psychometric dim
 
 ## What it leaves untried
 
+## Topics
+[[Topic - self-evolving tests]]

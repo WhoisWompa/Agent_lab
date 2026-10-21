@@ -6,6 +6,7 @@ arxiv: 2504.08942
 url: https://arxiv.org/abs/2504.08942
 venue: arXiv
 category: agent-evaluation-benchmarks
+topics: ["judge and decision-model audits", "agent evaluation benchmarks"]
 ---
 # AgentRewardBench: Evaluating Automatic Evaluations of Web Agent Trajectories
 
@@ -30,3 +31,6 @@ Best judge (simplified, GPT-4o, accessibility tree): precision 69.8%, recall 83.
 
 ## What it leaves untried
 - Judges that can query the environment's final state instead of reading the trajectory.
+
+## Topics
+[[Topic - judge and decision-model audits]] · [[Topic - agent evaluation benchmarks]]

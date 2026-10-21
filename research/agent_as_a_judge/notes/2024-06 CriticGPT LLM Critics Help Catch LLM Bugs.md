@@ -6,6 +6,7 @@ arxiv: 2407.00215
 url: https://arxiv.org/abs/2407.00215
 venue: arXiv (OpenAI)
 category: trained-judges-reward-models
+topics: ["trained judges and reward models", "preference learning", "LLM and agent judges"]
 ---
 # LLM Critics Help Catch LLM Bugs (CriticGPT)
 
@@ -36,3 +37,6 @@ RLHF-trained GPT-4 critic that writes code-review critiques of ChatGPT code; cat
 ## What it leaves untried
 - Critic with code execution or repository access.
 - Training on naturally occurring rather than inserted bugs at scale.
+
+## Topics
+[[Topic - trained judges and reward models]] · [[Topic - preference learning]] · [[Topic - LLM and agent judges]]

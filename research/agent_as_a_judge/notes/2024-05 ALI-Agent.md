@@ -6,6 +6,7 @@ arxiv: 2405.14125
 url: https://arxiv.org/abs/2405.14125
 venue: NeurIPS 2024
 category: self-evolving-tests
+topics: ["self-evolving tests", "LLM and agent judges"]
 ---
 # ALI-Agent: Assessing LLMs' Alignment with Human Values via Agent-based Evaluation
 
@@ -29,3 +30,6 @@ Three value dimensions: stereotypes, morality, legality, seeded from existing da
 ## What it leaves untried
 - Use memory to fix the judge, not only to reuse successful attacks.
 - Apply to tool-using agents over their native channel.
+
+## Topics
+[[Topic - self-evolving tests]] · [[Topic - LLM and agent judges]]

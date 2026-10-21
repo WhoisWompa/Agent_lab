@@ -6,6 +6,7 @@ arxiv: 2312.12343
 url: https://arxiv.org/abs/2312.12343
 venue: AAAI 2024
 category: self-evolving-tests
+topics: ["self-evolving tests"]
 ---
 # LatestEval: Addressing Data Contamination in Language Model Evaluation through Dynamic and Time-Sensitive Test Construction
 
@@ -26,3 +27,5 @@ Builds reading-comprehension tests automatically from texts published after mode
 
 ## What it leaves untried
 
+## Topics
+[[Topic - self-evolving tests]]

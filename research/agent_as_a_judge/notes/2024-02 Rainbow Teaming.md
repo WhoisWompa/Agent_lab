@@ -6,6 +6,7 @@ arxiv: 2402.16822
 url: https://arxiv.org/abs/2402.16822
 venue: NeurIPS 2024
 category: self-evolving-tests
+topics: ["self-evolving tests"]
 ---
 # Rainbow Teaming: Open-Ended Generation of Diverse Adversarial Prompts
 
@@ -29,3 +30,6 @@ Above 90% attack success rate across tested models (incl. Llama 2-chat and Llama
 ## What it leaves untried
 - Let the archive dimensions themselves evolve from what the judge found uncovered.
 - Audit and repair the judge using disagreements surfaced during search.
+
+## Topics
+[[Topic - self-evolving tests]]

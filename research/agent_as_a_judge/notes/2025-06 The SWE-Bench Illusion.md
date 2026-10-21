@@ -6,6 +6,7 @@ arxiv: 2506.12286
 url: https://arxiv.org/abs/2506.12286
 venue: arXiv
 category: agent-evaluation-benchmarks
+topics: ["agent evaluation benchmarks"]
 ---
 # The SWE-Bench Illusion: When State-of-the-Art LLMs Remember Instead of Reason
 
@@ -26,3 +27,5 @@ Up to 76% file-path accuracy on SWE-bench vs ~53% on repos outside it; 5-gram ve
 
 ## What it leaves untried
 
+## Topics
+[[Topic - agent evaluation benchmarks]]

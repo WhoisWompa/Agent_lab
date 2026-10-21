@@ -6,6 +6,7 @@ arxiv: 2401.10020
 url: https://arxiv.org/abs/2401.10020
 venue: ICML 2024
 category: trained-judges-reward-models
+topics: ["trained judges and reward models", "preference learning", "self-evolving tests", "judges as reward signals"]
 ---
 # Self-Rewarding Language Models
 
@@ -31,3 +32,6 @@ One model acts as both policy and LLM-as-a-judge of its own outputs, and iterati
 
 ## What it leaves untried
 - A way to improve the judge independently of the policy (taken up by Meta-Rewarding).
+
+## Topics
+[[Topic - trained judges and reward models]] · [[Topic - preference learning]] · [[Topic - self-evolving tests]] · [[Topic - judges as reward signals]]

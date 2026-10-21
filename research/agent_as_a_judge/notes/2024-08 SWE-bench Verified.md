@@ -6,6 +6,7 @@ arxiv: none
 url: https://openai.com/index/introducing-swe-bench-verified/
 venue: OpenAI blog
 category: agent-evaluation-benchmarks
+topics: ["agent evaluation benchmarks"]
 ---
 # Introducing SWE-bench Verified
 
@@ -30,3 +31,6 @@ Professional developers annotated sampled SWE-bench tasks for issue clarity and 
 
 ## What it leaves untried
 - Continuous re-screening or freshness (time-split tasks) instead of a one-off filtered set.
+
+## Topics
+[[Topic - agent evaluation benchmarks]]

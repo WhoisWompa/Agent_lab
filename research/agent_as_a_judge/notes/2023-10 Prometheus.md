@@ -6,6 +6,7 @@ arxiv: 2310.08491
 url: https://arxiv.org/abs/2310.08491
 venue: ICLR 2024
 category: trained-judges-reward-models
+topics: ["trained judges and reward models", "LLM and agent judges"]
 ---
 # Prometheus: Inducing Fine-grained Evaluation Capability in Language Models
 
@@ -35,3 +36,6 @@ A 13B Llama-2-Chat fine-tuned to give rubric-conditioned 1-5 scores plus written
 ## What it leaves untried
 - Judging without a reference answer, on tasks where the judge must derive correctness itself.
 - Any verification step (execution, retrieval).
+
+## Topics
+[[Topic - trained judges and reward models]] · [[Topic - LLM and agent judges]]

@@ -6,6 +6,9 @@ arxiv: 2601.05111
 url: https://arxiv.org/abs/2601.05111
 venue: arXiv
 category: agent-as-judge
+pdf: agent as a judge papers/A Survey on Agent-as-a-Judge (You 2026).pdf
+folder: ["agent as a judge"]
+topics: ["LLM and agent judges"]
 ---
 # A Survey on Agent-as-a-Judge
 
@@ -32,3 +35,6 @@ Survey, no experiments.
 ## What it leaves untried
 - An empirical comparison across the taxonomy on a common testbed.
 - Treatment of adversarial agents under test.
+
+## Topics
+[[Topic - LLM and agent judges]]

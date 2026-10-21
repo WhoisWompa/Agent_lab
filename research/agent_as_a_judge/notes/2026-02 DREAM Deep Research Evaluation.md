@@ -6,6 +6,7 @@ arxiv: 2602.18940
 url: https://arxiv.org/abs/2602.18940
 venue: arXiv
 category: agent-as-judge
+topics: ["LLM and agent judges", "agent evaluation benchmarks"]
 ---
 # DREAM: Deep Research Evaluation with Agentic Metrics
 
@@ -26,3 +27,5 @@ Agentic metrics (tool-using evaluator) for deep-research reports.
 
 ## What it leaves untried
 
+## Topics
+[[Topic - LLM and agent judges]] · [[Topic - agent evaluation benchmarks]]

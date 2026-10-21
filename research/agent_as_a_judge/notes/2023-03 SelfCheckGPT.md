@@ -6,6 +6,7 @@ arxiv: 2303.08896
 url: https://arxiv.org/abs/2303.08896
 venue: EMNLP 2023
 category: alternative-paradigms
+topics: ["alternative evaluation paradigms", "LLM and agent judges"]
 ---
 # SelfCheckGPT: Zero-Resource Black-Box Hallucination Detection for Generative Large Language Models
 
@@ -26,3 +27,5 @@ Samples several responses and flags sentences unsupported by the other samples a
 
 ## What it leaves untried
 
+## Topics
+[[Topic - alternative evaluation paradigms]] · [[Topic - LLM and agent judges]]

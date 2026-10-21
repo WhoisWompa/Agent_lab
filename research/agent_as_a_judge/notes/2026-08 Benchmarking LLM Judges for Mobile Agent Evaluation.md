@@ -6,6 +6,9 @@ arxiv: 2608.11434
 url: https://arxiv.org/abs/2608.11434
 venue: arXiv
 category: agent-evaluation-benchmarks
+pdf: agent as a judge papers/Benchmarking LLM Judges for Mobile Agent Evaluation - MobileJudgeBench (2026).pdf
+folder: ["agent as a judge"]
+topics: ["judge and decision-model audits", "agent evaluation benchmarks"]
 ---
 # Benchmarking LLM Judges for Mobile Agent Evaluation
 
@@ -27,3 +30,6 @@ Simple sampled-screenshot baseline matches or beats purpose-built judges; the ba
 
 ## What it leaves untried
 - Agentic judges that query device state after the run instead of trusting the last frame (added by agent-as-judge-core researcher).
+
+## Topics
+[[Topic - judge and decision-model audits]] · [[Topic - agent evaluation benchmarks]]

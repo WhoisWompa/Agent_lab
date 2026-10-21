@@ -6,6 +6,7 @@ arxiv: 2210.10760
 url: https://arxiv.org/abs/2210.10760
 venue: ICML 2023
 category: trained-judges-reward-models
+topics: ["trained judges and reward models", "preference learning", "judges as reward signals"]
 ---
 # Scaling Laws for Reward Model Overoptimization
 
@@ -28,3 +29,6 @@ Synthetic 'gold RM' setup measuring how true reward first rises then falls as a 
 
 ## What it leaves untried
 - Overoptimization laws for generative/reasoning judges.
+
+## Topics
+[[Topic - trained judges and reward models]] · [[Topic - preference learning]] · [[Topic - judges as reward signals]]

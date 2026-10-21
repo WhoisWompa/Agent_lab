@@ -6,6 +6,7 @@ arxiv: 2504.20879
 url: https://arxiv.org/abs/2504.20879
 venue: arXiv (revised 2025-05)
 category: alternative-paradigms
+topics: ["alternative evaluation paradigms"]
 ---
 # The Leaderboard Illusion
 
@@ -27,3 +28,6 @@ Meta tested 27 private variants before Llama-4. Google and OpenAI received an es
 
 ## What it leaves untried
 - Same audit for agent leaderboards (SWE-bench, WebArena) where submitters can also select runs.
+
+## Topics
+[[Topic - alternative evaluation paradigms]]

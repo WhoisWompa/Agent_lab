@@ -6,6 +6,7 @@ arxiv: 2501.18099
 url: https://arxiv.org/abs/2501.18099
 venue: ICML 2025
 category: trained-judges-reward-models
+topics: ["trained judges and reward models", "LLM and agent judges"]
 ---
 # Learning to Plan & Reason for Evaluation with Thinking-LLM-as-a-Judge (EvalPlanner)
 
@@ -28,3 +29,6 @@ Judge first writes an unconstrained evaluation plan, then executes it, then give
 
 ## What it leaves untried
 - Tool use inside the plan.
+
+## Topics
+[[Topic - trained judges and reward models]] · [[Topic - LLM and agent judges]]

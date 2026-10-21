@@ -6,6 +6,7 @@ arxiv: 2404.12272
 url: https://arxiv.org/abs/2404.12272
 venue: UIST 2024
 category: alternative-paradigms
+topics: ["LLM and agent judges", "alternative evaluation paradigms"]
 ---
 # Who Validates the Validators? Aligning LLM-Assisted Evaluation of LLM Outputs with Human Preferences
 
@@ -30,3 +31,6 @@ Qualitative user study with practitioners (participant count not re-verified); u
 
 ## What it leaves untried
 - Applying EvalGen-style alignment to agent-trajectory judges.
+
+## Topics
+[[Topic - LLM and agent judges]] · [[Topic - alternative evaluation paradigms]]

@@ -6,6 +6,7 @@ arxiv: 2202.02950
 url: https://arxiv.org/abs/2202.02950
 venue: CHI 2022
 category: alternative-paradigms
+topics: ["social choice"]
 ---
 # Jury Learning: Integrating Dissenting Voices into Machine Learning Models
 
@@ -26,3 +27,5 @@ Models individual annotators and lets practitioners specify a 'jury' composition
 
 ## What it leaves untried
 
+## Topics
+[[Topic - social choice]]

@@ -6,6 +6,7 @@ arxiv: 2402.09267
 url: https://arxiv.org/abs/2402.09267
 venue: ACL 2024
 category: alternative-paradigms
+topics: ["LLM and agent judges", "preference learning", "calibration", "judges as reward signals"]
 ---
 # Self-Alignment for Factuality: Mitigating Hallucinations in LLMs via Self-Evaluation
 
@@ -26,3 +27,5 @@ Uses the model's own self-evaluation (Self-Eval, with calibration) as the reward
 
 ## What it leaves untried
 
+## Topics
+[[Topic - LLM and agent judges]] · [[Topic - preference learning]] · [[Topic - calibration]] · [[Topic - judges as reward signals]]

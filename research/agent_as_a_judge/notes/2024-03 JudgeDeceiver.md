@@ -6,6 +6,7 @@ arxiv: 2403.17710
 url: https://arxiv.org/abs/2403.17710
 venue: ACM CCS 2024
 category: llm-judge-foundations
+topics: ["judge and decision-model audits"]
 ---
 # Optimization-based Prompt Injection Attack to LLM-as-a-Judge
 
@@ -26,3 +27,5 @@ Gradient-optimised injected sequence in one candidate makes the judge pick it re
 
 ## What it leaves untried
 
+## Topics
+[[Topic - judge and decision-model audits]]

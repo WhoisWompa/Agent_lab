@@ -6,6 +6,7 @@ arxiv: 2506.03136
 url: https://arxiv.org/abs/2506.03136
 venue: NeurIPS 2025
 category: self-evolving-tests
+topics: ["self-evolving tests", "trained judges and reward models", "judges as reward signals"]
 ---
 # Co-Evolving LLM Coder and Unit Tester via Reinforcement Learning (CURE)
 
@@ -26,3 +27,6 @@ ReasonFlux-Coder models improve code generation and unit-test accuracy over base
 
 ## What it leaves untried
 - Apply the tester-reward idea to a judge of agents: reward tests that discriminate known-good from known-bad agent behaviour.
+
+## Topics
+[[Topic - self-evolving tests]] · [[Topic - trained judges and reward models]] · [[Topic - judges as reward signals]]

@@ -6,6 +6,7 @@ arxiv: 2305.17926
 url: https://arxiv.org/abs/2305.17926
 venue: ACL 2024
 category: llm-judge-foundations
+topics: ["judge and decision-model audits", "presentation sensitivity", "LLM and agent judges"]
 ---
 # Large Language Models are not Fair Evaluators
 
@@ -27,3 +28,6 @@ Vicuna Benchmark 80 questions with human win/tie/lose labels. With ChatGPT as ev
 
 ## What it leaves untried
 - Testing calibration on tasks with objective ground truth rather than human preference.
+
+## Topics
+[[Topic - judge and decision-model audits]] · [[Topic - presentation sensitivity]] · [[Topic - LLM and agent judges]]

@@ -6,6 +6,7 @@ arxiv: 2508.17393
 url: https://arxiv.org/abs/2508.17393
 venue: arXiv
 category: self-evolving-tests
+topics: ["self-evolving tests", "user simulation"]
 ---
 # Agent-Testing Agent: A Meta-Agent for Automated Testing and Evaluation of Conversational AI Agents
 
@@ -27,3 +28,6 @@ Two targets: a travel planner and a Wikipedia-writing agent. Found more diverse 
 
 ## What it leaves untried
 - Track where the judge's scores disagree with humans and refine rubric and tests from that, not only from target weakness.
+
+## Topics
+[[Topic - self-evolving tests]] · [[Topic - user simulation]]

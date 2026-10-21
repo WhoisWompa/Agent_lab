@@ -6,6 +6,7 @@ arxiv: 2406.13352
 url: https://arxiv.org/abs/2406.13352
 venue: NeurIPS 2024 D&B
 category: agent-evaluation-benchmarks
+topics: ["agent evaluation benchmarks"]
 ---
 # AgentDojo: A Dynamic Environment to Evaluate Prompt Injection Attacks and Defenses for LLM Agents
 
@@ -26,3 +27,5 @@ Deterministic state checks for both the user task and the attacker goal; attacks
 
 ## What it leaves untried
 
+## Topics
+[[Topic - agent evaluation benchmarks]]

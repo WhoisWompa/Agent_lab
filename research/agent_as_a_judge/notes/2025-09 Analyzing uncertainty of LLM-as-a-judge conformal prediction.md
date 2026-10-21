@@ -6,6 +6,7 @@ arxiv: 2509.18658
 url: https://arxiv.org/abs/2509.18658
 venue: arXiv
 category: alternative-paradigms
+topics: ["LLM and agent judges", "calibration"]
 ---
 # Analyzing Uncertainty of LLM-as-a-Judge: Interval Evaluations with Conformal Prediction
 
@@ -26,3 +27,5 @@ Produces conformal prediction intervals for LLM-judge rating scores instead of p
 
 ## What it leaves untried
 
+## Topics
+[[Topic - LLM and agent judges]] · [[Topic - calibration]]

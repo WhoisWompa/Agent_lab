@@ -6,6 +6,7 @@ arxiv: 2505.15277
 url: https://arxiv.org/abs/2505.15277
 venue: NeurIPS 2025
 category: agent-evaluation-benchmarks
+topics: ["trained judges and reward models", "agent evaluation benchmarks"]
 ---
 # Web-Shepherd: Advancing PRMs for Reinforcing Web Agents
 
@@ -26,3 +27,5 @@ Checklist generation then step-level reward; trained on WebPRM Collection (40K s
 
 ## What it leaves untried
 
+## Topics
+[[Topic - trained judges and reward models]] · [[Topic - agent evaluation benchmarks]]

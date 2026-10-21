@@ -1,0 +1,245 @@
+{
+ "assignments": [
+  {
+   "note": "2025-05 Which Agent Causes Task Failures and When",
+   "topics": [
+    "agent evaluation benchmarks",
+    "LLM and agent judges"
+   ],
+   "why": "The Who&When dataset of labelled multi-agent failure logs is an agent benchmark with step-level scoring; the three LLM attribution methods judge trajectories to find the failing agent and step."
+  },
+  {
+   "note": "2025-06 AI Agents-as-Judge Enterprise Documents",
+   "topics": [
+    "LLM and agent judges"
+   ],
+   "why": "Its subject is a multi-agent judge that assesses business documents for accuracy, consistency, completeness and clarity."
+  },
+  {
+   "note": "2025-06 AI debate aids assessment of controversial claims",
+   "topics": [
+    "alternative evaluation paradigms",
+    "LLM and agent judges"
+   ],
+   "why": "Debate is the evaluation method under test, and the act of judging by human and AI judges with prior beliefs is the subject."
+  },
+  {
+   "note": "2025-06 Avoiding obfuscation with prover-estimator debate",
+   "topics": [
+    "alternative evaluation paradigms"
+   ],
+   "why": "A new recursive debate protocol for evaluation that lets the honest debater win against obfuscation."
+  },
+  {
+   "note": "2025-06 CURE Co-Evolving Coder and Unit Tester",
+   "topics": [
+    "self-evolving tests",
+    "trained judges and reward models"
+   ],
+   "why": "The unit tester is RL-trained to generate tests that learn from the coder's mistakes, and the trained models serve as reward models."
+  },
+  {
+   "note": "2025-06 Mind2Web 2",
+   "topics": [
+    "agent evaluation benchmarks",
+    "LLM and agent judges"
+   ],
+   "why": "A benchmark of 130 agentic-search tasks, scored by task-specific judge agents with rubric trees, an extractor and a verifier."
+  },
+  {
+   "note": "2025-06 RewardBench 2",
+   "topics": [
+    "trained judges and reward models",
+    "judge and decision-model audits"
+   ],
+   "why": "A meta-evaluation benchmark of reward models and LLM judges, measuring their accuracy and how well it carries to downstream best-of-N and PPO."
+  },
+  {
+   "note": "2025-06 RobustJudge",
+   "topics": [
+    "judge and decision-model audits"
+   ],
+   "why": "Measures the robustness of 13 judges against 15 attacks and 8 defences; the measurement is the contribution."
+  },
+  {
+   "note": "2025-06 Spurious rewards rethinking training signals in RLVR",
+   "topics": [
+    "judges as reward signals"
+   ],
+   "why": "It studies how random or wrong RLVR rewards still improve a policy; no registry topic covers the reward signal's effect on policy training (see proposal). | main session: assigned to the new topic 'judges as reward signals' created from this proposal."
+  },
+  {
+   "note": "2025-06 The SWE-Bench Illusion",
+   "topics": [
+    "agent evaluation benchmarks"
+   ],
+   "why": "Contamination probes showing SWE-bench scores reflect memorisation, a validity failure of an agent benchmark."
+  },
+  {
+   "note": "2025-06 UTBoost",
+   "topics": [
+    "agent evaluation benchmarks",
+    "self-evolving tests"
+   ],
+   "why": "Exposes SWE-bench verifier failures (wrong patches passing) and fixes them with LLM-generated test augmentation."
+  },
+  {
+   "note": "2025-06 tau2-bench",
+   "topics": [
+    "agent evaluation benchmarks",
+    "user simulation"
+   ],
+   "why": "A conversational agent benchmark whose dual-control setup centres on a simulated user who has its own tools and state."
+  },
+  {
+   "note": "2025-07 Beyond Binary Rewards RLCR",
+   "topics": [
+    "calibration"
+   ],
+   "why": "Brier-score reward training makes the model's stated confidence calibrated, with a proper-scoring-rule theorem and ECE results in and out of domain."
+  },
+  {
+   "note": "2025-07 Establishing Best Practices for Building Rigorous Agentic Benchmarks",
+   "topics": [
+    "agent evaluation benchmarks"
+   ],
+   "why": "The ABC checklist audits task and outcome validity of agent benchmarks, including verifier failures."
+  },
+  {
+   "note": "2025-07 FinResearchBench",
+   "topics": [
+    "LLM and agent judges",
+    "agent evaluation benchmarks"
+   ],
+   "why": "An agent-as-a-judge that scores financial research reports via an extracted logic tree, packaged as a 70-question benchmark for research agents."
+  },
+  {
+   "note": "2025-07 MAJ-Eval Multi-agent-as-judge",
+   "topics": [
+    "LLM and agent judges",
+    "alternative evaluation paradigms"
+   ],
+   "why": "The judge is a panel of evaluator-persona agents, and they reach scores by debating."
+  },
+  {
+   "note": "2025-07 One Token to Fool LLM-as-a-Judge",
+   "topics": [
+    "judge and decision-model audits",
+    "trained judges and reward models"
+   ],
+   "why": "Measures master-key false positives across generative reward models and judges, then trains Master-RM with adversarial negatives."
+  },
+  {
+   "note": "2025-07 Rubrics as Rewards",
+   "topics": [
+    "LLM and agent judges"
+   ],
+   "why": "Per-prompt rubrics are scored by an LLM judge to produce the reward, and the paper compares this judge design with Likert judging."
+  },
+  {
+   "note": "2025-07 Skywork-Reward-V2",
+   "topics": [
+    "trained judges and reward models",
+    "preference learning"
+   ],
+   "why": "Scalar Bradley-Terry reward models trained on 26M curated preference pairs."
+  },
+  {
+   "note": "2025-07 UserBench",
+   "topics": [
+    "user simulation",
+    "agent evaluation benchmarks"
+   ],
+   "why": "A gym environment for agents where simulated users reveal underspecified, evolving preferences a little at a time."
+  },
+  {
+   "note": "2025-08 Agent-Testing Agent",
+   "topics": [
+    "self-evolving tests",
+    "user simulation"
+   ],
+   "why": "A meta-agent generates adversarial tests whose difficulty adapts to judge feedback to target weak capabilities, delivered through persona-driven simulated dialogues."
+  },
+  {
+   "note": "2025-08 Auto-Eval Judge",
+   "topics": [
+    "LLM and agent judges",
+    "agent evaluation benchmarks"
+   ],
+   "why": "A judge agent that decomposes the task and validates each step of the actor's trajectory, which is trajectory and step-level agent scoring."
+  },
+  {
+   "note": "2025-08 Debate or vote",
+   "topics": [
+    "alternative evaluation paradigms",
+    "social choice"
+   ],
+   "why": "Takes multi-agent debate apart and finds that plain majority voting, an aggregation rule over agents' answers, explains most of its gains."
+  },
+  {
+   "note": "2025-08 Dropping just a handful of preferences can change top LLM rankings",
+   "topics": [
+    "alternative evaluation paradigms",
+    "preference learning"
+   ],
+   "why": "A sensitivity analysis of arena-style rankings built from Bradley-Terry fits to pairwise votes."
+  },
+  {
+   "note": "2025-08 Overconfidence in LLM-as-a-Judge",
+   "topics": [
+    "calibration",
+    "judge and decision-model audits",
+    "LLM and agent judges",
+    "social choice"
+   ],
+   "why": "Measures judge overconfidence (ECE, the TH-Score metric) and proposes LLM-as-a-Fuser, a judge that combines several judges' verdicts, compared against voting and weighted-voting aggregation."
+  },
+  {
+   "note": "2025-08 When AIs Judge AIs",
+   "topics": [
+    "LLM and agent judges"
+   ],
+   "why": "A review of agent-as-a-judge designs, from single-model judges to multi-agent debate."
+  },
+  {
+   "note": "2025-09 Analyzing uncertainty of LLM-as-a-judge conformal prediction",
+   "topics": [
+    "LLM and agent judges",
+    "calibration"
+   ],
+   "why": "Replaces a judge's point scores with conformal prediction intervals, a post-hoc method that gives its uncertainty valid coverage."
+  },
+  {
+   "note": "2025-09 Explicit Reasoning Makes Better Judges",
+   "topics": [
+    "judge and decision-model audits",
+    "LLM and agent judges"
+   ],
+   "why": "A systematic measurement of thinking versus non-thinking small judges on accuracy, cost and bias robustness, a choice of judge design."
+  },
+  {
+   "note": "2025-09 Silent Judge shortcut bias",
+   "topics": [
+    "judge and decision-model audits",
+    "presentation sensitivity"
+   ],
+   "why": "Measures judges changing verdicts on injected provenance and recency labels when the content is the same, without saying so."
+  },
+  {
+   "note": "2025-10 Holistic Agent Leaderboard",
+   "topics": [
+    "agent evaluation benchmarks"
+   ],
+   "why": "A standardised harness and leaderboard running 9 agent benchmarks, with cost tracking and log inspection."
+  }
+ ],
+ "proposals": [
+  {
+   "note": "2025-06 Spurious rewards rethinking training signals in RLVR",
+   "name": "reward signals in RL training",
+   "definition": "How the reward that trains a policy (verifiable rewards, judge or rubric rewards, noisy, random or spurious rewards) shapes what the policy learns, and when the reward signal is or is not what drives the gain.",
+   "why_none_fit": "trained judges and reward models covers training the judge or reward model, not what a given reward does to the policy, and no reward model is trained here; judge and decision-model audits measures judges, not policy training; LLM and agent judges needs a judge as subject; alternative evaluation paradigms is about ways to evaluate; calibration and the other mechanisms do not apply; preference learning needs pairwise or binary human feedback, and RLVR rewards are not that.",
+   "decision": "accepted as 'judges as reward signals'"
+  }
+ ]
+}

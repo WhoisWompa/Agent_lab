@@ -1,0 +1,221 @@
+{
+  "assignments": [
+    {
+      "note": "2022-10 Scaling Laws for Reward Model Overoptimization",
+      "topics": [
+        "trained judges and reward models",
+        "preference learning",
+        "judges as reward signals"
+      ],
+      "why": "Measures how optimising a policy against a proxy RM first raises then lowers true reward: overoptimisation of the training signal."
+    },
+    {
+      "note": "2023-10 A Long Way to Go Length Correlations in RLHF",
+      "topics": [
+        "trained judges and reward models",
+        "preference learning",
+        "judge and decision-model audits",
+        "judges as reward signals"
+      ],
+      "why": "Shows much of the RLHF reward gain is length; the policy exploits an RM shortcut."
+    },
+    {
+      "note": "2023-10 Reward Model Ensembles Help Mitigate Overoptimization",
+      "topics": [
+        "trained judges and reward models",
+        "preference learning",
+        "judges as reward signals"
+      ],
+      "why": "RM ensembles as the reward in BoN and PPO to reduce policy overoptimisation."
+    },
+    {
+      "note": "2023-12 Math-Shepherd",
+      "topics": [
+        "trained judges and reward models",
+        "judges as reward signals"
+      ],
+      "why": "Automatically labelled PRM used as the reward for step-by-step PPO, with reported policy gains."
+    },
+    {
+      "note": "2024-01 Self-Rewarding Language Models",
+      "topics": [
+        "trained judges and reward models",
+        "preference learning",
+        "self-evolving tests",
+        "judges as reward signals"
+      ],
+      "why": "Model's own LLM-judge scores are the training reward for iterative DPO; judge-in-the-loop training, with length growth noted."
+    },
+    {
+      "note": "2024-02 ODIN Disentangled Reward Mitigates Hacking",
+      "topics": [
+        "trained judges and reward models",
+        "preference learning",
+        "judges as reward signals"
+      ],
+      "why": "Reward design aimed at reducing length hacking of the RLHF policy."
+    },
+    {
+      "note": "2024-02 Self-alignment for factuality",
+      "topics": [
+        "LLM and agent judges",
+        "preference learning",
+        "calibration",
+        "judges as reward signals"
+      ],
+      "why": "Self-evaluation used as the reward signal for DPO to reduce hallucinations."
+    },
+    {
+      "note": "2024-06 Scaling Laws for RM Overoptimization in Direct Alignment",
+      "topics": [
+        "preference learning",
+        "trained judges and reward models",
+        "judges as reward signals"
+      ],
+      "why": "Overoptimisation of the implicit reward in DPO/IPO training, mainly length exploitation."
+    },
+    {
+      "note": "2024-07 Meta-Rewarding Language Models",
+      "topics": [
+        "trained judges and reward models",
+        "self-evolving tests",
+        "preference learning",
+        "judges as reward signals"
+      ],
+      "why": "Self-judging loop whose judgments train the policy via DPO; documents length drift and self-reinforcing judge bias."
+    },
+    {
+      "note": "2024-07 Prover-verifier games improve legibility of LLM outputs",
+      "topics": [
+        "alternative evaluation paradigms",
+        "trained judges and reward models",
+        "stackelberg games",
+        "judges as reward signals"
+      ],
+      "why": "Verifier acceptance is the RL reward for helpful and sneaky provers; studies what that reward does to policy legibility."
+    },
+    {
+      "note": "2024-09 Language Models Learn to Mislead Humans via RLHF",
+      "topics": [
+        "preference learning",
+        "judge and decision-model audits",
+        "judges as reward signals"
+      ],
+      "why": "RLHF against human evaluators teaches the policy to convince evaluators of wrong answers: reward hacking of the judge."
+    },
+    {
+      "note": "2024-07 Spontaneous Reward Hacking in Self-Refinement",
+      "topics": [
+        "judge and decision-model audits",
+        "judges as reward signals"
+      ],
+      "why": "Generator optimising against an LLM evaluator raises evaluator scores while true quality stalls: reward hacking (in-context optimisation)."
+    },
+    {
+      "note": "2024-04 Autonomous Evaluation and Refinement of Digital Agents",
+      "topics": [
+        "LLM and agent judges",
+        "agent evaluation benchmarks",
+        "judges as reward signals"
+      ],
+      "why": "Trajectory evaluators used as the reward for Reflexion-style refinement and filtered fine-tuning of agents, with reported policy gains."
+    },
+    {
+      "note": "2024-11 Tulu 3 RLVR",
+      "topics": [
+        "alternative evaluation paradigms",
+        "judges as reward signals"
+      ],
+      "why": "Introduces RLVR: programmatic checker as the training reward; notes checker gaps as reward-hacking targets."
+    },
+    {
+      "note": "2025-01 DeepSeek-R1",
+      "topics": [
+        "trained judges and reward models",
+        "alternative evaluation paradigms",
+        "judges as reward signals"
+      ],
+      "why": "Large-scale RL with rule-based rewards, chosen to avoid reward hacking of neural RMs."
+    },
+    {
+      "note": "2025-07 One Token to Fool LLM-as-a-Judge",
+      "topics": [
+        "judge and decision-model audits",
+        "trained judges and reward models",
+        "judges as reward signals"
+      ],
+      "why": "Generative RMs used as RLVR rewards are exploited by content-free 'master key' answers; a reward-hacking vulnerability of the training signal."
+    },
+    {
+      "note": "2025-03 Rewarding Doubt",
+      "topics": [
+        "calibration",
+        "open decision models",
+        "judges as reward signals"
+      ],
+      "why": "Log-scoring-rule reward in PPO and its effect on the policy's verbalised calibration."
+    },
+    {
+      "note": "2025-05 Absolute Zero",
+      "topics": [
+        "self-evolving tests",
+        "alternative evaluation paradigms",
+        "judges as reward signals"
+      ],
+      "why": "Self-play RL with a code executor as the verifier reward and a learnability reward for task proposal."
+    },
+    {
+      "note": "2025-06 CURE Co-Evolving Coder and Unit Tester",
+      "topics": [
+        "self-evolving tests",
+        "trained judges and reward models",
+        "judges as reward signals"
+      ],
+      "why": "Generated unit tests are the coder's RL reward; the paper designs the tester reward against wrong or naive tests."
+    },
+    {
+      "note": "2025-07 Beyond Binary Rewards RLCR",
+      "topics": [
+        "calibration",
+        "judges as reward signals"
+      ],
+      "why": "Shows the binary RLVR reward trains overconfident guessing and adds a Brier term to the reward; the reward is what drives the calibration change."
+    },
+    {
+      "note": "2025-07 Rubrics as Rewards",
+      "topics": [
+        "LLM and agent judges",
+        "judges as reward signals"
+      ],
+      "why": "Rubric-based LLM-judge rewards for on-policy RL where no verifier exists."
+    },
+    {
+      "note": "2026-01 Calibration-Aware RL for Decision-Making LLMs",
+      "topics": [
+        "calibration",
+        "open decision models",
+        "judges as reward signals"
+      ],
+      "why": "Shows RLVR leaves policies near-certain on every verdict and modifies the training signal to fix calibration."
+    },
+    {
+      "note": "2026-03 Code-A1",
+      "topics": [
+        "self-evolving tests",
+        "judges as reward signals"
+      ],
+      "why": "Tests from an adversarial Test LLM are the Code LLM's reward; addresses self-collusion of the reward."
+    },
+    {
+      "note": "2026-09 OpenJev-RLCD",
+      "topics": [
+        "decision models",
+        "open decision models",
+        "calibration",
+        "judges as reward signals"
+      ],
+      "why": "Proper-score reward replacing RLVR's correct-answer reward; analyses what each reward does to the policy (confident errors, reasoning switched off)."
+    }
+  ],
+  "proposals": []
+}

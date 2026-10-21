@@ -6,6 +6,7 @@ arxiv: 2210.10860
 url: https://arxiv.org/abs/2210.10860
 venue: arXiv
 category: alternative-paradigms
+topics: ["alternative evaluation paradigms"]
 ---
 # Two-Turn Debate Doesn't Help Humans Answer Hard Reading Comprehension Questions
 
@@ -26,3 +27,5 @@ Adding a second rebuttal turn still did not improve human judge accuracy on hard
 
 ## What it leaves untried
 
+## Topics
+[[Topic - alternative evaluation paradigms]]

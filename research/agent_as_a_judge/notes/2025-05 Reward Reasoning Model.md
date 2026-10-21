@@ -6,6 +6,7 @@ arxiv: 2505.14674
 url: https://arxiv.org/abs/2505.14674
 venue: arXiv
 category: trained-judges-reward-models
+topics: ["trained judges and reward models", "alternative evaluation paradigms"]
 ---
 # Reward Reasoning Models
 
@@ -26,3 +27,5 @@ RMs that deliberate with long chain-of-thought before a pairwise verdict, traine
 
 ## What it leaves untried
 
+## Topics
+[[Topic - trained judges and reward models]] · [[Topic - alternative evaluation paradigms]]

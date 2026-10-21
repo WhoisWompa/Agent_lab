@@ -6,6 +6,7 @@ arxiv: 2403.13787
 url: https://arxiv.org/abs/2403.13787
 venue: NAACL 2025 Findings
 category: trained-judges-reward-models
+topics: ["trained judges and reward models", "judge and decision-model audits", "preference learning"]
 ---
 # RewardBench: Evaluating Reward Models for Language Modeling
 
@@ -28,3 +29,5 @@ First standard RM benchmark (Chat, Chat-Hard, Safety, Reasoning) with a public l
 
 ## What it leaves untried
 
+## Topics
+[[Topic - trained judges and reward models]] · [[Topic - judge and decision-model audits]] · [[Topic - preference learning]]

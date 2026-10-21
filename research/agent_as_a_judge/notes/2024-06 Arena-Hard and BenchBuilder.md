@@ -6,6 +6,7 @@ arxiv: 2406.11939
 url: https://arxiv.org/abs/2406.11939
 venue: arXiv
 category: alternative-paradigms
+topics: ["LLM and agent judges", "alternative evaluation paradigms"]
 ---
 # From Crowdsourced Data to High-Quality Benchmarks: Arena-Hard and BenchBuilder Pipeline
 
@@ -32,3 +33,5 @@ Pipeline that filters crowdsourced Arena prompts into a hard static set (Arena-H
 ## What it leaves untried
 - Correctness-checked judging (execution/verification) for the coding and math share of prompts.
 
+## Topics
+[[Topic - LLM and agent judges]] · [[Topic - alternative evaluation paradigms]]

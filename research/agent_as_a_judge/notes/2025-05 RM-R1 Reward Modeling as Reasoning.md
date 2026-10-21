@@ -6,6 +6,7 @@ arxiv: 2505.02387
 url: https://arxiv.org/abs/2505.02387
 venue: arXiv (UIUC)
 category: trained-judges-reward-models
+topics: ["trained judges and reward models"]
 ---
 # RM-R1: Reward Modeling as Reasoning
 
@@ -28,3 +29,6 @@ Reasoning reward models: distil reasoning traces, then RL with a binary correctn
 
 ## What it leaves untried
 - Agentic reward modelling with tools.
+
+## Topics
+[[Topic - trained judges and reward models]]

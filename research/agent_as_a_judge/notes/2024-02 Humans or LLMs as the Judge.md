@@ -6,6 +6,7 @@ arxiv: 2402.10669
 url: https://arxiv.org/abs/2402.10669
 venue: EMNLP 2024
 category: llm-judge-foundations
+topics: ["judge and decision-model audits"]
 ---
 # Humans or LLMs as the Judge? A Study on Judgement Biases
 
@@ -26,3 +27,5 @@ Tests misinformation-oversight, gender, authority (fake citations) and beauty bi
 
 ## What it leaves untried
 
+## Topics
+[[Topic - judge and decision-model audits]]

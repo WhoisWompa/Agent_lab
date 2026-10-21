@@ -6,6 +6,7 @@ arxiv: 2508.11847
 url: https://arxiv.org/abs/2508.11847
 venue: arXiv
 category: alternative-paradigms
+topics: ["alternative evaluation paradigms", "preference learning"]
 ---
 # Dropping Just a Handful of Preferences Can Change Top Large Language Model Rankings
 
@@ -26,3 +27,5 @@ Data-dropping sensitivity analysis shows Bradley-Terry Arena-style rankings at t
 
 ## What it leaves untried
 
+## Topics
+[[Topic - alternative evaluation paradigms]] · [[Topic - preference learning]]

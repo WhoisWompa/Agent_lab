@@ -6,6 +6,7 @@ arxiv: none
 url: https://openai.com/index/why-we-no-longer-evaluate-swe-bench-verified/
 venue: OpenAI blog
 category: agent-evaluation-benchmarks
+topics: ["agent evaluation benchmarks"]
 ---
 # Why we no longer evaluate SWE-bench Verified
 
@@ -27,3 +28,6 @@ Audit of 138 hard / commonly failed tasks by reviewers; contamination probe by a
 
 ## What it leaves untried
 - No replacement verifier design is proposed; the problem is relocated to the next benchmark.
+
+## Topics
+[[Topic - agent evaluation benchmarks]]

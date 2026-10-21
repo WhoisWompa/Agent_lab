@@ -6,6 +6,7 @@ arxiv: 2406.05761
 url: https://arxiv.org/abs/2406.05761
 venue: NAACL 2025
 category: llm-judge-foundations
+topics: ["LLM and agent judges"]
 ---
 # The BiGGen Bench: A Principled Benchmark for Fine-grained Evaluation of Language Models with Language Models
 
@@ -26,3 +27,5 @@ category: llm-judge-foundations
 
 ## What it leaves untried
 
+## Topics
+[[Topic - LLM and agent judges]]

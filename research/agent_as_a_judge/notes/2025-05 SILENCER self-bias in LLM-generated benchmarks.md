@@ -6,6 +6,7 @@ arxiv: 2505.20738
 url: https://arxiv.org/abs/2505.20738
 venue: arXiv
 category: self-evolving-tests
+topics: ["self-evolving tests"]
 ---
 # SILENCER (self-bias in LLM-generated benchmarks; exact title not verified)
 
@@ -26,3 +27,5 @@ Reports that LLM-generated benchmarks favour the generator model ('self-bias' fr
 
 ## What it leaves untried
 
+## Topics
+[[Topic - self-evolving tests]]

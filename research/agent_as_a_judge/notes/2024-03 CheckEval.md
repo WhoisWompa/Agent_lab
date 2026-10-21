@@ -6,6 +6,7 @@ arxiv: 2403.18771
 url: https://arxiv.org/abs/2403.18771
 venue: EMNLP 2025
 category: llm-judge-foundations
+topics: ["LLM and agent judges"]
 ---
 # CheckEval: A reliable LLM-as-a-Judge framework for evaluating text generation using checklists
 
@@ -26,3 +27,5 @@ Decomposed binary checklist questions instead of Likert scores raise average agr
 
 ## What it leaves untried
 
+## Topics
+[[Topic - LLM and agent judges]]

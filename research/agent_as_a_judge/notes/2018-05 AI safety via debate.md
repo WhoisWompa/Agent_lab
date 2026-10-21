@@ -6,6 +6,7 @@ arxiv: 1805.00899
 url: https://arxiv.org/abs/1805.00899
 venue: arXiv
 category: alternative-paradigms
+topics: ["alternative evaluation paradigms"]
 ---
 # AI safety via debate
 
@@ -31,3 +32,6 @@ MNIST toy experiment: debaters reveal pixels to a sparse classifier judge that s
 ## What it leaves untried
 - Debate where the judge is an agent with tools (can run code, check sources) rather than a passive reader of a transcript.
 - Debate as a protocol for evaluating agent trajectories rather than answers to questions.
+
+## Topics
+[[Topic - alternative evaluation paradigms]]

@@ -6,6 +6,7 @@ arxiv: 2407.13692
 url: https://arxiv.org/abs/2407.13692
 venue: arXiv (OpenAI)
 category: alternative-paradigms
+topics: ["alternative evaluation paradigms", "trained judges and reward models", "stackelberg games", "judges as reward signals"]
 ---
 # Prover-Verifier Games improve legibility of LLM outputs
 
@@ -28,3 +29,6 @@ Optimising only for correctness makes solutions less legible (the legibility tra
 ## What it leaves untried
 - Use the trained verifier as an evaluator for agent outputs in domains without labels.
 - Combine with debate: prover and sneaky prover as debaters.
+
+## Topics
+[[Topic - alternative evaluation paradigms]] · [[Topic - trained judges and reward models]] · [[Topic - stackelberg games]] · [[Topic - judges as reward signals]]

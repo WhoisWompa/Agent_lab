@@ -6,6 +6,7 @@ arxiv: 2306.09983
 url: https://arxiv.org/abs/2306.09983
 venue: SaTML 2024 (as recalled)
 category: alternative-paradigms
+topics: ["alternative evaluation paradigms", "judge and decision-model audits"]
 ---
 # Evaluating Superhuman Models with Consistency Checks
 
@@ -26,3 +27,6 @@ Found inconsistencies in all three domains (e.g. opposing evaluations of equival
 
 ## What it leaves untried
 - Consistency relations over agent trajectories (e.g. equivalent environment states should yield equivalent actions).
+
+## Topics
+[[Topic - alternative evaluation paradigms]] · [[Topic - judge and decision-model audits]]

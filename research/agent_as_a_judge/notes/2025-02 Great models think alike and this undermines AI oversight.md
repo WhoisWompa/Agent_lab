@@ -6,6 +6,7 @@ arxiv: 2502.04313
 url: https://arxiv.org/abs/2502.04313
 venue: arXiv
 category: alternative-paradigms
+topics: ["judge and decision-model audits", "LLM and agent judges"]
 ---
 # Great Models Think Alike and this Undermines AI Oversight
 
@@ -26,3 +27,5 @@ Introduces a model-similarity metric (CAPA) and finds LLM judges favour models s
 
 ## What it leaves untried
 
+## Topics
+[[Topic - judge and decision-model audits]] · [[Topic - LLM and agent judges]]

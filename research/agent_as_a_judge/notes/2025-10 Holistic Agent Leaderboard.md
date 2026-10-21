@@ -6,6 +6,7 @@ arxiv: 2510.11977
 url: https://arxiv.org/abs/2510.11977
 venue: arXiv
 category: agent-evaluation-benchmarks
+topics: ["agent evaluation benchmarks"]
 ---
 # Holistic Agent Leaderboard: The Missing Infrastructure for AI Agent Evaluation
 
@@ -26,3 +27,6 @@ About $40,000 total. Higher reasoning effort reduced accuracy in most runs. Log 
 
 ## What it leaves untried
 - Turning log inspection into a scored, validated trajectory judge.
+
+## Topics
+[[Topic - agent evaluation benchmarks]]

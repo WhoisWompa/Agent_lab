@@ -6,6 +6,7 @@ arxiv: 2402.13125
 url: https://arxiv.org/abs/2402.13125
 venue: arXiv
 category: self-evolving-tests
+topics: ["self-evolving tests", "LLM and agent judges"]
 ---
 # TreeEval: Benchmark-Free Evaluation of Large Language Models through Tree Planning
 
@@ -26,3 +27,5 @@ An examiner LLM grows a tree of questions, choosing the next sub-topic from how 
 
 ## What it leaves untried
 
+## Topics
+[[Topic - self-evolving tests]] · [[Topic - LLM and agent judges]]

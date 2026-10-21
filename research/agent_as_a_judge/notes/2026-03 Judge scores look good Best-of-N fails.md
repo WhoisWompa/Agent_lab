@@ -6,6 +6,7 @@ arxiv: 2603.12520
 url: https://arxiv.org/abs/2603.12520
 venue: arXiv
 category: llm-judge-foundations
+topics: ["judge and decision-model audits", "alternative evaluation paradigms"]
 ---
 # When LLM Judge Scores Look Good but Best-of-N Decisions Fail
 
@@ -26,3 +27,5 @@ A judge with global r=0.47 captures only 21% of the achievable best-of-4 gain (w
 
 ## What it leaves untried
 
+## Topics
+[[Topic - judge and decision-model audits]] · [[Topic - alternative evaluation paradigms]]

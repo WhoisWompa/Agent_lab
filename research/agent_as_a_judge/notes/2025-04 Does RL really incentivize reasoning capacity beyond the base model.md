@@ -6,6 +6,7 @@ arxiv: 2504.13837
 url: https://arxiv.org/abs/2504.13837
 venue: NeurIPS 2025 (as recalled)
 category: alternative-paradigms
+topics: ["judges as reward signals"]
 ---
 # Does Reinforcement Learning Really Incentivize Reasoning Capacity in LLMs Beyond the Base Model?
 
@@ -26,3 +27,5 @@ RLVR improves pass@1 but base models achieve higher pass@k at large k, suggestin
 
 ## What it leaves untried
 
+## Topics
+[[Topic - judges as reward signals]]

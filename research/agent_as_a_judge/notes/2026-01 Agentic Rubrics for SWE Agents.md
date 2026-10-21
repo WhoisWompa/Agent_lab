@@ -6,6 +6,7 @@ arxiv: 2601.04171
 url: https://arxiv.org/abs/2601.04171
 venue: arXiv
 category: agent-as-judge
+topics: ["LLM and agent judges"]
 ---
 # Agentic Rubrics as Contextual Verifiers for SWE Agents
 
@@ -26,3 +27,5 @@ An agent explores the repository to write a codebase-grounded checklist rubric, 
 
 ## What it leaves untried
 
+## Topics
+[[Topic - LLM and agent judges]]

@@ -6,6 +6,7 @@ arxiv: 2312.08935
 url: https://arxiv.org/abs/2312.08935
 venue: ACL 2024
 category: trained-judges-reward-models
+topics: ["trained judges and reward models", "judges as reward signals"]
 ---
 # Math-Shepherd: Verify and Reinforce LLMs Step-by-step without Human Annotations
 
@@ -27,3 +28,6 @@ Labels steps automatically by Monte Carlo rollouts (a step is good if completion
 
 ## What it leaves untried
 - Label steps by checking validity rather than reachability of the answer.
+
+## Topics
+[[Topic - trained judges and reward models]] · [[Topic - judges as reward signals]]

@@ -6,6 +6,7 @@ arxiv: 2305.19118
 url: https://arxiv.org/abs/2305.19118
 venue: EMNLP 2024
 category: alternative-paradigms
+topics: ["alternative evaluation paradigms"]
 ---
 # Encouraging Divergent Thinking in Large Language Models through Multi-Agent Debate
 
@@ -26,3 +27,5 @@ MAD framework with an affirmative and negative debater and a judge to counter 'd
 
 ## What it leaves untried
 
+## Topics
+[[Topic - alternative evaluation paradigms]]

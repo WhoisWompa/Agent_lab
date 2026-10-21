@@ -6,6 +6,7 @@ arxiv: 2309.13308
 url: https://arxiv.org/abs/2309.13308
 venue: LREC-COLING 2024
 category: llm-judge-foundations
+topics: ["LLM and agent judges", "self-evolving tests"]
 ---
 # Calibrating LLM-Based Evaluator
 
@@ -26,3 +27,5 @@ AutoCalibrate drafts and refines scoring criteria from a few human labels to rai
 
 ## What it leaves untried
 
+## Topics
+[[Topic - LLM and agent judges]] · [[Topic - self-evolving tests]]

@@ -6,6 +6,7 @@ arxiv: 2409.16636
 url: https://arxiv.org/abs/2409.16636
 venue: arXiv
 category: alternative-paradigms
+topics: ["alternative evaluation paradigms"]
 ---
 # Training Language Models to Win Debates with Self-Play Improves Judge Accuracy
 
@@ -26,3 +27,5 @@ RL/self-play training of LLM debaters to win on QuALITY raised judge accuracy, w
 
 ## What it leaves untried
 
+## Topics
+[[Topic - alternative evaluation paradigms]]

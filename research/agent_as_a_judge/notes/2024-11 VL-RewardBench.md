@@ -6,6 +6,7 @@ arxiv: 2411.17451
 url: https://arxiv.org/abs/2411.17451
 venue: CVPR 2025
 category: llm-judge-foundations
+topics: ["judge and decision-model audits", "trained judges and reward models"]
 ---
 # VL-RewardBench: A Challenging Benchmark for Vision-Language Generative Reward Models
 
@@ -26,3 +27,5 @@ category: llm-judge-foundations
 
 ## What it leaves untried
 
+## Topics
+[[Topic - judge and decision-model audits]] · [[Topic - trained judges and reward models]]

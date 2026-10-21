@@ -6,6 +6,7 @@ arxiv: 2407.01502
 url: https://arxiv.org/abs/2407.01502
 venue: arXiv
 category: agent-evaluation-benchmarks
+topics: ["agent evaluation benchmarks"]
 ---
 # AI Agents That Matter
 
@@ -26,3 +27,5 @@ Critique of agent evaluation: accuracy-only reporting, no cost control, overfitt
 
 ## What it leaves untried
 
+## Topics
+[[Topic - agent evaluation benchmarks]]

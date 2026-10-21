@@ -6,6 +6,7 @@ arxiv: 2506.13609
 url: https://arxiv.org/abs/2506.13609
 venue: arXiv (revised 2026-07)
 category: alternative-paradigms
+topics: ["alternative evaluation paradigms"]
 ---
 # Avoiding Obfuscation with Prover-Estimator Debate
 
@@ -26,3 +27,6 @@ No empirical evaluation reported in the abstract.
 
 ## What it leaves untried
 - Empirical instantiation with LLM agents.
+
+## Topics
+[[Topic - alternative evaluation paradigms]]

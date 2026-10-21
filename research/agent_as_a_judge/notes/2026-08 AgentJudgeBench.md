@@ -6,6 +6,7 @@ arxiv: 2608.26623
 url: https://arxiv.org/abs/2608.26623
 venue: EMNLP 2026
 category: agent-as-judge
+topics: ["judge and decision-model audits", "agent evaluation benchmarks"]
 ---
 # AgentJudgeBench: A Multi-Difficulty Benchmark for Evaluating LLM Judges on Agentic Tool-Calling
 
@@ -26,3 +27,6 @@ Benchmark of 3,808 tool-calling workflow instances across DAG topologies and dif
 
 ## What it leaves untried
 - Testing whether tool-using judges that execute the workflow break the hard-query ceiling.
+
+## Topics
+[[Topic - judge and decision-model audits]] · [[Topic - agent evaluation benchmarks]]

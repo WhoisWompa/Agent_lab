@@ -6,6 +6,7 @@ arxiv: 2604.18240
 url: https://arxiv.org/abs/2604.18240
 venue: ACL 2026 Findings
 category: agent-as-judge
+topics: ["LLM and agent judges", "judge and decision-model audits"]
 ---
 # AJ-Bench: Benchmarking Agent-as-a-Judge for Environment-Aware Evaluation
 
@@ -33,3 +34,6 @@ Benchmark that tests whether LLM agents can judge other agents' trajectories by 
 ## What it leaves untried
 - Measuring run-to-run variance and cost per verdict for agent judges.
 - Judges that re-execute or replay actions to test counterfactuals rather than only inspect final state.
+
+## Topics
+[[Topic - LLM and agent judges]] · [[Topic - judge and decision-model audits]]

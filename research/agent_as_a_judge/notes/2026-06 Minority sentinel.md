@@ -6,6 +6,7 @@ arxiv: 2606.29270
 url: https://arxiv.org/abs/2606.29270
 venue: arXiv
 category: alternative-paradigms
+topics: ["alternative evaluation paradigms", "social choice"]
 ---
 # Minority Sentinel: When to Overturn Majority Voting in Multi-Agent LLM Debates
 
@@ -26,3 +27,5 @@ Argues an LLM judge reading debate logs shares the debaters' blind spots; report
 
 ## What it leaves untried
 
+## Topics
+[[Topic - alternative evaluation paradigms]] · [[Topic - social choice]]

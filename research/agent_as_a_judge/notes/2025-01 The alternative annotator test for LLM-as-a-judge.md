@@ -6,6 +6,7 @@ arxiv: 2501.10970
 url: https://arxiv.org/abs/2501.10970
 venue: ACL 2025 (as recalled)
 category: alternative-paradigms
+topics: ["judge and decision-model audits", "LLM and agent judges"]
 ---
 # The Alternative Annotator Test for LLM-as-a-Judge: How to Statistically Justify Replacing Human Annotators with LLMs
 
@@ -26,3 +27,5 @@ Statistical test (alt-test) that checks with a few annotators whether an LLM jud
 
 ## What it leaves untried
 
+## Topics
+[[Topic - judge and decision-model audits]] · [[Topic - LLM and agent judges]]

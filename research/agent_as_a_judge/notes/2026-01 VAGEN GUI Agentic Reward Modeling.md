@@ -6,6 +6,7 @@ arxiv: 2602.00575
 url: https://arxiv.org/abs/2602.00575
 venue: arXiv
 category: agent-as-judge
+topics: ["LLM and agent judges", "adaptive reasoning depth"]
 ---
 # Agentic Reward Modeling: Verifying GUI Agent via Online Proactive Interaction
 
@@ -26,3 +27,5 @@ VAGEN: a tool-augmented verifier agent that first extracts evidence from a GUI a
 
 ## What it leaves untried
 
+## Topics
+[[Topic - LLM and agent judges]] · [[Topic - adaptive reasoning depth]]

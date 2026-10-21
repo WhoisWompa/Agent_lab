@@ -6,6 +6,7 @@ arxiv: 2501.07493
 url: https://arxiv.org/abs/2501.07493
 venue: ICML 2025 (as recalled)
 category: alternative-paradigms
+topics: ["alternative evaluation paradigms", "social choice"]
 ---
 # Exploring and Mitigating Adversarial Manipulation of Voting-Based Leaderboards
 
@@ -26,3 +27,5 @@ Shows an attacker can identify which model wrote a reply with >95% accuracy and 
 
 ## What it leaves untried
 
+## Topics
+[[Topic - alternative evaluation paradigms]] · [[Topic - social choice]]

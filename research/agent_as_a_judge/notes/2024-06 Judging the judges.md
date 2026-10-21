@@ -6,6 +6,7 @@ arxiv: 2406.12624
 url: https://arxiv.org/abs/2406.12624
 venue: arXiv
 category: alternative-paradigms
+topics: ["judge and decision-model audits", "LLM and agent judges"]
 ---
 # Judging the Judges: Evaluating Alignment and Vulnerabilities in LLMs-as-Judges
 
@@ -27,3 +28,5 @@ On TriviaQA with human labels, only the largest judges approach human alignment;
 
 ## What it leaves untried
 
+## Topics
+[[Topic - judge and decision-model audits]] · [[Topic - LLM and agent judges]]

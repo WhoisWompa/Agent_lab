@@ -6,6 +6,7 @@ arxiv: 2603.29403
 url: https://arxiv.org/abs/2603.29403
 venue: arXiv
 category: llm-judge-foundations
+topics: ["judge and decision-model audits", "LLM and agent judges"]
 ---
 # Security in LLM-as-a-Judge: A Comprehensive SoK
 
@@ -26,3 +27,5 @@ Systematisation of 45 studies (from 863) on judge security: attacks on judges, a
 
 ## What it leaves untried
 
+## Topics
+[[Topic - judge and decision-model audits]] · [[Topic - LLM and agent judges]]

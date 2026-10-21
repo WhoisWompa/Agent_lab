@@ -6,6 +6,7 @@ arxiv: 2307.04346
 url: https://arxiv.org/abs/2307.04346
 venue: arXiv
 category: alternative-paradigms
+topics: ["self-evolving tests", "alternative evaluation paradigms"]
 ---
 # Can Large Language Models Write Good Property-Based Tests?
 
@@ -26,3 +27,5 @@ Evaluates LLM-written property-based tests from API documentation for validity, 
 
 ## What it leaves untried
 
+## Topics
+[[Topic - self-evolving tests]] · [[Topic - alternative evaluation paradigms]]

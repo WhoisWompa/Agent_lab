@@ -6,6 +6,7 @@ arxiv: 2403.07974
 url: https://arxiv.org/abs/2403.07974
 venue: ICLR 2025
 category: self-evolving-tests
+topics: ["self-evolving tests"]
 ---
 # LiveCodeBench: Holistic and Contamination Free Evaluation of Large Language Models for Code
 
@@ -26,3 +27,5 @@ Continuously collects new contest problems (LeetCode, AtCoder, Codeforces) with 
 
 ## What it leaves untried
 
+## Topics
+[[Topic - self-evolving tests]]

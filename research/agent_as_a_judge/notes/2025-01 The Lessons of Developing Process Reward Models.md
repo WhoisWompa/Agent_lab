@@ -6,6 +6,7 @@ arxiv: 2501.07301
 url: https://arxiv.org/abs/2501.07301
 venue: ACL 2025 Findings
 category: trained-judges-reward-models
+topics: ["trained judges and reward models", "judge and decision-model audits"]
 ---
 # The Lessons of Developing Process Reward Models in Mathematical Reasoning
 
@@ -27,3 +28,6 @@ Qwen team's account of why PRMs disappoint: MC labels are noisy, and Best-of-N e
 
 ## What it leaves untried
 - Process supervision outside math.
+
+## Topics
+[[Topic - trained judges and reward models]] · [[Topic - judge and decision-model audits]]

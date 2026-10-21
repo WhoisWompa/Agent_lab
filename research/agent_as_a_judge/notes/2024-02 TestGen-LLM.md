@@ -6,6 +6,7 @@ arxiv: 2402.09171
 url: https://arxiv.org/abs/2402.09171
 venue: FSE 2024 (Industry)
 category: self-evolving-tests
+topics: ["self-evolving tests", "alternative evaluation paradigms"]
 ---
 # Automated Unit Test Improvement using Large Language Models at Meta
 
@@ -26,3 +27,5 @@ Industrial LLM test generation with filters (builds, passes reliably, raises cov
 
 ## What it leaves untried
 
+## Topics
+[[Topic - self-evolving tests]] · [[Topic - alternative evaluation paradigms]]

@@ -6,6 +6,7 @@ arxiv: 2506.02175
 url: https://arxiv.org/abs/2506.02175
 venue: arXiv
 category: alternative-paradigms
+topics: ["alternative evaluation paradigms", "LLM and agent judges"]
 ---
 # AI Debate Aids Assessment of Controversial Claims
 
@@ -26,3 +27,5 @@ Tests debate for helping humans and AI judges assess contested (e.g. health) cla
 
 ## What it leaves untried
 
+## Topics
+[[Topic - alternative evaluation paradigms]] · [[Topic - LLM and agent judges]]

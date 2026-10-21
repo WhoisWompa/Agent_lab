@@ -1,0 +1,13 @@
+# What graphify must not index. Used with --no-gitignore, since the papers
+# folder is gitignored but is exactly what the graph is for.
+.venv/
+.git/
+.vscode/
+__pycache__/
+*.pyc
+agents/*/.env
+agent_template/.env
+agents/*/data/
+agents/*/logs/
+agents/*/test data/
+graphify-out/

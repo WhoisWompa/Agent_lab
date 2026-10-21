@@ -6,6 +6,7 @@ arxiv: 2310.17631
 url: https://arxiv.org/abs/2310.17631
 venue: ICLR 2025
 category: trained-judges-reward-models
+topics: ["trained judges and reward models", "LLM and agent judges", "presentation sensitivity"]
 ---
 # JudgeLM: Fine-tuned Large Language Models are Scalable Judges
 
@@ -32,3 +33,6 @@ Vicuna-based 7B/13B/33B pairwise judges fine-tuned on 100K GPT-4 judgments, with
 
 ## What it leaves untried
 - Agreement with ground-truth correctness rather than with the teacher judge.
+
+## Topics
+[[Topic - trained judges and reward models]] · [[Topic - LLM and agent judges]] · [[Topic - presentation sensitivity]]

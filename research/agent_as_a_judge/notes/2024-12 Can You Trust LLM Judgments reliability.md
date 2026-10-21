@@ -6,6 +6,7 @@ arxiv: 2412.12509
 url: https://arxiv.org/abs/2412.12509
 venue: arXiv
 category: llm-judge-foundations
+topics: ["judge and decision-model audits", "LLM and agent judges"]
 ---
 # Can You Trust LLM Judgments? Reliability of LLM-as-a-Judge
 
@@ -26,3 +27,5 @@ Uses McDonald's omega over repeated samples to show single-shot judgments (even 
 
 ## What it leaves untried
 
+## Topics
+[[Topic - judge and decision-model audits]] · [[Topic - LLM and agent judges]]

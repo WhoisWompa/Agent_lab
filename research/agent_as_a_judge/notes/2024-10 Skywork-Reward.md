@@ -6,6 +6,7 @@ arxiv: 2410.18451
 url: https://arxiv.org/abs/2410.18451
 venue: arXiv
 category: trained-judges-reward-models
+topics: ["trained judges and reward models", "preference learning"]
 ---
 # Skywork-Reward: Bag of Tricks for Reward Modeling in LLMs
 
@@ -26,3 +27,5 @@ Scalar RMs on an 80K curated preference set that topped RewardBench in late 2024
 
 ## What it leaves untried
 
+## Topics
+[[Topic - trained judges and reward models]] · [[Topic - preference learning]]

@@ -6,6 +6,7 @@ arxiv: none
 url: https://eqbench.com/judgemark-v2.html
 venue: Leaderboard (eqbench.com); release month not verified
 category: llm-judge-foundations
+topics: ["judge and decision-model audits", "LLM and agent judges"]
 ---
 # Judgemark (EQ-Bench)
 
@@ -26,3 +27,5 @@ Leaderboard that scores how well a model judges creative writing from 19 test mo
 
 ## What it leaves untried
 
+## Topics
+[[Topic - judge and decision-model audits]] · [[Topic - LLM and agent judges]]

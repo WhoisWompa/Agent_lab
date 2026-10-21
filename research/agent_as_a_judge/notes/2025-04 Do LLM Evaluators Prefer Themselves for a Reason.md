@@ -6,6 +6,7 @@ arxiv: 2504.03846
 url: https://arxiv.org/abs/2504.03846
 venue: arXiv
 category: llm-judge-foundations
+topics: ["judge and decision-model audits"]
 ---
 # Do LLM Evaluators Prefer Themselves for a Reason?
 
@@ -26,3 +27,6 @@ Stronger models show more self-preference, mostly aligned with real quality; whe
 
 ## What it leaves untried
 - Cross-family blinding plus CoT combined.
+
+## Topics
+[[Topic - judge and decision-model audits]]

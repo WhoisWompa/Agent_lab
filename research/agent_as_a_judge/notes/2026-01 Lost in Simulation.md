@@ -6,6 +6,7 @@ arxiv: 2601.17087
 url: https://arxiv.org/abs/2601.17087
 venue: arXiv
 category: agent-evaluation-benchmarks
+topics: ["user simulation", "agent evaluation benchmarks"]
 ---
 # Lost in Simulation: LLM-Simulated Users are Unreliable Proxies for Human Users in Agentic Evaluations
 
@@ -27,3 +28,5 @@ Success shifts up to 9 pp by user LLM; simulators underestimate on hard and over
 
 ## What it leaves untried
 
+## Topics
+[[Topic - user simulation]] · [[Topic - agent evaluation benchmarks]]

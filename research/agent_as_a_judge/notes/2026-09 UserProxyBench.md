@@ -6,6 +6,7 @@ arxiv: 2609.38043
 url: https://arxiv.org/abs/2609.38043
 venue: arXiv
 category: agent-evaluation-benchmarks
+topics: ["user simulation", "agent evaluation benchmarks"]
 ---
 # UserProxyBench: Evaluating LLM User Simulators for Agent Benchmarks and Training
 
@@ -26,3 +27,5 @@ Swapping only the user moves mean reward 15.2 points; 24.4% of successful episod
 
 ## What it leaves untried
 
+## Topics
+[[Topic - user simulation]] · [[Topic - agent evaluation benchmarks]]

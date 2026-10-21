@@ -6,6 +6,7 @@ arxiv: 2309.17012
 url: https://arxiv.org/abs/2309.17012
 venue: ACL 2024 (per arXiv comment)
 category: llm-judge-foundations
+topics: ["judge and decision-model audits", "presentation sensitivity"]
 ---
 # Benchmarking Cognitive Biases in Large Language Models as Evaluators
 
@@ -26,3 +27,5 @@ CoBBLEr measures six cognitive biases (egocentric, order, bandwagon, attention, 
 
 ## What it leaves untried
 
+## Topics
+[[Topic - judge and decision-model audits]] · [[Topic - presentation sensitivity]]

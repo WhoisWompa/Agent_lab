@@ -6,6 +6,7 @@ arxiv: 2310.02743
 url: https://arxiv.org/abs/2310.02743
 venue: ICLR 2024
 category: trained-judges-reward-models
+topics: ["trained judges and reward models", "preference learning", "judges as reward signals"]
 ---
 # Reward Model Ensembles Help Mitigate Overoptimization
 
@@ -26,3 +27,5 @@ Uses Gao et al.'s gold-RM setup to show worst-case and uncertainty-weighted RM e
 
 ## What it leaves untried
 
+## Topics
+[[Topic - trained judges and reward models]] · [[Topic - preference learning]] · [[Topic - judges as reward signals]]

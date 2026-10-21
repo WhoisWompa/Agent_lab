@@ -6,6 +6,7 @@ arxiv: 2302.09664
 url: https://arxiv.org/abs/2302.09664
 venue: ICLR 2023
 category: alternative-paradigms
+topics: ["alternative evaluation paradigms"]
 ---
 # Semantic Uncertainty: Linguistic Invariances for Uncertainty Estimation in Natural Language Generation
 
@@ -26,3 +27,5 @@ Semantic entropy: cluster sampled answers by meaning (bidirectional entailment) 
 
 ## What it leaves untried
 
+## Topics
+[[Topic - alternative evaluation paradigms]]

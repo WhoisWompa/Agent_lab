@@ -6,6 +6,7 @@ arxiv: 2507.16248
 url: https://arxiv.org/abs/2507.16248
 venue: ICAIF 2025
 category: agent-as-judge
+topics: ["LLM and agent judges", "agent evaluation benchmarks"]
 ---
 # FinResearchBench: A Logic Tree based Agent-as-a-Judge Evaluation Framework for Financial Research Agents
 
@@ -26,3 +27,5 @@ Agent-as-a-Judge that extracts a logic tree from a financial research report and
 
 ## What it leaves untried
 
+## Topics
+[[Topic - LLM and agent judges]] · [[Topic - agent evaluation benchmarks]]

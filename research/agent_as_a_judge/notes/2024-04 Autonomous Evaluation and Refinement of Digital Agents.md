@@ -6,6 +6,7 @@ arxiv: 2404.06474
 url: https://arxiv.org/abs/2404.06474
 venue: COLM 2024
 category: agent-evaluation-benchmarks
+topics: ["LLM and agent judges", "agent evaluation benchmarks", "judges as reward signals"]
 ---
 # Autonomous Evaluation and Refinement of Digital Agents
 
@@ -26,3 +27,5 @@ Variants trade cost, modularity and accuracy (end-to-end VLM vs captioner + LLM 
 
 ## What it leaves untried
 
+## Topics
+[[Topic - LLM and agent judges]] · [[Topic - agent evaluation benchmarks]] · [[Topic - judges as reward signals]]

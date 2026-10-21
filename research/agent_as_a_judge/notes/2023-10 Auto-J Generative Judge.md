@@ -6,6 +6,7 @@ arxiv: 2310.05470
 url: https://arxiv.org/abs/2310.05470
 venue: ICLR 2024
 category: trained-judges-reward-models
+topics: ["trained judges and reward models", "LLM and agent judges"]
 ---
 # Generative Judge for Evaluating Alignment (Auto-J)
 
@@ -30,3 +31,6 @@ A 13B generative judge for 58 real-world scenarios that does pairwise comparison
 
 ## What it leaves untried
 - Judging correctness of reasoning, code or math.
+
+## Topics
+[[Topic - trained judges and reward models]] · [[Topic - LLM and agent judges]]

@@ -6,6 +6,7 @@ arxiv: 2407.10817
 url: https://arxiv.org/abs/2407.10817
 venue: EMNLP 2024
 category: trained-judges-reward-models
+topics: ["trained judges and reward models", "LLM and agent judges"]
 ---
 # Foundational Autoraters: Taming Large Language Models for Better Automatic Evaluation (FLAMe)
 
@@ -26,3 +27,5 @@ Google autorater trained on 100+ quality-assessment tasks and 5M+ human judgment
 
 ## What it leaves untried
 
+## Topics
+[[Topic - trained judges and reward models]] · [[Topic - LLM and agent judges]]

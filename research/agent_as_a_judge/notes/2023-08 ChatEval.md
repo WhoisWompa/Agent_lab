@@ -6,6 +6,7 @@ arxiv: 2308.07201
 url: https://arxiv.org/abs/2308.07201
 venue: ICLR 2024
 category: alternative-paradigms
+topics: ["LLM and agent judges", "alternative evaluation paradigms", "social choice"]
 ---
 # ChatEval: Towards Better LLM-based Evaluators through Multi-Agent Debate
 
@@ -30,3 +31,6 @@ Open-ended QA (FairEval pairs) and dialogue response generation (Topical-Chat); 
 
 ## What it leaves untried
 - Agents that can execute or retrieve during the debate; application to agent trajectories.
+
+## Topics
+[[Topic - LLM and agent judges]] · [[Topic - alternative evaluation paradigms]] · [[Topic - social choice]]

@@ -6,6 +6,7 @@ arxiv: 2504.13472
 url: https://arxiv.org/abs/2504.13472
 venue: ASE 2025
 category: agent-as-judge
+topics: ["LLM and agent judges"]
 ---
 # CodeVisionary: An Agent-based Framework for Evaluating Large Language Models in Code Generation
 
@@ -26,3 +27,5 @@ Two-stage agent evaluator for code (requirement-guided multi-dimensional context
 
 ## What it leaves untried
 
+## Topics
+[[Topic - LLM and agent judges]]

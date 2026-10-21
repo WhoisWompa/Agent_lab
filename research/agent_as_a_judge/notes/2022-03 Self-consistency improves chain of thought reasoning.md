@@ -6,6 +6,7 @@ arxiv: 2203.11171
 url: https://arxiv.org/abs/2203.11171
 venue: ICLR 2023
 category: alternative-paradigms
+topics: ["social choice", "alternative evaluation paradigms"]
 ---
 # Self-Consistency Improves Chain of Thought Reasoning in Language Models
 
@@ -26,3 +27,5 @@ Sample many reasoning paths and take the majority answer; agreement rate doubles
 
 ## What it leaves untried
 
+## Topics
+[[Topic - social choice]] · [[Topic - alternative evaluation paradigms]]

@@ -6,6 +6,7 @@ arxiv: 2506.22485
 url: https://arxiv.org/abs/2506.22485
 venue: arXiv
 category: agent-as-judge
+topics: ["LLM and agent judges"]
 ---
 # AI Agents-as-Judge: Automated Assessment of Accuracy, Consistency, Completeness and Clarity for Enterprise Documents
 
@@ -26,3 +27,5 @@ Multi-agent system that reviews structured business documents for accuracy, cons
 
 ## What it leaves untried
 
+## Topics
+[[Topic - LLM and agent judges]]

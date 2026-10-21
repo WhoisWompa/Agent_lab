@@ -6,6 +6,7 @@ arxiv: 2602.23729
 url: https://arxiv.org/abs/2602.23729
 venue: ICLR 2026
 category: self-evolving-tests
+topics: ["self-evolving tests"]
 ---
 # From Static Benchmarks to Dynamic Protocol: Agent-Centric Text Anomaly Detection for Evaluating LLM Reasoning
 
@@ -26,3 +27,5 @@ Teacher agent writes problems, orchestrator agent validates them and screens adv
 
 ## What it leaves untried
 
+## Topics
+[[Topic - self-evolving tests]]

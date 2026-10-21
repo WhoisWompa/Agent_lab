@@ -6,6 +6,7 @@ arxiv: 2410.09024
 url: https://arxiv.org/abs/2410.09024
 venue: ICLR 2025
 category: self-evolving-tests
+topics: ["agent evaluation benchmarks"]
 ---
 # AgentHarm: A Benchmark for Measuring Harmfulness of LLM Agents
 
@@ -26,3 +27,5 @@ Static benchmark of 110 explicitly malicious agent tasks (440 with augmentations
 
 ## What it leaves untried
 
+## Topics
+[[Topic - agent evaluation benchmarks]]

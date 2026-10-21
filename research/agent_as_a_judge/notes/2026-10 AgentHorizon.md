@@ -6,6 +6,7 @@ arxiv: 2610.11050
 url: https://arxiv.org/abs/2610.11050
 venue: arXiv
 category: agent-as-judge
+topics: ["LLM and agent judges", "judge and decision-model audits"]
 ---
 # AgentHorizon: Evaluating Agentic Judges for Long-Horizon Computer-Use Tasks
 
@@ -35,3 +36,6 @@ Benchmark of 1,373 human-recorded computer-use trajectories built in success/nea
 ## What it leaves untried
 - Judges that replay or re-run actions in a live environment to check side effects (here the judge only has recordings).
 - Explicit side-effect checking (diffing environment state before/after).
+
+## Topics
+[[Topic - LLM and agent judges]] · [[Topic - judge and decision-model audits]]

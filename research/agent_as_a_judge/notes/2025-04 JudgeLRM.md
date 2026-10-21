@@ -6,6 +6,7 @@ arxiv: 2504.00050
 url: https://arxiv.org/abs/2504.00050
 venue: arXiv
 category: trained-judges-reward-models
+topics: ["trained judges and reward models"]
 ---
 # JudgeLRM: Large Reasoning Models as a Judge
 
@@ -26,3 +27,6 @@ RL-trained reasoning judges (3B-14B) with judge-specific outcome rewards; shows 
 
 ## What it leaves untried
 - Harder meta-eval (JudgeBench, RewardBench 2).
+
+## Topics
+[[Topic - trained judges and reward models]]

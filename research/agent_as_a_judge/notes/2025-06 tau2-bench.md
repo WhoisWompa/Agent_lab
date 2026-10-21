@@ -6,6 +6,7 @@ arxiv: 2506.07982
 url: https://arxiv.org/abs/2506.07982
 venue: arXiv
 category: agent-evaluation-benchmarks
+topics: ["agent evaluation benchmarks", "user simulation"]
 ---
 # τ²-Bench: Evaluating Conversational Agents in a Dual-Control Environment
 
@@ -27,3 +28,5 @@ Reports significant drops from no-user to dual-control mode.
 
 ## What it leaves untried
 
+## Topics
+[[Topic - agent evaluation benchmarks]] · [[Topic - user simulation]]

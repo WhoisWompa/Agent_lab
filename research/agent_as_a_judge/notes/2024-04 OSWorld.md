@@ -6,6 +6,7 @@ arxiv: 2404.07972
 url: https://arxiv.org/abs/2404.07972
 venue: NeurIPS 2024 D&B
 category: agent-evaluation-benchmarks
+topics: ["agent evaluation benchmarks", "alternative evaluation paradigms"]
 ---
 # OSWorld: Benchmarking Multimodal Agents for Open-Ended Tasks in Real Computer Environments
 
@@ -28,3 +29,5 @@ Humans 72.36% vs best model 12.24% at release.
 
 ## What it leaves untried
 
+## Topics
+[[Topic - agent evaluation benchmarks]] · [[Topic - alternative evaluation paradigms]]

@@ -6,6 +6,7 @@ arxiv: 2306.05685
 url: https://arxiv.org/abs/2306.05685
 venue: NeurIPS 2023 Datasets and Benchmarks
 category: alternative-paradigms
+topics: ["LLM and agent judges", "judge and decision-model audits", "alternative evaluation paradigms", "presentation sensitivity"]
 ---
 # Judging LLM-as-a-Judge with MT-Bench and Chatbot Arena
 
@@ -37,3 +38,5 @@ Introduces MT-Bench and early Chatbot Arena; GPT-4 judge agrees with humans over
 - Swap-and-tie is a conservative patch; the paper does not test whether ties hide real preferences or measure the cost in discriminative power.
 - No adversarial robustness study of the judge (later done by Raina 2024, JudgeDeceiver, null models).
 
+## Topics
+[[Topic - LLM and agent judges]] · [[Topic - judge and decision-model audits]] · [[Topic - alternative evaluation paradigms]] · [[Topic - presentation sensitivity]]

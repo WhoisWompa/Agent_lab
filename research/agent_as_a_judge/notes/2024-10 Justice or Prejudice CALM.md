@@ -6,6 +6,7 @@ arxiv: 2410.02736
 url: https://arxiv.org/abs/2410.02736
 venue: ICLR 2025
 category: llm-judge-foundations
+topics: ["judge and decision-model audits", "presentation sensitivity"]
 ---
 # Justice or Prejudice? Quantifying Biases in LLM-as-a-Judge
 
@@ -26,3 +27,5 @@ CALM framework quantifies 12 judge biases (position, verbosity, authority, bandw
 
 ## What it leaves untried
 
+## Topics
+[[Topic - judge and decision-model audits]] · [[Topic - presentation sensitivity]]

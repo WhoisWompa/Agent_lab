@@ -6,6 +6,7 @@ arxiv: 2404.18796
 url: https://arxiv.org/abs/2404.18796
 venue: arXiv (Cohere)
 category: alternative-paradigms
+topics: ["LLM and agent judges", "social choice", "alternative evaluation paradigms"]
 ---
 # Replacing Judges with Juries: Evaluating LLM Generations with a Panel of Diverse Models
 
@@ -35,3 +36,5 @@ Three judge settings and six datasets (single-hop QA, multi-hop QA, Chatbot Aren
 - A panel of agentic judges; panels with selective abstention when members disagree.
 - Panels on hard objective tasks without references; correlated errors when all members share a training-data blind spot.
 
+## Topics
+[[Topic - LLM and agent judges]] · [[Topic - social choice]] · [[Topic - alternative evaluation paradigms]]

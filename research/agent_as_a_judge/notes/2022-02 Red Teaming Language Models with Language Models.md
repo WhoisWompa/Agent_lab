@@ -6,6 +6,7 @@ arxiv: 2202.03286
 url: https://arxiv.org/abs/2202.03286
 venue: EMNLP 2022
 category: self-evolving-tests
+topics: ["self-evolving tests"]
 ---
 # Red Teaming Language Models with Language Models
 
@@ -28,3 +29,6 @@ Uncovers tens of thousands of offensive replies from the 280B chatbot. Reports a
 
 ## What it leaves untried
 - Improve the judge (classifier) from the misjudgments surfaced by the attack loop; here only the attacker learns.
+
+## Topics
+[[Topic - self-evolving tests]]

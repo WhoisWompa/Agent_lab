@@ -6,6 +6,7 @@ arxiv: 2603.05167
 url: https://arxiv.org/abs/2603.05167
 venue: arXiv
 category: llm-judge-foundations
+topics: ["judge and decision-model audits"]
 ---
 # C2-Faith: Benchmarking LLM Judges for Causal and Coverage Faithfulness in Chain-of-Thought Reasoning
 
@@ -26,3 +27,5 @@ From PRM800K perturbations: frontier judges detect that a reasoning error exists
 
 ## What it leaves untried
 
+## Topics
+[[Topic - judge and decision-model audits]]

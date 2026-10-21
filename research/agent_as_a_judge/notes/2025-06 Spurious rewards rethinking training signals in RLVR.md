@@ -6,6 +6,7 @@ arxiv: 2506.10947
 url: https://arxiv.org/abs/2506.10947
 venue: arXiv
 category: alternative-paradigms
+topics: ["judges as reward signals"]
 ---
 # Spurious Rewards: Rethinking Training Signals in RLVR
 
@@ -26,3 +27,5 @@ RLVR on Qwen2.5-Math improves MATH scores even with random or incorrect rewards,
 
 ## What it leaves untried
 
+## Topics
+[[Topic - judges as reward signals]]

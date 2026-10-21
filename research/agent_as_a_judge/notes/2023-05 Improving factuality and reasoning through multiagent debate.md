@@ -6,6 +6,7 @@ arxiv: 2305.14325
 url: https://arxiv.org/abs/2305.14325
 venue: ICML 2024
 category: alternative-paradigms
+topics: ["alternative evaluation paradigms"]
 ---
 # Improving Factuality and Reasoning in Language Models through Multiagent Debate
 
@@ -26,3 +27,5 @@ Several LLM instances answer, read each other's answers and revise over rounds, 
 
 ## What it leaves untried
 
+## Topics
+[[Topic - alternative evaluation paradigms]]

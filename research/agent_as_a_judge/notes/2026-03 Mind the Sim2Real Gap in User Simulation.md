@@ -6,6 +6,7 @@ arxiv: 2603.11245
 url: https://arxiv.org/abs/2603.11245
 venue: COLM 2026
 category: agent-evaluation-benchmarks
+topics: ["user simulation", "agent evaluation benchmarks"]
 ---
 # Mind the Sim2Real Gap in User Simulation for Agentic Tasks
 
@@ -26,3 +27,5 @@ Runs the tau-bench protocol with 451 real people and 31 LLM user simulators and 
 
 ## What it leaves untried
 
+## Topics
+[[Topic - user simulation]] · [[Topic - agent evaluation benchmarks]]

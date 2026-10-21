@@ -6,6 +6,7 @@ arxiv: 2305.06311
 url: https://arxiv.org/abs/2305.06311
 venue: Findings of EMNLP 2023
 category: self-evolving-tests
+topics: ["LLM and agent judges", "trained judges and reward models"]
 ---
 # Automatic Evaluation of Attribution by Large Language Models
 
@@ -26,3 +27,5 @@ Prompted and fine-tuned LLMs judge whether a cited source supports a generated c
 
 ## What it leaves untried
 
+## Topics
+[[Topic - LLM and agent judges]] · [[Topic - trained judges and reward models]]

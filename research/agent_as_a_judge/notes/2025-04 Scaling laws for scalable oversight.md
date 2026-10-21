@@ -6,6 +6,7 @@ arxiv: 2504.18530
 url: https://arxiv.org/abs/2504.18530
 venue: arXiv (revised 2025-10)
 category: alternative-paradigms
+topics: ["alternative evaluation paradigms"]
 ---
 # Scaling Laws For Scalable Oversight
 
@@ -26,3 +27,6 @@ Nested scalable oversight success at a general Elo gap of 400: Debate 51.7%, Maf
 
 ## What it leaves untried
 - Same scaling analysis for agentic judges overseeing agents.
+
+## Topics
+[[Topic - alternative evaluation paradigms]]

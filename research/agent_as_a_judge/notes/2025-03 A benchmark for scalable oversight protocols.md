@@ -6,6 +6,7 @@ arxiv: 2504.03731
 url: https://arxiv.org/abs/2504.03731
 venue: arXiv
 category: alternative-paradigms
+topics: ["alternative evaluation paradigms", "judge and decision-model audits"]
 ---
 # A Benchmark for Scalable Oversight Protocols
 
@@ -26,3 +27,5 @@ Argues plain judge accuracy is the wrong metric for oversight protocols and prop
 
 ## What it leaves untried
 
+## Topics
+[[Topic - alternative evaluation paradigms]] · [[Topic - judge and decision-model audits]]

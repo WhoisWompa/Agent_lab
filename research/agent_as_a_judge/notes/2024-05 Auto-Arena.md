@@ -6,6 +6,7 @@ arxiv: 2405.20267
 url: https://arxiv.org/abs/2405.20267
 venue: arXiv
 category: alternative-paradigms
+topics: ["alternative evaluation paradigms", "LLM and agent judges", "social choice"]
 ---
 # Auto-Arena: Automating LLM Evaluations with Agent Peer Battles and Committee Discussions
 
@@ -26,3 +27,5 @@ Fully LLM-driven arena: an examiner LLM writes questions, two candidate LLMs bat
 
 ## What it leaves untried
 
+## Topics
+[[Topic - alternative evaluation paradigms]] · [[Topic - LLM and agent judges]] · [[Topic - social choice]]

@@ -6,6 +6,7 @@ arxiv: 2310.01798
 url: https://arxiv.org/abs/2310.01798
 venue: ICLR 2024
 category: alternative-paradigms
+topics: ["judge and decision-model audits", "LLM and agent judges"]
 ---
 # Large Language Models Cannot Self-Correct Reasoning Yet
 
@@ -26,3 +27,5 @@ Shows intrinsic self-correction without external feedback often fails to improve
 
 ## What it leaves untried
 
+## Topics
+[[Topic - judge and decision-model audits]] · [[Topic - LLM and agent judges]]

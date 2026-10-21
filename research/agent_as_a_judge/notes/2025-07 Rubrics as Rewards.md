@@ -6,6 +6,7 @@ arxiv: 2507.17746
 url: https://arxiv.org/abs/2507.17746
 venue: arXiv
 category: agent-evaluation-benchmarks
+topics: ["LLM and agent judges", "judges as reward signals"]
 ---
 # Rubrics as Rewards: Reinforcement Learning Beyond Verifiable Domains
 
@@ -26,3 +27,6 @@ Up to 31% relative gain on HealthBench and 7% on GPQA-Diamond over Likert LLM-ju
 
 ## What it leaves untried
 - Not tested on multi-step agent trajectories (medical and science QA only).
+
+## Topics
+[[Topic - LLM and agent judges]] · [[Topic - judges as reward signals]]

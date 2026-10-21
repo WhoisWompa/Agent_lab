@@ -6,6 +6,7 @@ arxiv: 2605.30803
 url: https://arxiv.org/abs/2605.30803
 venue: arXiv
 category: self-evolving-tests
+topics: ["LLM and agent judges", "preference learning"]
 ---
 # PReMISE: Policy Rubrics as Measurement Specifications for LLM Judges
 
@@ -26,3 +27,5 @@ Audits and repairs judge rubrics using pairwise human preference data (known onl
 
 ## What it leaves untried
 
+## Topics
+[[Topic - LLM and agent judges]] · [[Topic - preference learning]]

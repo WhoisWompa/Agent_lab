@@ -6,6 +6,7 @@ arxiv: 2507.08794
 url: https://arxiv.org/abs/2507.08794
 venue: NeurIPS 2025
 category: llm-judge-foundations
+topics: ["judge and decision-model audits", "trained judges and reward models", "judges as reward signals"]
 ---
 # One Token to Fool LLM-as-a-Judge
 
@@ -26,3 +27,6 @@ Widespread false positives across open models and proprietary GPT-o1, Claude-4; 
 
 ## What it leaves untried
 - Systematic search for new master keys against Master-RM (adaptive attacker).
+
+## Topics
+[[Topic - judge and decision-model audits]] · [[Topic - trained judges and reward models]] · [[Topic - judges as reward signals]]

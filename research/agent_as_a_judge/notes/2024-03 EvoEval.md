@@ -6,6 +6,7 @@ arxiv: 2403.19114
 url: https://arxiv.org/abs/2403.19114
 venue: COLM 2024
 category: self-evolving-tests
+topics: ["self-evolving tests"]
 ---
 # Top Leaderboard Ranking = Top Coding Proficiency, Always? EvoEval: Evolving Coding Benchmarks via LLM
 
@@ -26,3 +27,5 @@ Evolves HumanEval problems into new variants (harder, creative, tool-use, etc.) 
 
 ## What it leaves untried
 
+## Topics
+[[Topic - self-evolving tests]]

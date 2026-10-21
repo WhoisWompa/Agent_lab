@@ -6,6 +6,7 @@ arxiv: 2311.14125
 url: https://arxiv.org/abs/2311.14125
 venue: ICML 2024
 category: alternative-paradigms
+topics: ["alternative evaluation paradigms"]
 ---
 # Scalable AI Safety via Doubly-Efficient Debate
 
@@ -26,3 +27,6 @@ No empirical evaluation; theorems only.
 
 ## What it leaves untried
 - Empirical test with LLM debaters.
+
+## Topics
+[[Topic - alternative evaluation paradigms]]

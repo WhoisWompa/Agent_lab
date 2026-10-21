@@ -6,6 +6,7 @@ arxiv: 2401.13919
 url: https://arxiv.org/abs/2401.13919
 venue: ACL 2024
 category: agent-evaluation-benchmarks
+topics: ["agent evaluation benchmarks", "LLM and agent judges"]
 ---
 # WebVoyager: Building an End-to-End Web Agent with Large Multimodal Models
 
@@ -26,3 +27,5 @@ Reported ~85.3% agreement between GPT-4V auto-eval and human judgement.
 
 ## What it leaves untried
 
+## Topics
+[[Topic - agent evaluation benchmarks]] · [[Topic - LLM and agent judges]]
