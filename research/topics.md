@@ -40,6 +40,7 @@ Cross-cutting techniques and failure modes. A paper carries one of these when th
 | presentation sensitivity | Decisions that change with option order, option names or labels, the set of listed options, question form or request serialisation, though the content is logically the same; and methods that remove the sensitivity. |
 | abstention and fallback | None-of-the-above, defer, other, ask a clarifying question, null gates: whether a model can decline to pick from the menu, and how reliably. |
 | adaptive reasoning depth | Spending extra compute (looping, partial chain of thought, handing off to a slow reasoner) only on inputs where the fast decision is unsure, and how the switch is decided. |
+| reasoning prompting | Prompt-level techniques that elicit better single-model reasoning: chain-of-thought triggers, plan-then-solve, decomposition prompts, self-consistency voting, program-of-thought. The subject is the prompt wording and the reasoning text it produces, not a multi-agent structure or a critique loop. |
 
 ## Game theory
 
@@ -56,3 +57,17 @@ The lab's game-theory areas, from `game theory/`. A paper carries one when it us
 | social choice | Aggregating outputs, votes, rankings and judge scores from several agents: Arrow, Gibbard-Satterthwaite, voting rules, judgment aggregation, fair division, computational social choice. |
 | stackelberg games | Leader commits, follower best-responds: the orchestrator-worker relationship, Stackelberg equilibrium, security games, commitment computation. |
 | team theory and distributed decision making | Agents that share an objective but not information: common-payoff games, Dec-POMDPs, information structures, consensus and coordination, decentralised control, credit assignment. |
+
+## Agent systems
+
+How LLM agents are composed into systems. A paper carries one when the system's structure is a main subject.
+
+| Topic | Definition |
+|---|---|
+| self-refinement and critique loops | A model critiques and revises its own output, or is critiqued by a second model, over one or more rounds (Self-Refine, Reflexion, RCI, generator-critic loops). The subject is what the loop changes, when it helps or hurts, and what stops it. The critique is a step in producing the answer, not a judgment of someone else's output. |
+| orchestration and delegation | A controller LLM decomposes a request, routes sub-tasks to tools, models or sub-agents, and composes their outputs: planner-executor, orchestrator-worker, hierarchical delegation, hand-offs. The subject is the architecture: planning, selection, what the controller sees of the workers' results and how it accepts them. |
+| role-based agent teams | Two or more LLM agents given complementary roles (instructor and assistant, analyst, coder and tester, a software company) work through a task by turn-taking dialogue or a fixed workflow. The subject is how role assignment, standard procedures, what each role sees and the termination rule keep the team on task, including role flipping, loops, hollow completion and drift. |
+| strategic play among LLM agents | LLM agents in games with hidden information, hidden roles, or opposed or partly aligned goals: negotiation and bargaining, social deduction, cheap talk between agents, and the trust, deception and coordination that emerge in play. The subject is how the agents play and what the communication channel does, not a shared-task team. |
+| multi-agent debate and consensus | Several LLM agents, often from different models, exchange answers and explanations over rounds, revise their positions after seeing each other's, and settle on a team answer by vote, judge or convergence. The subject is what the exchange adds over one model or a plain ensemble: agent diversity, conformity and echo chambers, convergence, and when rounds stop helping. Debate as a way of producing an answer, not as a way of evaluating one. |
+| automated pipeline and topology search | Searching for or learning the prompts, demonstrations, workflow, agent roles or communication graph of an LM pipeline or multi-agent system against a metric, instead of hand-writing them: compiled prompt programs, bootstrapped demonstrations, workflow search, learned or pruned agent topologies. The subject is the optimizer and what it finds, not the wording of any one prompt. |
+| communication topology and channels | How the shape and size of the communication structure among LLM agents (chain, tree, star, mesh, layered, random, agent count) and what passes over an edge (text, summaries, artifacts only, embeddings or hidden states, protocol envelopes) determine task quality, cost and context load, including scaling in the number of agents. The subject is the structure and the channel, not the roles in it and not a search for it. |

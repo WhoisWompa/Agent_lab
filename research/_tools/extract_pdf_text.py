@@ -11,7 +11,7 @@ for p in sorted(glob.glob(os.path.join(src,'**','*.pdf'), recursive=True)):
         rows.append({"pdf":rel,"error":str(e)}); continue
     dst=os.path.join(out, os.path.splitext(rel)[0]+".txt")
     os.makedirs(os.path.dirname(dst), exist_ok=True)
-    open(dst,"w",encoding="utf-8").write(text)
+    open(dst,"w",encoding="utf-8",errors="replace").write(text)
     rows.append({"pdf":rel,"pages":pages,"chars":len(text),"est_tokens":len(text)//4,"txt":dst})
 json.dump(rows, open(os.path.join(out,"index.json"),"w"), indent=1)
 ok=[r for r in rows if "pages" in r]
