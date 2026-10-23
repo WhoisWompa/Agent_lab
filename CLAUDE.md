@@ -34,6 +34,19 @@ the `one-job-per-file` skill. The main session runs
 the result; what happens feeds back into discussion. Git discards what
 did not work.
 
+## Stale review
+
+Called by the main session after every builder pass, with the builder's
+report. The `stale-reviewer` reads only the files that report names, greps the
+folder for what references them, and reads only the files that do. Within that
+neighbourhood it removes what nothing uses: a function nothing calls, a file
+nothing imports, a prompt nothing reads, a package nothing imports, a settings
+key nothing reads, a README row for a file that is gone, a docstring or comment
+describing behaviour that no longer exists. A file or folder the brief
+deliberately left blank is named in the reviewer's brief and is not stale. It
+reports what it removed; the main session relays that. It adds nothing, changes
+no behaviour, and never reads beyond the neighbourhood.
+
 ## Paper team
 
 Called when PDFs need notes: the user says so, or a research run has
@@ -70,8 +83,18 @@ At the start of session:
 2. If the user's opening message clearly indicates which agent in the table, start on it. Do not ask.
 3. Otherwise, match what the user describes against the Summary column. If one agent clearly fits, confirm it in a line and proceed. If several could fit, offer those candidates plus "new agent" and let the user choose.
 
+**Stale means gone.** This holds for code, prompts, docstrings, `handoff.md`, this file, the skills and the agent definitions. Anything out of date is removed or rewritten, never marked. No "this rule is stale", no "deprecated", no commented-out code, no "kept for reference". A stale line costs context on every read and says nothing true.
+
 While building the source code:
 1. Inside an agent, `base/` is the base. It is read-only, never edited, for any reason: it is a copy of `agent_template/base/`, and `sync.py` overwrites it. The builder writes only `src/`.
+2. Code under `src/` has two shapes, and each tells one thing. The graph is the agent in time; the file tree is the agent in parts. Reading the node names in order and the folder and file names should be enough to know what the agent does. Opening a file is only for seeing how one thing is done.
+   - **Depth is dependency.** The more foundational a piece of code, the closer to the root of `src/` it sits. A root file imports nothing of ours. A folder imports root files and nothing beside it.
+   - **Closed form.** A function is complete where it stands. One job is never scattered over several files.
+   - **A family is a folder.** Parts that only make sense together live in one folder. Two different jobs are two folders.
+   - **The graph is the flow.** On LangGraph, one node per step of the agent's reasoning: each check, decision and action, named in the agent's own words, so a trace says which step broke. A decision is a node too. A step made of smaller steps is a subgraph. Steps live in `flow/`, one file per step and one folder per subgraph; their bodies call the families, which do the work and are never nodes.
+   - **The two axes run opposite ways.** Going deeper in `flow/` is zooming into a step; going deeper in a family is going from shared to specific. The flow imports down into its subgraphs and across into the families; the families import up toward the root; nothing imports `flow/`.
+
+   The tree grows one agreed piece at a time. The main session shows names and places only for what the discussion has settled; what has not been discussed is blank, a name at most, never a body, a signature or a guessed behaviour. The builder is briefed the same way.
 
 ## Keeping the table up to date.
 
@@ -114,8 +137,8 @@ python provider.py remove <agent> <label>
 | `git_sync.py` | Commits, then pulls or pushes so the laptop and GitHub match. Run by the session hooks; see **Commits**. |
 | `mcp/` | Shared MCP servers that agents may list in their `base_settings.json`. |
 | `research/` | Paper corpora: one folder per topic area, each with `notes/` (one note per paper, in `_TEMPLATE.md`'s shape, with `topics:` from the registry). `research/topics.md` is the topic registry; `research/_tools/` is the ingest pipeline. The graphify graph over all of it lives in `graphify-out/` at the root, gitignored, rebuilt with `graphify update . --force`. |
-| `.claude/agents/` | Subagents. `agent-builder` writes an agent's logic from a brief; `mcp-builder` writes an MCP server in `mcp/<name>/` from a brief. `research-searcher`, `research-reader`, `research-librarian` and `deep-reader` are the deep-read team, spawned by the deep-read workflow only. `paper-reader` writes one paper's note from its extracted text and picks its topics from `research/topics.md`, spawned by the `paper-ingest` skill. |
-| `.claude/hooks/` | `builder_paths.py` and `mcp_builder_paths.py` enforce the two builders' read and write limits. |
+| `.claude/agents/` | Subagents. `agent-builder` writes an agent's logic from a brief; `mcp-builder` writes an MCP server in `mcp/<name>/` from a brief; `stale-reviewer` removes what nothing uses from the neighbourhood of a builder's change. `research-searcher`, `research-reader`, `research-librarian` and `deep-reader` are the deep-read team, spawned by the deep-read workflow only. `paper-reader` writes one paper's note from its extracted text and picks its topics from `research/topics.md`, spawned by the `paper-ingest` skill. |
+| `.claude/hooks/` | `builder_paths.py` enforces the read and write limits of `agent-builder` and `stale-reviewer`; `mcp_builder_paths.py` those of `mcp-builder`. |
 | `.claude/skills/` | `one-job-per-file` is how code is split into files; both builders load it before writing. `vault-notes` is the note conventions for the vault. `deep-read` launches a deep read of one paper. `paper-ingest` turns a folder of PDFs into notes, topic links and the graphify graph. |
 | `.claude/workflows/` | Workflow scripts. `deep-read.js` is `deep-read-run`, led by the deep reader. |
 

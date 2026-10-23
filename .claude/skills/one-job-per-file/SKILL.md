@@ -66,6 +66,16 @@ Each package carries a table, one row per file, saying what the file does in a s
 
 If the calling session's brief names the files and their functions, build exactly that layout. The rule above is for what the brief leaves open, and for noticing when a brief's single file has quietly become three.
 
+## Two axes
+
+The file tree and the LangGraph graph are built on different principles and need not line up.
+
+The tree is the agent in parts. The more foundational a file, the closer to the root of `src/`: a root file imports nothing of ours, a folder imports root files and nothing beside it. Parts that only make sense together are one folder; two different jobs are two folders. A function is complete where it stands, never spread over files. Going deeper is going from shared to specific; imports point up toward the root.
+
+The graph is the agent in time. One node per step of its reasoning, each check, decision and action, named in the agent's own words so a trace names the step that broke. A decision is a node. A step made of smaller steps is a subgraph. Steps live in `flow/`, one file per step, one folder per subgraph, the folder's `__init__.py` wiring it. A step's body takes from the state, calls a family, writes back. Going deeper is zooming into a step; imports point down into subgraphs and across into families. Families and root files are never nodes, and nothing imports `flow/`.
+
+Where the brief is blank, the code is blank. A folder or file the brief names without a body stays empty. Nothing is filled in from guesswork; say in the report what was left blank.
+
 ## The worked example
 
 `mcp/telegram/src/telegram_mcp/` is the shape to copy:

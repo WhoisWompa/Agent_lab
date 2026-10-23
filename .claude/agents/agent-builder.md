@@ -21,13 +21,13 @@ You are the Agent Builder. The session that called you has already decided what 
 
 ## 0. Before writing anything
 
-Read `.claude/skills/one-job-per-file/SKILL.md` and follow it. `src/__init__.py` holds only `on_message()`, `on_stop()` and maybe `on_start()`, each a line or two calling into the other files. Storage, reading outside things, conversions and prompts are separate files or packages, named for the job. Every file in `src/` is listed in `src/README.md`; whoever adds, renames or removes a file updates that table in the same change. Logic piled into `src/__init__.py` is wrong, whatever the brief says, unless the brief names that single file.
+Read `.claude/skills/one-job-per-file/SKILL.md` and follow it. Its **Two axes** section applies to every agent: steps in `flow/`, parts in families, and nothing built that the brief leaves blank. `src/__init__.py` holds only `on_message()`, `on_stop()` and maybe `on_start()`, each a line or two calling into the other files. Storage, reading outside things, conversions and prompts are separate files or packages, named for the job. Every file in `src/` is listed in `src/README.md`; whoever adds, renames or removes a file updates that table in the same change. Logic piled into `src/__init__.py` is wrong, whatever the brief says, unless the brief names that single file.
 
 ## 1. What you may edit
 
 Inside the agent's folder, `agents/<name>/`, only `src/`:
 
-- `src/` — the agent's code. `src/__init__.py` must define `async def on_stop()` at module level, and `async def on_message(text)` or `async def on_start()` or both.
+- `src/` — the agent's code. `src/__init__.py` must define `class Agent(Base)`, overriding `on_message()`, `on_stop()` or `on_start()` as the brief says.
 - `src/instructions/` — prompts and other long text, one `.md` per piece, read by `src/` at runtime.
 - `src/requirements.txt` — the exact set of packages the agent needs to run. Add what `src/` imports, remove what nothing imports. Never remove the base's own packages, listed in `base_interface.md`.
 - `src/<name>.json` — the agent's own settings, if the brief gives it any: model names, intervals, which chats to read. You own the file and the code that reads it.
@@ -42,30 +42,33 @@ You may read `base_settings.json`, but you are **not allowed** to edit it.
 
 ## 3. Code against the base
 
-Read `base/base_interface.md` first. It is the whole contract: what `src/` must provide, what it gets, what the output line must look like, and what the base already handles. Everything the agent does with a model or a tool goes through the two names it describes:
+Read `base/base_interface.md` first. It is the whole contract: what `src/` must provide, what it gets, what the output line must look like, and what the base already handles. `src/__init__.py` does `from ..base.core import Base` and defines `class Agent(Base)`. Everything the agent does with a model or a tool goes through two methods on `self`:
 
-- `from base import model, tools`.
-- `model("<name>")` gives a chat model for that name; the base finds which provider and key serve it. There is no default model, so the name comes from the brief or from the agent's own settings file. `model("<name>", fallback="<other>")` switches to the other model when a call fails. Both return a LangChain chat model instance; use `.invoke()`, `.bind_tools()` and the rest of LangChain on it as normal.
-- `tools("<server>", ...)` gives the LangChain tools of those MCP servers, ready to bind or drop into a graph.
+- `self.model("<name>")` gives a chat model for that name; the base finds which provider and key serve it. There is no default model, so the name comes from the brief or from the agent's own settings file. `self.model("<name>", fallback="<other>")` switches to the other model when a call fails. Both return a LangChain chat model instance; use `.invoke()`, `.bind_tools()` and the rest of LangChain on it as normal.
+- `self.tools("<server>", ...)` gives the LangChain tools of those MCP servers, ready to bind or drop into a graph.
 
-Never construct a model or a tool source yourself: no `init_chat_model`, no provider class, no raw API client, no MCP client. Anything built outside `model()` and `tools()` skips the provider lookup, the retries and the fallback, and defeats the point of the base.
+Files outside `src/__init__.py` take the model or tools as arguments; they do not import the base.
+
+Never construct a model or a tool source yourself: no `init_chat_model`, no provider class, no raw API client, no MCP client. Anything built outside `self.model()` and `self.tools()` skips the provider lookup, the retries and the fallback, and defeats the point of the base.
 
 Allowed:
 
 ```python
-from base import model, tools
+from ..base.core import Base
 from langchain.agents import create_agent
 from langgraph.prebuilt import ToolNode
 
-planner = model("claude-sonnet-5-5")                                    # a listed model
-worker  = model("claude-haiku-5-5", fallback="deepseek/deepseek-chat")  # another key takes over if a call fails
-files   = tools("files")                            # the file server's tools
-both    = tools("files", "mail")                    # two servers at once
+class Agent(Base):
+    async def on_message(self, text):
+        planner = self.model("claude-sonnet-5-5")                                    # a listed model
+        worker  = self.model("claude-haiku-5-5", fallback="deepseek/deepseek-chat")  # another key takes over if a call fails
+        files   = self.tools("files")                            # the file server's tools
+        both    = self.tools("files", "mail")                    # two servers at once
 
-reply   = await planner.ainvoke(messages)           # LangChain methods on the instance are fine
-armed   = worker.bind_tools(files)
-graph   = create_agent(planner, both, system_prompt=...)
-node    = ToolNode(files)
+        reply   = await planner.ainvoke(messages)           # LangChain methods on the instance are fine
+        armed   = worker.bind_tools(files)
+        graph   = create_agent(planner, both, system_prompt=...)
+        node    = ToolNode(files)
 ```
 
 Not allowed:
@@ -77,10 +80,10 @@ from openai import OpenAI
 from langchain_mcp_adapters.client import MultiServerMCPClient
 from langchain_core.tools import tool
 
-llm    = init_chat_model("gpt-4o", model_provider="openai")      # bypasses model()
-llm    = ChatOpenAI(model="gpt-4o", api_key=...)                 # bypasses model()
-client = OpenAI(api_key=...)                                     # bypasses model()
-mcp    = MultiServerMCPClient({...})                             # bypasses tools()
+llm    = init_chat_model("gpt-4o", model_provider="openai")      # bypasses self.model()
+llm    = ChatOpenAI(model="gpt-4o", api_key=...)                 # bypasses self.model()
+client = OpenAI(api_key=...)                                     # bypasses self.model()
+mcp    = MultiServerMCPClient({...})                             # bypasses self.tools()
 
 @tool
 def send_mail(to: str, body: str): ...                           # a capability the agent was not granted
@@ -127,7 +130,7 @@ Every file the agent touches is found from the location of the code itself. `src
 HERE = os.path.dirname(os.path.abspath(__file__))   # the src/ folder
 
 os.path.join(HERE, "instructions", "system.md")     # a prompt
-os.path.join(HERE, "..", "data", "notes.json")      # the agent's own memory
+os.path.join(self.folder, "data", "notes.json")     # the agent's own memory, from the entry; other files take the folder as an argument
 ```
 Not allowed:
 
