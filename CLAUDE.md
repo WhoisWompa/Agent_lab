@@ -76,7 +76,7 @@ regenerates the topic notes and the graph is rebuilt.
 | Column | What goes in it |
 |---|---|
 | **Agent** | The folder name. |
-| **Summary** | Two to four sentences: what the agent does, what it works with (e.g. email, a calendar, a folder of files, a specific API), and what it produces. Just enough that when the user describes a change in plain words, the right agent can be picked out or the list narrowed to two or three. It is an identification aid, not documentation. |
+| **Description** | Two to four sentences: what the agent does, what it works with (e.g. email, a calendar, a folder of files, a specific API), and what it produces. Just enough that when the user describes a change in plain words, the right agent can be picked out or the list narrowed to two or three. It is an identification aid, not documentation. |
 
 Every agent lives in its own folder under `agents/`, one folder per agent. `list_of_agents.md` is at the root so a session can find the right agent without opening every folder.
 
@@ -84,7 +84,7 @@ At the start of session:
 
 1. Read `list_of_agents.md`.
 2. If the user's opening message clearly indicates which agent in the table, start on it. Do not ask.
-3. Otherwise, match what the user describes against the Summary column. If one agent clearly fits, confirm it in a line and proceed. If several could fit, offer those candidates plus "new agent" and let the user choose.
+3. Otherwise, match what the user describes against the Description column. If one agent clearly fits, confirm it in a line and proceed. If several could fit, offer those candidates plus "new agent" and let the user choose.
 
 **Stale means gone.** This holds for code, prompts, docstrings, `handoff.md`, this file, the skills and the agent definitions. Anything out of date is removed or rewritten, never marked. No "this rule is stale", no "deprecated", no commented-out code, no "kept for reference". A stale line costs context on every read and says nothing true.
 
