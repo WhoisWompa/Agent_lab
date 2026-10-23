@@ -123,7 +123,7 @@ python provider.py add <agent> <label> --provider <pkg> --base-url <url> --key <
 python provider.py remove <agent> <label>
 ```
 
-`add` writes the block and appends the blank line; the user fills the value. `remove` deletes both. The script prints variable names, never values. A model name belongs to exactly one provider in an agent; the base refuses to start otherwise. There is no default model: `src/` always calls `model("<name>")`.
+`add` writes the block and appends the blank line; the user fills the value. `remove` deletes both. The script prints variable names, never values. A model name belongs to exactly one provider in an agent; the base refuses to start otherwise. There is no default model: `src/` always calls `self.model("<name>")`.
 
 ## Repo layout
 
@@ -148,9 +148,9 @@ Two folders and the files the base reads. `base/` is the template's; `src/` is t
 
 | Path | What it is | Builder reads | Builder writes |
 |---|---|---|---|
-| `base/` | The base, one file per job: `main.py` (the stdin/stdout loop), config, trace, models, MCP tools, the turn, and `base_interface.md`. Gives `src/` `model()` and `tools()`. A copy of `agent_template/base/`, overwritten by `sync.py`. Never edited here. | **no** | no |
+| `base/` | The base: one class, `Base`, split over one file per job (config, models, MCP tools, trace, the turn) and `base_interface.md`. `src/` subclasses it and gets `self.model()` and `self.tools()`. A copy of `agent_template/base/`, overwritten by `sync.py`. Never edited here. | **no** | no |
 | `base/base_interface.md` | The base as a black box: what `src/` must provide, what it gets, what the output line looks like. The one file in `base/` the builder reads. | yes | no |
-| `src/` | The agent's code. `src/__init__.py` holds `on_stop()`, and `on_message()` or `on_start()` or both. `src/README.md` lists every file. | yes | yes |
+| `src/` | The agent's code. `src/__init__.py` holds `class Agent(Base)`, overriding `on_message()`, `on_stop()` or `on_start()`. `src/README.md` lists every file. | yes | yes |
 | `src/instructions/` | Prompts and other long text, one `.md` per piece. | yes | yes |
 | `src/requirements.txt` | The exact set of packages the agent needs to run. | yes | yes |
 | `src/<name>.json` | The agent's own settings, if it has any. The base never opens it. | yes | yes |
@@ -162,8 +162,9 @@ Two folders and the files the base reads. `base/` is the template's; `src/` is t
 | `.gitignore` | Kept from the template; the root `.gitignore` is what actually applies. | no | no |
 | `tests/` | Never shipped. Empty for now. | no | no |
 | `handoff.md` | What is left to continue in this agent, nothing else. Written by the main session. See **Handoff** below. | no | no |
+| `__init__.py`, `__main__.py` | The two lines that make `from agents import <name>` and `python -m agents.<name>` work. Copied from the template, never edited. | no | no |
 
-An agent runs as `python agents/<name>/base/main.py` with the shared root `.venv` active. The main session reads everything except `.env`, and writes everything the builder does not, when the user agrees.
+An agent runs as `python -m agents.<name>` from the repo root with the shared `.venv` active. The main session reads everything except `.env`, and writes everything the builder does not, when the user agrees.
 
 ## Handoff
 
