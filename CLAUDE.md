@@ -43,9 +43,12 @@ neighbourhood it removes what nothing uses: a function nothing calls, a file
 nothing imports, a prompt nothing reads, a package nothing imports, a settings
 key nothing reads, a README row for a file that is gone, a docstring or comment
 describing behaviour that no longer exists. A file or folder the brief
-deliberately left blank is named in the reviewer's brief and is not stale. It
-reports what it removed; the main session relays that. It adds nothing, changes
-no behaviour, and never reads beyond the neighbourhood.
+deliberately left blank is named in the reviewer's brief and is not stale. For
+each file it reads it also says in one line what the file does; if that line
+needs "and", it reports the file as two jobs and does not split it, since a
+split changes the tree and the tree is agreed in discussion. It reports what it
+removed and what it flagged; the main session relays that. It adds nothing,
+changes no behaviour, and never reads beyond the neighbourhood.
 
 ## Paper team
 
