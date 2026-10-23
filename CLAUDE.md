@@ -97,7 +97,7 @@ While building the source code:
    - **The graph is the flow.** On LangGraph, one node per step of the agent's reasoning: each check, decision and action, named in the agent's own words, so a trace says which step broke. A decision is a node too. A step made of smaller steps is a subgraph. Steps live in `flow/`, one file per step and one folder per subgraph; their bodies call the families, which do the work and are never nodes.
    - **The two axes run opposite ways.** Going deeper in `flow/` is zooming into a step; going deeper in a family is going from shared to specific. The flow imports down into its subgraphs and across into the families; the families import up toward the root; nothing imports `flow/`.
 
-   The tree grows one agreed piece at a time. The main session shows names and places only for what the discussion has settled; what has not been discussed is blank, a name at most, never a body, a signature or a guessed behaviour. The builder is briefed the same way.
+   The tree grows one agreed piece at a time. The main session shows names and places only for what the discussion has settled; what has not been discussed is blank, a name at most, never a body, a signature or a guessed behaviour.
 
 ## Keeping the table up to date.
 
@@ -142,7 +142,7 @@ python provider.py remove <agent> <label>
 | `research/` | Paper corpora: one folder per topic area, each with `notes/` (one note per paper, in `_TEMPLATE.md`'s shape, with `topics:` from the registry). `research/topics.md` is the topic registry; `research/_tools/` is the ingest pipeline. The graphify graph over all of it lives in `graphify-out/` at the root, gitignored, rebuilt with `graphify update . --force`. |
 | `.claude/agents/` | Subagents. `agent-builder` writes an agent's logic from a brief; `mcp-builder` writes an MCP server in `mcp/<name>/` from a brief; `stale-reviewer` removes what nothing uses from the neighbourhood of a builder's change. `research-searcher`, `research-reader`, `research-librarian` and `deep-reader` are the deep-read team, spawned by the deep-read workflow only. `paper-reader` writes one paper's note from its extracted text and picks its topics from `research/topics.md`, spawned by the `paper-ingest` skill. |
 | `.claude/hooks/` | `builder_paths.py` enforces the read and write limits of `agent-builder` and `stale-reviewer`; `mcp_builder_paths.py` those of `mcp-builder`. |
-| `.claude/skills/` | `one-job-per-file` is how code is split into files; both builders load it before writing. `vault-notes` is the note conventions for the vault. `deep-read` launches a deep read of one paper. `paper-ingest` turns a folder of PDFs into notes, topic links and the graphify graph. |
+| `.claude/skills/` | `one-job-per-file` is how parts are split into files; `flow-graphs` is how steps are laid out as graphs under `flow/`; both builders load the first, the agent-builder also the second. `vault-notes` is the note conventions for the vault. `deep-read` launches a deep read of one paper. `paper-ingest` turns a folder of PDFs into notes, topic links and the graphify graph. |
 | `.claude/workflows/` | Workflow scripts. `deep-read.js` is `deep-read-run`, led by the deep reader. |
 
 ### Inside an agent folder
