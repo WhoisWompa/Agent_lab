@@ -1,112 +1,131 @@
-# Discussion: the judge's flow and the difficulty ladder
+# Discussion: the shape of the judge
 
-Design idea from the session of 2026-10-22. Complements `eval_design.md`,
-which covers how a single scenario is graded. This file covers the judge's
-overall flow, how scenarios grow harder, and how the judge drives a
-conversation through them. Items marked *to be confirmed* are the user's own
-open points.
+Where the design landed in the sessions of 2026-10-22 and 2026-10-23.
+`eval_design.md` covers how one run is graded: binary criteria, check
+shapes, must and should lines, the user vetting what the judge invents. This
+file covers the judge as a whole: its roles, what a scenario is, how runs are
+composed, and the sandbox they run in. Anything still open is in the last
+section.
 
-## The flow
+## Three roles
 
-1. **Learn the target.** The judge reads the agent's description, its tools,
-   and its code (*to be confirmed* whether the judge sees the code). The aim
-   is to know what the agent can and cannot do before anything else.
-2. **Clear open questions with the user.** The judge converses with the user
-   until it has no open questions about the target.
-3. **Create scenarios.** The judge writes scenarios with their details: the
-   ground truth, plus the other contents of a scenario (*to be confirmed*
-   what else a scenario carries).
-4. **The user vets.** The user reads each scenario and accepts or rejects it.
-   Only accepted scenarios are run.
-5. **Simulate.** For an accepted scenario the judge calls a fake user with a
-   persona and has it interact with the agent. The judge tracks the entire
-   conversation.
-6. **Verify claims with tools.** When the agent says it did something with an
-   effect, such as booking a flight or saving data, the judge calls a tool to
-   check that the effect is real.
-7. **The judge ends the session.** Only when the judge determines it has
-   collected enough data does it choose to end the session.
-
-## Difficulty is a ladder of turns
-
-The test set is not a fixed pile of scenarios. At the bottom every scenario is
-one turn: the fake user asks, the agent answers, the run ends. Each rung up
-adds turns, and each added turn carries one new kind of pressure. The agent
-climbs until it breaks. Where it breaks, and on what, is the finding.
-
-A conversation of ten unrelated questions is ten level-one scenarios. What
-makes a later turn hard is what it does to the earlier ones. The pressures
-named so far:
-
-| Pressure | What it tests |
+| Role | What it does |
 |---|---|
-| Refer back | "The one I mentioned earlier." Did the agent keep the thread. |
-| Nonexistent thing | Asking for an item that is not in the state. Does the agent invent it. |
-| Prerequisite | Asking for an action that needs another step first. Does the agent notice, do it, or ask. |
-| Contradiction | The user says something that conflicts with the state or with an earlier turn. |
-| Changed mind | "Actually, not that one." |
-| Out of scope | Asking for something the agent must refuse. |
+| **Main judge** | Learns the target: its description, its tools, where its state lives and where fake state can be planted. Clears its open questions with the user. Authors scenarios into a pool. Brings the user what the observers found. Talks to the user over stdin and stdout; it is the agent in `agents/judge/`. |
+| **Observer** | Owns one run: one sandbox, one target process, one path through the pool. Plants state, starts the target, feeds it, restarts it when the path says a new conversation begins, reads the trace, grades. Reads the whole pool so it knows what is still worth re-asking. Many observers running different paths is the Monte Carlo. |
+| **Simulated user** | A character living through the scenario: a persona, the facts it is allowed to know, a memory of everything it has already told the target, and what it wants now. Composes its own words. Lives inside the observer, so its memory survives a target restart. Present only when the scenario has a user part. |
 
-A level is how many pressures are stacked in one conversation. The report says
-which pressure broke the agent, not only at which turn.
+The scenario script says when the simulated user speaks and what it wants;
+the simulated user decides how to say it. Nobody improvises a fact the
+scenario did not give. This is the fence.
 
-## The scenario is the fence
+## A scenario
 
-Every scenario carries its facts and its ground truth. The starting state is
-frozen and the facts are fixed; the fake user never introduces a fact that is
-not in the scenario and never pursues a goal the scenario did not give it.
+A data file in one fixed shape, authored by the main judge, vetted by the
+user. Not code: the observer composes and reorders scenarios, and code that
+runs cannot be composed. Where a scenario needs code, planting a fake folder
+or checking an end state, that is a named step inside the shape, a line or
+two, as `eval_design.md` allows.
 
-Inside the fence the judge steers live. It picks which pressure to apply next,
-in what order and in what words, reacting to what the agent just said. The
-scenario bounds what may happen; the judge decides how.
+| Part | Holds | Present |
+|---|---|---|
+| **Plant** | The fake state the target starts from, or the delta on the state of the scenario it needs. | always |
+| **Checklist** | The lines the target must do, each with its check shape and its must or should tier. Written against the state as planted. | always |
+| **Needs** | Which scenario this one stacks on, if any. | always, may be empty |
+| **User** | Persona, what the user knows, what the user wants, at which point they come. | when the target converses |
+| **Clock** | What day it is for the target, and how time moves between rungs. | when the target reasons about dates |
 
-## Scenarios stack
+A target that runs without a user does its job and exits; the observer sees
+only output and end state. A timeless target, a data-analysis job, has no
+clock part and stacks by "the output of A is the input of B". The year-long
+simulation of a calendar agent is the hard end of the same shape, not a
+different shape.
 
-A higher scenario is built on a lower one. The conversation that passed at the
-level below is the prefix; the new pressure is the extension. The agent walks
-into the new turn already carrying the earlier ones, so a refer-back has
-something real to refer back to. When a level breaks, the level below passed on
-the same prefix, so the break is isolated to the one new pressure.
+## A run is a path through the pool
 
-## Monte Carlo over paths
+Scenarios stack: A alone, or A then B, or A then B then C, where B says it
+needs A. The observer picks the path within the dependencies and owns one
+target process across it. The target walks into each rung carrying its own
+memory and a changed world: a rung is a state delta plus a new thing the
+user wants.
 
-One stacked scenario is a tree: at each turn the judge can choose a different
-pressure or wording, and the agent can answer differently. The judge does not
-pick one path. It samples many, runs each live from the start, grades every
-trajectory against the scenario's ground truth, and reads the statistics.
+At any point on the path the observer may re-ask an earlier scenario. The
+simulated user composes the re-ask from its memory ("that appointment I
+mentioned"), never the original words. The observer, having read the pool,
+knows which earlier checklists a later delta has invalidated and does not
+re-ask those.
 
-What this gives:
+**New conversation** is one move on the observer's menu: stop the target,
+which runs its save hook and exits, then start it again. Disk memory under
+`data/` survives, context does not. The simulated user remembers either way.
+This separates two kinds of forgetting, reported apart:
 
-- Per-pressure survival rates instead of a single pass or fail. The must-line
-  gate from `eval_design.md` still applies: a scenario passes only if every
-  must line passes on every sampled path. One break in thirty is a finding to
-  read, not noise.
-- The prefix does not need to be stable. A flaky prefix becomes a measured
-  rate about the agent rather than a defect of the harness.
-- Failures can be grouped by the sequence of pressures that led to them, so a
-  weakness that only shows up in one ordering is visible as such.
+| Forgetting | Caught by |
+|---|---|
+| Within a conversation: long context, drift | re-asking in the same process |
+| Across conversations: did it save what mattered | re-asking after a restart |
 
-The trajectory is the thing checked, as in `eval_design.md`: the trace in
-`logs/` plus the reply, graded by coded checks wherever possible, plus the
-tool checks of step 6 for any effect the agent claims.
+Randomness in the Monte Carlo is in the simulated user's wording and the
+target's answers. The order of pressures on a path is fixed by the scenarios,
+so failures group cleanly by rung and by what was asked.
+
+## The verdict
+
+Two sources per run, both ending as yes-or-no lines:
+
+- **The checklist**, fixed at authoring time, run by code wherever its shape allows.
+- **Claims**, discovered live: the observer pulls out what the target said it did or found, and verifies each against the planted state and the trace. The model's part is only "what was claimed"; the check is against things the observer holds.
+
+A claim the observer has nowhere to check is a third outcome, *unverified*,
+never a fail; counting it as a fail would punish the target for the judge's
+blind spot.
+
+**Drift** is a checkable line, not an opinion: a turn that contradicts the
+planted state or an earlier turn of the same conversation. The finding is
+the turn number and the two conflicting statements. Across many paths this
+gives a drift rate per rung, which is the number behind "good enough to put
+in front of a real user". Whether the conversation read well stays a should
+line: reported, never gating.
+
+**Enough evidence is asymmetric.** One failed must line with a trace behind
+it fails the scenario; more runs only add examples. A pass is never proven,
+only bounded: N clean paths, N set per scenario.
+
+## The sandbox
+
+One per run: a copy of the agent folder in a scratch place, fake state
+planted, empty `data/` and `logs/`, thrown away after. Parallel paths are
+parallel copies. The code is the repo's code, the venv is the shared one.
+The copy must stay importable as `agents.<name>`, since that is how a target
+is started.
+
+Docker is not needed for a clean folder. It would add a network cut, so a
+target cannot reach its real service during a test, and that is reached for
+only when a target has to be cut off. It does not supply a fake service;
+that is the planting problem below.
+
+## Time
+
+Where the target reasons about dates, the planted dates and the target's
+"today" must agree. A folder cannot change what day the target thinks it is,
+so the base must read today from something the judge can set, falling back
+to the real clock when unset. One-line base change, discussed separately,
+required for any scenario with a clock part.
+
+**Training leak.** A scenario set in a period the target model saw in
+training lets it answer from memory instead of from the data, and the judge
+cannot tell. Fatal for a time-series target. Rule for the main judge when
+planting: every date after the target model's training cutoff, or values
+that cannot exist in any training set; the first covers the second. The
+judge must know the cutoff per model and asks the user when it does not.
 
 ## Open
 
-From the user:
-
-- Whether the judge sees the agent's code or only its description and tools.
-- What a scenario carries beyond the ground truth.
-
-Raised in discussion, not decided:
-
-- Whether the pressures are a fixed menu the judge picks from, with the harness
-  recording which pressure each turn was, or free-form steering under
-  instruction. The menu makes "inside the fence" checkable by code and makes
-  the per-pressure grouping free.
-- Which randomness the Monte Carlo is over: the fake user's choices, the
-  agent's answers, or both.
-- How many paths per scenario, and whether sampling stops on a fixed count or
-  once the observed rates have settled.
-- What "enough data" means for step 7, in terms the harness can check.
-- Cost: with live steering, every path is a fake-user call plus an agent call
-  per turn. Coded checks keep grading free; the steering is the bill.
+- The three roles in detail: what each holds, what each is told, the moves on the observer's menu. Next stage.
+- Whether the main judge sees the target's code or only its description, tools and state.
+- Planting for a target whose state lives behind an MCP server that talks to a real service (the ledger and Telegram): the server needs a swappable backing store, or the target cannot be graded this way.
+- Where the trace lands. `base_interface.md` says Phoenix; `CLAUDE.md` says `logs/`. The observer reads the trajectory from wherever it is, and that decides what the observer has to have at hand.
+- The base change that lets the judge set the target's date.
+- Where each model's training cutoff is recorded.
+- N clean paths per scenario, and whether it is a fixed count or stops when rates settle.
+- Cost: every path is a simulated-user call plus a target call per turn, plus a claim-extraction call per target turn. Coded checks are free.
