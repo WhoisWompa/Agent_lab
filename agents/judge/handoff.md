@@ -1,3 +1,3 @@
-- The judge's overall shape is settled and written in `discussion.md`: three roles (main judge, observer, simulated user), the scenario as a fixed-shape data file with optional user and clock parts, runs as paths through a pool with restarts, the verdict from checklist plus discovered claims, one sandbox per run, time and the training-leak rule. Its **Open** section lists what is not.
-- Next: the three roles one at a time, in discussion, before any file or signature is drawn. Nothing of the judge is built; `src/` is still the template stub.
-- Two things outside the judge are on the design's path: the base reading "today" from something the judge can set, and where the trace lands (Phoenix versus `logs/`).
+- The judge is now the runner only; the `examiner` writes the scenarios. Both are described in `discussion.md` here, which with `eval_design.md` is the design for both agents. Its **Open** section lists what is not settled.
+- `src/` agreed so far: `flow/` with graph 0 (pick paths, run them all at once, report) and a `runner/` graph (one path), plus the `user/` family: `persona.py`, `memory.py`, `compose.py`. Nothing else is placed. Nothing is built; `src/` is still the template stub.
+- Next: the steps inside `flow/` and where the rest of the judge's work lives, in discussion.

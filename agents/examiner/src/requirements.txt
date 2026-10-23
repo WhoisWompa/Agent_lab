@@ -1,0 +1,9 @@
+langchain==1.4.4
+langchain-anthropic==1.7.5
+langgraph==1.2.14
+langchain-mcp-adapters==0.3.2
+deepagents==0.7.23
+openinference-instrumentation-langchain==0.1.79
+openinference-semantic-conventions==0.1.41
+opentelemetry-sdk==1.45.1
+opentelemetry-exporter-otlp-proto-http==1.45.1

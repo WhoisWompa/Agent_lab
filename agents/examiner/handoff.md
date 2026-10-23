@@ -1,0 +1,4 @@
+- Folder just created; `ANTHROPIC_API_KEY` is blank in `.env`. `src/` is the template stub.
+- The design is in `agents/judge/discussion.md` and `agents/judge/eval_design.md`: the examiner writes scenarios to `scenarios/<target>/`, the judge runs them.
+- `src/` drafted and not objected to, nothing written: `flow/` graph 0 (learn the target, clear questions, draft, walk through, save, read results); `target/` family (`describe.py`, `state.py`); `scenario/` family (`draft.py`, `variants.py`, `pool.py`).
+- Next: the steps inside `flow/`, in discussion.
