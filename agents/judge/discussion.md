@@ -132,9 +132,7 @@ examiner must know the cutoff per model and asks the user when it does not.
 ## Open
 
 - The judge's `src/` is agreed as `flow/` plus the `user/` family (persona, memory, compose). Everything else the judge needs is not yet placed.
-- The examiner's `src/`: a `target/` family (describe, state) and a `scenario/` family (draft, variants, pool) were drafted and not objected to; nothing is written.
 - The steps inside each agent's `flow/`, in detail.
-- Whether the examiner sees the target's code or only its description, tools and state.
 - Planting for a target whose state lives behind an MCP server that talks to a real service (the ledger and Telegram): the server needs a swappable backing store, or the target cannot be graded this way.
 - Where the trace lands. `base_interface.md` says Phoenix; `CLAUDE.md` says `logs/`. The judge reads the trajectory from wherever it is.
 - The base change that lets the judge set the target's date.

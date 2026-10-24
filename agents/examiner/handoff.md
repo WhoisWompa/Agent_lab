@@ -1,4 +1,4 @@
-- Folder just created; `ANTHROPIC_API_KEY` is blank in `.env`. `src/` is the template stub.
-- The design is in `agents/judge/discussion.md` and `agents/judge/eval_design.md`: the examiner writes scenarios to `scenarios/<target>/`, the judge runs them.
+- `ANTHROPIC_API_KEY` is blank in `.env`. `src/` is the template stub.
+- The design is `discussion.md` here; how a run is executed and graded is in `agents/judge/discussion.md` and `agents/judge/eval_design.md`.
 - `src/` drafted and not objected to, nothing written: `flow/` graph 0 (learn the target, clear questions, draft, walk through, save, read results); `target/` family (`describe.py`, `state.py`); `scenario/` family (`draft.py`, `variants.py`, `pool.py`).
-- Next: the steps inside `flow/`, in discussion.
+- Open, listed in `discussion.md`: the steps inside `flow/`; whether the examiner sees the target's code; the scenario file's exact shape; where training cutoffs are recorded; planting behind a real-service MCP server.
