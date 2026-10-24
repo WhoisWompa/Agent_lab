@@ -2,7 +2,7 @@
 
 Where the design landed in the sessions of 2026-10-22 and 2026-10-23.
 `eval_design.md` covers how one run is graded: binary criteria, check
-shapes, must and should lines, the user vetting what the judge invents. This
+shapes, error and warning lines, the user vetting what the judge invents. This
 file covers the judge as a whole: its roles, what a scenario is, how runs are
 composed, and the sandbox they run in. Anything still open is in the last
 section.
@@ -31,39 +31,43 @@ test, one process is one trace, and a crash stays in the target.
 
 ## A scenario
 
-A data file in one fixed shape, authored by the examiner, vetted by the
-user. Not code: the judge composes and reorders scenarios, and code that
-runs cannot be composed. Where a scenario needs code, planting a fake folder
-or checking an end state, that is a named step inside the shape, a line or
-two, as `eval_design.md` allows.
-
-| Part | Holds | Present |
-|---|---|---|
-| **Plant** | The fake state the target starts from, or the delta on the state of the scenario it needs. | always |
-| **Checklist** | The lines the target must do, each with its check shape and its must or should tier. Written against the state as planted. | always |
-| **Needs** | Which scenario this one stacks on, if any. | always, may be empty |
-| **User** | Persona, what the user knows, what the user wants, at which point they come. | when the target converses |
-| **Clock** | What day it is for the target, and how time moves between rungs. | when the target reasons about dates |
+One folder per scenario under `scenarios/<target>/<name>/`: a YAML file
+and the data files that do not fit inline. Authored by the examiner, vetted
+by the user. Not code: the judge composes and reorders scenarios, and code
+that runs cannot be composed. The exact shape, with the judge functions a
+check may name, is in `agents/examiner/discussion.md`. What the judge needs
+from it: `data`, one entry per file to plant, keyed by its path under the
+sandbox's `data/`, every date an offset from now; `conversation`, what the
+simulated user knows and wants on each turn; `checklist`, named lines each
+naming one judge function and its arguments, with severity `error` or
+`warning`. Every scenario is complete on its own and says nothing about who
+the user is or what it stacks on.
 
 A target that runs without a user does its job and exits; the judge sees
-only output and end state. A timeless target, a data-analysis job, has no
-clock part and stacks by "the output of A is the input of B". The year-long
-simulation of a calendar agent is the hard end of the same shape, not a
-different shape.
+only output and end state. A timeless target, a data-analysis job, stacks by
+"the output of A is the input of B". The year-long simulation of a calendar
+agent is the hard end of the same shape, not a different shape.
 
 ## A run is a path through the pool
 
-Scenarios stack: A alone, or A then B, or A then B then C, where B says it
-needs A. The judge picks the path within the dependencies and owns one
-target process across it. The target walks into each rung carrying its own
-memory and a changed world: a rung is a state delta plus a new thing the
-user wants.
+Scenarios stack: A alone, or A then B, or B then A. No scenario depends on
+another; the judge picks the order, since A then B tests memory and B then A
+tests hallucination with the same two files. It owns one target process
+across the path. Each rung's data is added onto what is already planted,
+never written over it, and its offsets are resolved from the rung's own now.
+The target walks into each rung carrying its own memory and a grown world.
+
+Told which scenarios and what the user wants to find out, the judge proposes
+the path first: the order, the gaps, the restarts, the persona it will play,
+and which checklist lines it will skip or add under that stack, each with
+its reason. The user approves, then it runs. The judge's own lines never
+enter a scenario file and are reported apart from the vetted ones.
 
 At any point on the path the judge may re-ask an earlier scenario. The
 simulated user composes the re-ask from its memory ("that appointment I
 mentioned"), never the original words. The judge, having read the pool,
-knows which earlier checklists a later delta has invalidated and does not
-re-ask those.
+knows which earlier lines a later rung has made moot and does not re-ask
+those.
 
 **New conversation** is one move on the judge's menu: stop the target,
 which runs its save hook and exits, then start it again. Disk memory under
@@ -94,12 +98,12 @@ blind spot.
 planted state or an earlier turn of the same conversation. The finding is
 the turn number and the two conflicting statements. Across many paths this
 gives a drift rate per rung, which is the number behind "good enough to put
-in front of a real user". Whether the conversation read well stays a should
-line: reported, never gating.
+in front of a real user". Whether the conversation read well stays a
+warning: reported, never gating.
 
-**Enough evidence is asymmetric.** One failed must line with a trace behind
+**Enough evidence is asymmetric.** One failed error line with a trace behind
 it fails the scenario; more runs only add examples. A pass is never proven,
-only bounded: N clean paths, N set per scenario.
+only bounded: N clean paths, N a setting of the judge.
 
 ## The sandbox
 
@@ -116,18 +120,14 @@ that is the planting problem below.
 
 ## Time
 
-Where the target reasons about dates, the planted dates and the target's
-"today" must agree. A folder cannot change what day the target thinks it is,
-so the base must read today from something the judge can set, falling back
-to the real clock when unset. One-line base change, discussed separately,
-required for any scenario with a clock part.
-
-**Training leak.** A scenario set in a period the target model saw in
-training lets it answer from memory instead of from the data, and the judge
-cannot tell. Fatal for a time-series target. Rule for the examiner when
-planting: every date after the target model's training cutoff, or values
-that cannot exist in any training set; the first covers the second. The
-examiner must know the cutoff per model and asks the user when it does not.
+No scenario carries an absolute date. Every date is an offset from now, and
+the judge resolves it against the real clock when it plants a rung, so the
+planted dates and the target's "today" agree and are always past any model's
+training cutoff. For a later rung the judge moves "now" forward by the gap it
+chose. A folder cannot change what day the target thinks it is, so the base
+must read today from something the judge can set, falling back to the real
+clock when unset. One-line base change, discussed separately, required for
+any target that reasons about dates.
 
 ## Open
 
@@ -136,6 +136,5 @@ examiner must know the cutoff per model and asks the user when it does not.
 - Planting for a target whose state lives behind an MCP server that talks to a real service (the ledger and Telegram): the server needs a swappable backing store, or the target cannot be graded this way.
 - Where the trace lands. `base_interface.md` says Phoenix; `CLAUDE.md` says `logs/`. The judge reads the trajectory from wherever it is.
 - The base change that lets the judge set the target's date.
-- Where each model's training cutoff is recorded.
 - N clean paths per scenario, and whether it is a fixed count or stops when rates settle.
 - Cost: every path is a simulated-user call plus a target call per turn, plus a claim-extraction call per target turn. Coded checks are free.

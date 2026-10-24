@@ -1,4 +1,4 @@
 - `ANTHROPIC_API_KEY` is blank in `.env`. `src/` is the template stub.
-- The design is `discussion.md` here; how a run is executed and graded is in `agents/judge/discussion.md` and `agents/judge/eval_design.md`.
+- The design is `discussion.md` here; how a run is executed and graded is in `agents/judge/discussion.md` and `agents/judge/eval_design.md`. The scenario file's shape is settled and written in `discussion.md`.
 - `src/` drafted and not objected to, nothing written: `flow/` graph 0 (learn the target, clear questions, draft, walk through, save, read results); `target/` family (`describe.py`, `state.py`); `scenario/` family (`draft.py`, `variants.py`, `pool.py`).
-- Open, listed in `discussion.md`: the steps inside `flow/`; whether the examiner sees the target's code; the scenario file's exact shape; where training cutoffs are recorded; planting behind a real-service MCP server.
+- Open, listed in `discussion.md`: the steps inside `flow/`; the examiner's input; whether the examiner sees the target's code; planting behind a real-service MCP server.

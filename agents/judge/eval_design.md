@@ -2,7 +2,7 @@
 
 Working notes for how the judge builds and grades evaluations. The six
 practices from the industry overview are all covered; the later sections
-refine the earlier ones (must/should tiers replace the weights in the first
+refine the earlier ones (error/warning severities replace the weights in the first
 examples).
 
 ## Vocabulary
@@ -343,10 +343,11 @@ lines failed; per criterion, the pass rate across all runs. Those two tables
 are the result, and a change is judged by comparing the tables before and
 after.
 
-Whether the target agent is usable is a gate. Each line is a *must* (failure
-makes the reply wrong: listed the rent, called send) or a *should* (quality:
-under 150 words, due dates given). A scenario passes only if every must line
-passes on every request variant. Should lines are reported, never gate. The
+Whether the target agent is usable is a gate. Each line is an *error*
+(failure makes the reply wrong: listed the rent, called send) or a *warning*
+(quality: under 150 words, due dates given). A scenario passes only if every
+error line passes on every request variant. Warnings are reported, never
+gate. The
 agent is usable when every vetted scenario passes. This replaces the numeric
 weights in the earlier examples.
 
