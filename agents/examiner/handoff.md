@@ -1,4 +1,4 @@
 - `ANTHROPIC_API_KEY` is blank in `.env`. `src/` is the template stub.
-- The design is `discussion.md` here; how a run is executed and graded is in `agents/judge/discussion.md` and `agents/judge/eval_design.md`. The scenario file's shape is settled and written in `discussion.md`.
-- `src/` drafted and not objected to, nothing written: `flow/` graph 0 (learn the target, clear questions, draft, walk through, save, read results); `target/` family (`describe.py`, `state.py`); `scenario/` family (`draft.py`, `variants.py`, `pool.py`).
-- Open, listed in `discussion.md`: the steps inside `flow/`; the examiner's input; whether the examiner sees the target's code; planting behind a real-service MCP server.
+- The design is `discussion.md` here, rewritten 2026-10-28: decisions as the unit, the two per-target files, the grid, switches, canaries, paths as code. The scenario file's shape is in it.
+- Nothing in `src/` is agreed beyond the five flow steps named in `discussion.md`. The first slice (pick and learn the target, decision list, always-lines) is to be shown as a tree with signatures and agreed before the builder is called.
+- Open, listed in `discussion.md`: planting behind a real-service MCP server; the target README's two sections; carrying the switch and path decisions into the judge's design; how many canaries and where.
