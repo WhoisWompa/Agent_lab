@@ -53,12 +53,12 @@ Pointing the examiner at a target is naming it. From the name it reads:
   the target reads;
 - a few real records of the data the target works with, which the user puts
   in `agents/<target>/test data/`. Gitignored, so they stay on the user's
-  machine. Read once, on the first run for that target, so the examiner gets a
-  feel for what the target usually deals with: who writes, about what, how
-  messy, in what shape. Its first job on that run is to write what it learned
-  into its notes; every later run loads the notes and never opens the samples
-  again. That is a rule in the entry, not in the prompt: the samples are given
-  only when there is no notes file for the target.
+  machine. Not loaded at start: the examiner opens one when something the user
+  asks for points at it, "separate the adverts from the receipts" sends it to
+  look at an inbox sample, and it writes what it learned into its notes so it
+  is not read again for the same reason. The samples give it the feel of what
+  the target usually deals with: who writes, about what, how messy, in what
+  shape.
 
 It never reads the target's code. What the user talks like is the judge's
 problem, not the examiner's; the examiner's realism is realism of the world
@@ -71,7 +71,9 @@ and the user vets each.
 
 **`decisions.yaml`** is the decision list: every decision the target is known
 to make, one entry each, with a short name, the question, a clear yes case, a
-clear no case, and the borderline cases the user has named. It is the map of
+clear no case, and the borderline cases the user has named, each with the
+user's ruling beside it, given while the list is vetted. A borderline without
+a ruling has no cell yet. It is the map of
 the whole test and the source of every switch name. It is complete as far as
 anyone can tell, never more, and it grows from the judge's failures.
 
@@ -87,11 +89,13 @@ them.
 ## The grid
 
 Decisions down the side, directions across: yes, no, each borderline case the
-user named. Every cell is one scenario. An empty cell is a hole by definition,
-so the examiner never looks for holes; it reads them off. Drafting means
-picking an empty cell and filling it. A scenario is only drafted to fill a
-cell. When no cell is empty the examiner says so, with the count, and stops;
-the user may ask for more, the examiner never proposes more on its own.
+user has ruled on. Every cell is one scenario. An empty cell is a hole by
+definition, so the examiner never looks for holes; it reads them off with
+`empty_cells`, code over `decisions.yaml` and the scenario folders. A scenario
+is only drafted to fill a cell, and a drafted cell counts as filled whether or
+not it is vetted yet. When no cell is empty the examiner says so, with the
+count; the user may ask for more, the examiner never proposes more on its
+own.
 
 Decisions are never paired. A scenario tests one decision going one way, so a
 failure names the decision. Interactions between decisions are the judge's,
@@ -100,28 +104,28 @@ by stacking.
 A hole noticed while drafting, "what if Sam said no rush?", is a new borderline
 on that decision's row, and so a new empty cell. The list is the hole list.
 
-## Drafting one scenario
+## Drafting the scenarios
 
-Checklist first, then the world around it. The line is the test; the scenario
-is the smallest world in which the line can be checked.
+Once the decision list and the always-lines are accepted, the examiner fans
+out: one worker per empty cell, all at once, each writing one scenario. A
+worker is given its cell, the ruling if the cell is a borderline, the
+always-lines, the notes for this target, and the names of the existing
+scenarios with one line each, so it does not reuse a name or plant Sam asking
+the same thing twice. Never the text of another scenario: a model that reads
+one writes something similar enough. Two scenarios differ because their cells
+differ, and the workers cannot see each other, so that is enforced by what
+they are.
 
-1. Pick an empty cell: a decision and a direction.
-2. Write the line. The user rules on it before anything else is written,
-   because if the line is wrong the rest is wasted. A borderline cell's answer
-   is the user's; the examiner cannot guess it.
-3. Plant the one message that makes the line checkable, then two or three
-   around it so the right answer is not the only thing in the data.
-4. The turns: what the user wants, never the words.
-5. The story, one paragraph.
-6. Show the whole draft. The user corrects or accepts.
-7. Save. Next empty cell.
+Inside a worker, checklist first, then the world around it. The line is the
+test; the scenario is the smallest world in which the line can be checked:
+the line, the one planted message that makes it checkable, two or three
+messages around it so the right answer is not the only thing in the data, the
+turns, the story.
 
-What the drafter is given: the cell, the always-lines, the notes it has
-learned about this target, and the names of the existing scenarios with one
-line each, so it does not reuse a name or plant Sam asking the same thing
-twice. Never the full text of earlier scenarios: a model that reads them
-writes something similar enough. Two scenarios differ because their cells
-differ, and that is enforced by what they are.
+Every fanned-out scenario is saved with `vetted: false`. The judge runs only
+vetted scenarios. Fanning out again after the list has changed drafts only the
+cells that are new, since `empty_cells` counts the drafted ones as filled.
+When a decision is dropped from the list, its scenarios are removed.
 
 Two other ways to draft, beside the grid:
 
@@ -137,8 +141,8 @@ Two other ways to draft, beside the grid:
 
 What the user corrects in one draft must carry into the next, or the examiner
 invents the same wrong world again. It keeps one note per target under its
-own `data/`: what the real data looks like, learned from the samples on the
-first run, and which rulings the user gave. This
+own `data/`: what the real data looks like, learned from the samples it has
+opened, and which rulings the user gave. This
 is not the persona, which is the judge's; it is the texture of the world and
 the answers to the borderline cases.
 
@@ -194,6 +198,7 @@ name: <scenario name>                    # required, matches the folder
 target: <agent name>                     # required, matches the parent folder
 decision: <name from decisions.yaml>     # required
 direction: <yes | no | the borderline case's name>   # required
+vetted: <true | false>                   # required; false on write, true when the user accepts; the judge runs only true
 
 context: >                               # required
   <the story, one paragraph>
@@ -341,10 +346,11 @@ generated once, vetted with the rest, then fixed.
 
 An examiner that invents a scenario also invents what correct looks like for
 it, and may get that wrong. Model-generated scenarios are good at finding
-breaks and unreliable at certifying passes. So nothing joins the pool
-without the user: the decision list, the always-lines, and every scenario,
-line first. Each is vetted once and reused on every run and every rebuild of
-the target. The rulings on the borderline cases are the one thing that stays
+breaks and unreliable at certifying passes. So nothing counts without the
+user: the decision list and the always-lines are corrected until accepted,
+and every scenario is opened by name, corrected, and accepted, which sets
+`vetted: true`. Each is vetted once and reused on every run and every rebuild
+of the target. The rulings on the borderline cases are the one thing that stays
 the user's, because they are what the user wants, not a fact anyone can check.
 
 ## Canaries and the broken target
@@ -402,20 +408,43 @@ judge's results beside them. Tracked in git, since the user vetted every
 scenario in it. The examiner writes there and reads results from there; it
 reads nothing else of the judge's.
 
-## `src/`
+## How a run goes
 
-The flow, as settled:
+The examiner is a model with tools and a long system prompt, not a fixed
+pipeline: the conversation sets the order. What is fixed is fixed in the
+entry.
 
-1. Pick the target; learn it.
-2. Decision list: draft, show, correct until accepted, save.
-3. Always-lines: the same.
-4. Scenarios: pick a cell, line, rule, data, turns, story, vet, save; until
-   the grid is full.
-5. Results: read, propose, rule, back to 2.
+**Input.** Every line from the app is one JSON object: `target_agent`,
+`scenario` (a name or null) and `response` (the user's words, null on the
+first line, which means start).
 
-Steps 2 and 3 happen once per target. Step 4 is a subgraph. Step 5 is the
-loop that never ends. The tree and signatures are agreed in discussion one
-slice at a time before the builder writes them.
+**The opening, in code.** The entry loads `instructions/system.md`, then the
+target's information as one text: README, table row, tool list. Then it looks
+in the pool.
+
+- No `scenarios/<target>/decisions.yaml`: the first model call drafts the
+  foundation, the decision list and the always-lines, from that information.
+  Both are written to the pool and attached to the first reply. The user's
+  first sight of the examiner is the draft list.
+- A list exists: it is loaded as context, and the first reply says where
+  things stand: decisions, scenarios, how many not yet vetted.
+- A scenario is named: that `scenario.yaml` is loaded too, and the
+  conversation is about it.
+
+**The conversation.** The user says what they want out of the target. The
+examiner pulls a sample when one is relevant, rewrites the list or the lines,
+and every rewrite is written to the pool and attached to the reply with the
+protocol's `file` key, so the user sees the current file beside the chat.
+When the user accepts the two files, the examiner fans out the scenarios.
+When a scenario is named, the user corrects it, the examiner rewrites it,
+the user accepts, `vetted` turns true.
+
+**Tools.** Reading: two read-only file toolkits, one rooted at the target's
+`data/`, one at `test data/`, and one at the pool. Writing: `write_decisions`,
+`write_always`, `write_scenario`, `remove_scenario`, `accept_scenario`,
+`empty_cells`, `draft_scenarios` (the fan-out), `read_notes`, `write_notes`.
+Nothing else touches disk. The tree and signatures are agreed in discussion
+before the builder writes them.
 
 ## Open
 
@@ -430,3 +459,4 @@ slice at a time before the builder writes them.
   `discussion.md`.
 - How many canaries per target, and whether they live in `always.yaml` or in
   one scenario of their own.
+- The judge skips scenarios with `vetted: false`; to carry into its design.
