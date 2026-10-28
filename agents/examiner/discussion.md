@@ -51,8 +51,14 @@ Pointing the examiner at a target is naming it. From the name it reads:
   arguments, descriptions. A tool's interface is not its implementation;
 - the layout of the target's `data/`, since a data entry is keyed by the path
   the target reads;
-- the real exports under `test data/` where they exist, for the texture of
-  the data: who writes, about what, how messy.
+- a few real records of the data the target works with, which the user puts
+  in `agents/<target>/test data/`. Gitignored, so they stay on the user's
+  machine. Read once, on the first run for that target, so the examiner gets a
+  feel for what the target usually deals with: who writes, about what, how
+  messy, in what shape. Its first job on that run is to write what it learned
+  into its notes; every later run loads the notes and never opens the samples
+  again. That is a rule in the entry, not in the prompt: the samples are given
+  only when there is no notes file for the target.
 
 It never reads the target's code. What the user talks like is the judge's
 problem, not the examiner's; the examiner's realism is realism of the world
@@ -131,7 +137,8 @@ Two other ways to draft, beside the grid:
 
 What the user corrects in one draft must carry into the next, or the examiner
 invents the same wrong world again. It keeps one note per target under its
-own `data/`: what the real data looks like, which rulings the user gave. This
+own `data/`: what the real data looks like, learned from the samples on the
+first run, and which rulings the user gave. This
 is not the persona, which is the judge's; it is the texture of the world and
 the answers to the borderline cases.
 
