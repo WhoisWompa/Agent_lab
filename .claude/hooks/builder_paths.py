@@ -3,7 +3,7 @@
 Allowed to read:  agents/<agent>/src/**, agents/<agent>/base/base_interface.md, agents/<agent>/base_settings.json,
                   agents/<agent>/README.md, agents/<agent>/data/** and logs/**, plus mcp/** and .claude/skills/** at the repo root.
                   Never .env, never the rest of base/, never handoff.md or tests/.
-Allowed to write: agents/<agent>/src/** only (code, instructions/, requirements.txt and README.md all live there).
+Allowed to write: agents/<agent>/src/** (code and instructions/), agents/<agent>/README.md (its file table), and requirements.txt at the repo root.
 Exit 2 blocks the call; the reason on stderr is shown to the subagent.
 """
 import json
@@ -35,7 +35,11 @@ except ValueError:
 if tool in ("Edit", "Write"):
     if len(rel) >= 4 and rel[0] == AGENTS and rel[2] == "src":
         sys.exit(0)
-    block(f"may only write inside agents/<agent>/src/, not {'/'.join(rel)}")
+    if len(rel) == 3 and rel[0] == AGENTS and rel[2] == "README.md":
+        sys.exit(0)
+    if rel == ("requirements.txt",):
+        sys.exit(0)
+    block(f"may only write inside agents/<agent>/src/, the agent's README.md or the root requirements.txt, not {'/'.join(rel)}")
 
 # Read, Glob, Grep
 if rel and rel[0] == "mcp":

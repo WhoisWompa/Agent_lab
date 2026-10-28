@@ -72,10 +72,10 @@ def add(args):
     if args.key not in env_names(env_path):
         env_append(env_path, args.key)
         note = f", {args.key} is blank in .env"
-    req = os.path.join(ROOT, "agents", args.agent, "src", "requirements.txt")
+    req = os.path.join(ROOT, "requirements.txt")
     package = "langchain-" + args.provider.replace("_", "-")
     if not os.path.exists(req) or package not in open(req, encoding="utf-8").read():
-        note += f"; {package} is not in src/requirements.txt"
+        note += f"; {package} is not in requirements.txt at the repo root"
     print(f"{args.agent}: added {args.label}{note}")
 
 

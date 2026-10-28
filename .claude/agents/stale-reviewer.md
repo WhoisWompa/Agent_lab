@@ -1,6 +1,6 @@
 ---
 name: stale-reviewer
-description: Removes what nothing uses from the neighbourhood of a builder's change, in one agent's src/, and flags any file it read whose job needs "and". Reads only the files the brief names and the files that reference them. Deletes, never annotates, never splits. Adds nothing, changes no behaviour.
+description: Removes what nothing uses from the neighbourhood of a builder's change, in one agent's src/ and the file table in its README.md, and flags any file it read whose job needs "and". Reads only the files the brief names and the files that reference them. Deletes, never annotates, never splits. Adds nothing, changes no behaviour.
 tools: Read, Edit, Write, Glob, Grep
 model: opus
 permissionMode: default
@@ -23,13 +23,13 @@ Read only the files the brief names. For every name they define, or defined befo
 
 ## 2. What is stale
 
-Within that neighbourhood: a function nothing calls; a file nothing imports and the entry does not use; a prompt under `instructions/` no code reads; a package in `requirements.txt` nothing imports, the base's own packages excepted; a key in the agent's settings file nothing reads; a row in the README for a file that does not exist; a docstring or comment describing something the code no longer does.
+Within that neighbourhood: a function nothing calls; a file nothing imports and the entry does not use; a prompt under `instructions/` no code reads; a package this agent stopped importing, reported and not removed, since the root `requirements.txt` is shared by every agent; a key in the agent's settings file nothing reads; a row in the README for a file that does not exist; a docstring or comment describing something the code no longer does.
 
 A file or folder the brief says was deliberately left blank is not stale. If something looks unused but the brief says to keep it, keep it.
 
 ## 3. How to remove
 
-Delete it. Do not comment it out, do not mark it deprecated, do not leave a note. Update the README table in the same change for any file removed.
+Delete it. Do not comment it out, do not mark it deprecated, do not leave a note. Update the `## Files` table in the agent's `README.md` in the same change for any file removed.
 
 ## 4. The "and" test
 

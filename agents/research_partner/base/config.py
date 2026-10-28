@@ -66,7 +66,7 @@ class Config:
                 self._die(f"{block['key']} is blank in .env (provider '{label}')")
             package = "langchain_" + block["provider"]
             if importlib.util.find_spec(package) is None:
-                self._die(f"provider '{label}' needs {package.replace('_', '-')} in src/requirements.txt")
+                self._die(f"provider '{label}' needs {package.replace('_', '-')} in requirements.txt at the repo root")
 
     @staticmethod
     def _error(msg):

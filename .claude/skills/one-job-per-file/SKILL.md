@@ -68,7 +68,7 @@ A file past about 150 lines is the tripwire: stop and say in one line what the f
 
 ## Every file is listed
 
-Each package carries a table, one row per file, saying what the file does in a sentence or two. For an agent it is `src/README.md`. For an MCP server it is the `## Files` section of the server's `README.md`. Whoever adds, renames or removes a file updates the table in the same change. The table is an identification aid: enough to pick the right file, not documentation of it. A row that needs "and" is a file that needs splitting.
+Each package carries a table, one row per file, saying what the file does in a sentence or two. For an agent it is the `## Files` section of the agent's `README.md`, beside `src/`. For an MCP server it is the `## Files` section of the server's `README.md`. Whoever adds, renames or removes a file updates the table in the same change. The table is an identification aid: enough to pick the right file, not documentation of it. A row that needs "and" is a file that needs splitting.
 
 ## When the brief gives a layout
 
@@ -79,9 +79,9 @@ If the calling session's brief names the files and their functions, build exactl
 The parts of a made-up agent that answers a question from a folder of notes:
 
 ```
+README.md           the agent's manual; its ## Files section lists every file below, one row each
 src/
   __init__.py       class Agent(Base): runs the top graph that flow/ built
-  README.md         one row per file
   state.py          root: what the graph carries from step to step
   convert.py        root: shapes every family shares
   flow/             the steps, in order; see flow-graphs

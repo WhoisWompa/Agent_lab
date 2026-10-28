@@ -156,9 +156,10 @@ Paths are relative to the agent folder, `agents/<name>/`.
 
 | Path | Yours? | What |
 |---|---|---|
-| `src/` | yes | Your code. Any files you like; `src/__init__.py` holds `class Agent(Base)`. `src/README.md` lists every file. |
+| `src/` | yes | Your code. Any files you like; `src/__init__.py` holds `class Agent(Base)`. |
 | `src/instructions/` | yes | Prompts and any other long text, one `.md` per piece. Read them at runtime; do not paste prose into Python. |
-| `src/requirements.txt` | yes | The exact set of packages the agent needs to run. Add what `src/` imports, remove what nothing imports. Never remove the base's own packages, listed below. |
+| `README.md` | the file table | The agent's manual, beside `src/`: what it does, how it is run, and a `## Files` table of every file in `src/`, one row each. Whoever adds, renames or removes a file updates the table in the same change. |
+| `requirements.txt` | add only | At the repo root, one file for every agent, installed into the shared `.venv`. Add what `src/` imports if it is not there, pinned. Remove nothing: other agents share it. |
 | `src/<name>.json` | yes | The agent's own settings, if it has any: model names, intervals, which chats to read. Read with `json.load`; the base never opens it. |
 | `base_settings.json` | read only | The providers (each one key and the models it serves), `max_retries`, which MCP servers are granted, and `phoenix`, where the trace goes. If you need a model or a server that is not there, say so in your report. |
 | `data/` | at runtime | Keep the agent's own memory here if it needs any, in whatever shape. |
@@ -169,7 +170,7 @@ Paths are relative to the agent folder, `agents/<name>/`.
 
 `src/__init__.py` defines `HERE` as the `src/` folder, from `__file__`. Build every path from it: `os.path.join(HERE, "instructions", "system.md")` for a prompt, `os.path.join(self.folder, "data", "notes.json")` for memory.
 
-The base's own packages in `src/requirements.txt`, never removed:
+The base's own packages in the root `requirements.txt`, never removed:
 
 ```
 langchain
@@ -182,4 +183,4 @@ opentelemetry-sdk
 opentelemetry-exporter-otlp-proto-http
 ```
 
-`deepagents` is also present at creation; keep it only if `src/` uses it.
+`deepagents` is also there; it stays while any agent uses it.

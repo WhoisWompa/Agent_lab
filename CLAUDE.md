@@ -109,7 +109,7 @@ The summary describes the agent in high level overview. It should contain enough
 
 1. Before drafting, the session asks whatever it needs to get the big picture of what the agent is supposed to do. The aim is a summary detailed enough that a future session reading `list_of_agents.md` can tell this agent apart from every other one. Questions about the idea only, never about how to build it or what the session needs. Then it drafts the row (folder name and summary) and shows it, with one more question: which provider, which models, and which `.env` variable name the agent's first key goes under. If the user doesnt provide a name, give some options for the user to choose from, or tell the user to enter its own preferred name.
 2. The user edits or agrees. Redraft until agreed. Nothing is written before.
-3. On agreement: add the row to `list_of_agents.md`, copy `agent_template/` to `agents/<name>/`, create an empty `.env` there (no `.env` is tracked, so the copy will not have one), run `provider.py add` for the first provider, and set the matching `langchain-<provider>` package in `src/requirements.txt`.
+3. On agreement: add the row to `list_of_agents.md`, copy `agent_template/` to `agents/<name>/`, create an empty `.env` there (no `.env` is tracked, so the copy will not have one), run `provider.py add` for the first provider, and add the matching `langchain-<provider>` package to the root `requirements.txt` if it is not there.
 4. Report that the folder exists and which key name is blank in `.env`, in a line, and stop. No plan, no open questions, no suggestion of what to build first. The user says what comes next.
 5. Never read `.env`.
 
@@ -135,6 +135,7 @@ python provider.py remove <agent> <label>
 | `agents/<agent-name>/` | One folder per agent. `agents/` holds nothing else. Contents in the next table. |
 | `agent_template/` | The blank agent folder. Copied and renamed to start every new agent. Its `base/` is the one place the base is edited. |
 | `list_of_agents.md` | The index of agents. |
+| `requirements.txt` | The one set of packages for the shared `.venv`, every agent's together. A package is added when an agent's `src/` needs it and removed only when no agent imports it. |
 | `sync.py` | Copies `agent_template/base/` into every agent's `base/`. `--check` only reports. |
 | `provider.py` | Adds or removes a provider in one agent: the settings block and the `.env` line together. |
 | `git_sync.py` | Commits, then pulls or pushes so the laptop and GitHub match. Run by the session hooks; see **Commits**. |
@@ -154,15 +155,14 @@ Two folders and the files the base reads. `base/` is the template's; `src/` is t
 |---|---|---|---|
 | `base/` | The base: one class, `Base`, split over one file per job (config, models, MCP tools, trace, the turn) and `base_interface.md`. `src/` subclasses it and gets `self.model()` and `self.tools()`. A copy of `agent_template/base/`, overwritten by `sync.py`. Never edited here. | **no** | no |
 | `base/base_interface.md` | The base as a black box: what `src/` must provide, what it gets, what the output line looks like. The one file in `base/` the builder reads. | yes | no |
-| `src/` | The agent's code. `src/__init__.py` holds `class Agent(Base)`, overriding `on_message()`, `on_stop()` or `on_start()`. `src/README.md` lists every file. | yes | yes |
+| `src/` | The agent's code. `src/__init__.py` holds `class Agent(Base)`, overriding `on_message()`, `on_stop()` or `on_start()`. | yes | yes |
 | `src/instructions/` | Prompts and other long text, one `.md` per piece. | yes | yes |
-| `src/requirements.txt` | The exact set of packages the agent needs to run. | yes | yes |
 | `src/<name>.json` | The agent's own settings, if it has any. The base never opens it. | yes | yes |
 | `base_settings.json` | The providers, `max_retries` and the granted MCP servers. Shape set by the base, values per agent. Written by `provider.py` and the main session, agreed with the user. | yes | no |
 | `.env` | Secrets, one `KEY=value` per line, one per provider. Empty at creation; `provider.py` adds and removes the names, the user fills the values. Nobody reads it. | **no** | no |
 | `data/` | Whatever memory the agent keeps. Written by the running agent only. | yes | no |
 | `logs/` | One OpenInference trace per run. Written by the base only. | yes | no |
-| `README.md` | User manual. Template not yet decided. | yes | no |
+| `README.md` | The agent's manual: what it does, how it is run, and a `## Files` table of every file in `src/`, one row each. The one README an agent has. | yes | the file table |
 | `.gitignore` | Kept from the template; the root `.gitignore` is what actually applies. | no | no |
 | `tests/` | Never shipped. Empty for now. | no | no |
 | `handoff.md` | What is left to continue in this agent, nothing else. Written by the main session. See **Handoff** below. | no | no |
